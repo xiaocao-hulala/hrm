@@ -1,0 +1,32 @@
+2020-05-13 14:51:14,366 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-13 14:56:05,810 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-13 16:36:06,676 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-13 16:50:12,180 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-13 16:55:36,962 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-13 17:03:55,233 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-13 17:03:55,312 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 17:03:55,313 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 17:03:55,313 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 17:03:55,313 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 17:03:55,483 - Opening JDBC Connection
+2020-05-13 17:07:37,732 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-13 17:07:37,776 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 17:07:37,776 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 17:07:37,777 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 17:07:37,777 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 17:07:37,913 - Opening JDBC Connection
+2020-05-13 17:07:38,490 - Created connection 369241501.
+2020-05-13 17:07:38,491 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@16022d9d]
+2020-05-13 17:07:38,507 - ==>  Preparing: select * from myuser; 
+2020-05-13 17:07:38,590 - ==> Parameters: 
+2020-05-13 17:07:38,629 - <==      Total: 2
+2020-05-13 18:31:27,277 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-13 18:31:27,376 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 18:31:27,376 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 18:31:27,377 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 18:31:27,377 - PooledDataSource forcefully closed/removed all connections.
+2020-05-13 18:31:27,591 - Opening JDBC Connection
+2020-05-13 18:31:28,865 - Created connection 1484531981.
+2020-05-13 18:31:28,867 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@587c290d]
+2020-05-13 18:31:28,884 - ==>  Preparing: select * from myuser; 
+2020-05-13 18:31:28,971 - ==> Parameters: 

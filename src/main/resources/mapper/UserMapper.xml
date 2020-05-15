@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace是相当于包名，用于区分不同类的-->
+<!-- mapper.xml通过namespace来关联一起i-->
+<mapper namespace="com.dao.UserDao">
+
+    <!-- 结果集映射，用于将查询结果映射到指定的类对象中-->
+    <resultMap id="usermap" type="com.entity.User">
+        <!-- 将sql查询吃䣌指定column映射到type指定类的property属性中-->
+        <result property="id" column="id"></result>
+        <result property="loginname" column="loginname"></result>
+        <result property="username" column="username"></result>
+        <result property="state" column="state"></result>
+        <result property="createtime" column="createtime"></result>
+    </resultMap>
+
+    <select id="selectall" resultMap="usermap">
+        select id,loginname,username,state,createtime from user
+    </select>
+
+
+
+
+
+
+</mapper>

@@ -1,0 +1,222 @@
+2020-05-15 07:08:18,697 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 07:08:18,715 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 07:08:19,024 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:08:19,035 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:08:19,036 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:08:19,037 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:08:19,431 - Opening JDBC Connection
+2020-05-15 07:08:20,328 - Created connection 667447085.
+2020-05-15 07:08:20,329 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c86f2d]
+2020-05-15 07:08:20,338 - ==>  Preparing: select dename,id,detail from department where 1=1 and dename like concat('%',?,'%') 
+2020-05-15 07:08:20,477 - ==> Parameters: 销售(String)
+2020-05-15 07:08:20,556 - <==      Total: 0
+2020-05-15 07:10:22,000 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 07:10:22,004 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 07:10:22,124 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:10:22,125 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:10:22,125 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:10:22,125 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:10:22,372 - Opening JDBC Connection
+2020-05-15 07:10:22,873 - Created connection 667447085.
+2020-05-15 07:10:22,873 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c86f2d]
+2020-05-15 07:10:22,883 - ==>  Preparing: select dename,id,detail from department where 1=1 and id =? 
+2020-05-15 07:10:22,994 - ==> Parameters: 1(Integer)
+2020-05-15 07:10:23,042 - <==      Total: 1
+2020-05-15 07:10:46,474 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 07:10:46,479 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 07:10:46,653 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:10:46,654 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:10:46,654 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:10:46,654 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:10:46,890 - Opening JDBC Connection
+2020-05-15 07:10:47,356 - Created connection 667447085.
+2020-05-15 07:10:47,357 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c86f2d]
+2020-05-15 07:10:47,372 - ==>  Preparing: select dename,id,detail from department where 1=1 and dename like concat('%','?','%') 
+2020-05-15 07:11:47,259 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 07:11:47,262 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 07:11:47,428 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:11:47,428 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:11:47,428 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:11:47,428 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:11:47,697 - Opening JDBC Connection
+2020-05-15 07:11:48,170 - Created connection 667447085.
+2020-05-15 07:11:48,170 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c86f2d]
+2020-05-15 07:11:48,184 - ==>  Preparing: select dename,id,detail from department where 1=1 and dename like concat('%',?,'%') 
+2020-05-15 07:11:48,298 - ==> Parameters: 销售(String)
+2020-05-15 07:11:48,330 - <==      Total: 0
+2020-05-15 07:13:04,316 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 07:13:04,321 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 07:13:04,486 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:13:04,486 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:13:04,486 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:13:04,486 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:13:04,803 - Opening JDBC Connection
+2020-05-15 07:13:05,363 - Created connection 667447085.
+2020-05-15 07:13:05,365 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c86f2d]
+2020-05-15 07:13:05,374 - ==>  Preparing: select dename,id,detail from department where 1=1 and dename like concat('%',?,'%') 
+2020-05-15 07:13:05,509 - ==> Parameters: 销售(String)
+2020-05-15 07:13:05,575 - <==      Total: 0
+2020-05-15 07:15:53,463 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 07:15:53,466 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 07:15:53,647 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:15:53,647 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:15:53,647 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:15:53,648 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:15:53,884 - Opening JDBC Connection
+2020-05-15 07:15:54,325 - Created connection 667447085.
+2020-05-15 07:15:54,326 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c86f2d]
+2020-05-15 07:15:54,332 - ==>  Preparing: select * from department where 1=1 and dename like concat('%',?,'%') 
+2020-05-15 07:15:54,416 - ==> Parameters: 销售(String)
+2020-05-15 07:15:54,440 - <==      Total: 0
+2020-05-15 07:22:58,864 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 07:22:58,867 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 07:22:58,999 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:22:58,999 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:22:58,999 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:22:59,000 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:22:59,241 - Opening JDBC Connection
+2020-05-15 07:22:59,810 - Created connection 331418503.
+2020-05-15 07:22:59,810 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@13c10b87]
+2020-05-15 07:22:59,820 - ==>  Preparing: select * from department WHERE id =? 
+2020-05-15 07:22:59,979 - ==> Parameters: 1(Integer)
+2020-05-15 07:23:00,076 - <==      Total: 1
+2020-05-15 07:35:24,451 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 07:35:24,455 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 07:35:24,709 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:35:24,710 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:35:24,712 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:35:24,712 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:35:24,955 - Opening JDBC Connection
+2020-05-15 07:35:25,692 - Created connection 667447085.
+2020-05-15 07:35:25,692 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c86f2d]
+2020-05-15 07:35:25,703 - ==>  Preparing: update department SET and detai=? where id = ? 
+2020-05-15 07:35:25,778 - ==> Parameters: 吊吊吊豆腐发发发(String), 1(Integer)
+2020-05-15 07:36:51,405 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 07:36:51,409 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 07:36:51,600 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:36:51,600 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:36:51,601 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:36:51,601 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:36:51,910 - Opening JDBC Connection
+2020-05-15 07:36:52,357 - Created connection 667447085.
+2020-05-15 07:36:52,357 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c86f2d]
+2020-05-15 07:36:52,366 - ==>  Preparing: update department SET detai=? where id = ? 
+2020-05-15 07:36:52,527 - ==> Parameters: 吊吊吊豆腐发发发(String), 1(Integer)
+2020-05-15 07:37:47,682 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 07:37:47,687 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 07:37:47,883 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:37:47,883 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:37:47,883 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:37:47,883 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:37:48,222 - Opening JDBC Connection
+2020-05-15 07:37:48,875 - Created connection 667447085.
+2020-05-15 07:37:48,875 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c86f2d]
+2020-05-15 07:37:48,886 - ==>  Preparing: update department SET detail=? where id = ? 
+2020-05-15 07:37:48,963 - ==> Parameters: 吊吊吊豆腐发发发(String), 1(Integer)
+2020-05-15 07:37:48,984 - <==    Updates: 1
+2020-05-15 07:44:49,513 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 07:44:49,522 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 07:44:49,867 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:44:49,868 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:44:49,868 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:44:49,868 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 07:44:50,351 - Opening JDBC Connection
+2020-05-15 07:44:51,521 - Created connection 667447085.
+2020-05-15 07:44:51,522 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27c86f2d]
+2020-05-15 07:44:51,535 - ==>  Preparing: update department SET detail=? where id = ? 
+2020-05-15 07:44:51,781 - ==> Parameters: 吊吊吊豆腐发发发(String), 1(Integer)
+2020-05-15 07:44:51,801 - <==    Updates: 1
+2020-05-15 10:56:22,560 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 10:56:22,564 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 10:56:22,891 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 10:56:22,891 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 10:56:22,891 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 10:56:22,891 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 10:56:23,498 - Opening JDBC Connection
+2020-05-15 10:56:24,681 - Created connection 1519736165.
+2020-05-15 10:56:24,682 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5a955565]
+2020-05-15 10:56:24,696 - ==>  Preparing: select * from department WHERE dename like concat('%',?,'%') 
+2020-05-15 10:56:24,847 - ==> Parameters: 销售(String)
+2020-05-15 10:56:24,902 - <==      Total: 0
+2020-05-15 11:05:11,800 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 11:05:11,803 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 11:05:11,990 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:05:11,991 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:05:11,991 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:05:11,993 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:05:12,506 - Opening JDBC Connection
+2020-05-15 11:05:13,185 - Created connection 1519736165.
+2020-05-15 11:05:13,185 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5a955565]
+2020-05-15 11:05:13,195 - ==>  Preparing: select * from department WHERE dename like concat('%',?,'%') 
+2020-05-15 11:05:13,363 - ==> Parameters: 销售(String)
+2020-05-15 11:05:13,394 - <==      Total: 0
+2020-05-15 11:06:10,738 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 11:06:10,740 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 11:06:10,869 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:06:10,869 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:06:10,869 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:06:10,869 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:06:11,259 - Opening JDBC Connection
+2020-05-15 11:06:11,799 - Created connection 1519736165.
+2020-05-15 11:06:11,799 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5a955565]
+2020-05-15 11:06:11,808 - ==>  Preparing: select * from department WHERE dename like concat('%',?,'%') 
+2020-05-15 11:06:11,890 - ==> Parameters: 销售(String)
+2020-05-15 11:06:11,920 - <==      Total: 0
+2020-05-15 11:10:07,659 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 11:10:07,662 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 11:10:07,811 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:10:07,811 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:10:07,812 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:10:07,812 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:10:08,364 - Opening JDBC Connection
+2020-05-15 11:10:08,926 - Created connection 1519736165.
+2020-05-15 11:10:08,926 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5a955565]
+2020-05-15 11:10:08,937 - ==>  Preparing: select * from department WHERE dename like concat('%',?,'%') 
+2020-05-15 11:10:09,028 - ==> Parameters: 销售(String)
+2020-05-15 11:10:09,074 - <==      Total: 1
+2020-05-15 11:24:23,759 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 11:24:23,762 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 11:24:23,901 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:24:23,901 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:24:23,901 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:24:23,902 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:24:24,210 - Opening JDBC Connection
+2020-05-15 11:24:24,837 - Created connection 2025269734.
+2020-05-15 11:24:24,837 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@78b729e6]
+2020-05-15 11:24:24,849 - ==>  Preparing: insert into department ( dename, detail, ) value ( ?, ?, ) 
+2020-05-15 11:24:24,986 - ==> Parameters: 管理部(String), 上层管理阶层由我管理(String)
+2020-05-15 11:27:29,868 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 11:27:29,871 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 11:27:30,015 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:27:30,016 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:27:30,017 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:27:30,017 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:27:30,312 - Opening JDBC Connection
+2020-05-15 11:27:30,785 - Created connection 2025269734.
+2020-05-15 11:27:30,786 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@78b729e6]
+2020-05-15 11:27:30,797 - ==>  Preparing: insert into department ( dename, detail ) value ( ?, ? ) 
+2020-05-15 11:27:30,943 - ==> Parameters: 管理部(String), 上层管理阶层由我管理(String)
+2020-05-15 11:29:36,419 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 11:29:36,423 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 11:29:36,558 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:29:36,558 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:29:36,559 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:29:36,559 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:29:36,791 - Opening JDBC Connection
+2020-05-15 11:29:37,310 - Created connection 2025269734.
+2020-05-15 11:29:37,311 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@78b729e6]
+2020-05-15 11:29:37,321 - ==>  Preparing: insert into department ( dename, detail ) value ( ?, ? ) 
+2020-05-15 11:29:37,414 - ==> Parameters: 管理部(String), 上层管理阶层由我管理(String)
+2020-05-15 11:29:37,464 - <==    Updates: 1
+2020-05-15 11:39:01,596 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-15 11:39:01,600 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-15 11:39:01,808 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:39:01,808 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:39:01,809 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:39:01,809 - PooledDataSource forcefully closed/removed all connections.
+2020-05-15 11:39:02,113 - Opening JDBC Connection
+2020-05-15 11:39:02,745 - Created connection 2032188048.
+2020-05-15 11:39:02,746 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7920ba90]
+2020-05-15 11:39:02,757 - ==>  Preparing: delete from department where id = ? 
+2020-05-15 11:39:02,965 - ==> Parameters: 1(Integer)
+2020-05-15 11:39:02,987 - <==    Updates: 1

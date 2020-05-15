@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.DepartmentDao">
+
+    <resultMap id="departmentmap" type="com.entity.Department">
+        <!--   <result property="id" column="id"></result>-->
+        <!-- 主键列推荐使用id,这样效率更高-->
+        <id property="id" column="id"></id>
+        <result property="dename" column="dename"></result>
+        <result property="detail" column="detail"></result>
+    </resultMap>
+
+    <select id="selectall" resultMap="departmentmap">
+        select dename,id,detail from department
+    </select>
+
+
+    <select id="selectByParams" resultMap="departmentmap">
+        select * from department
+        <where>
+            <if test="dename != null and dename != ''">
+                and dename like concat('%',#{dename},'%')
+            </if>
+            <if test="id !=null">
+                and id =#{id}
+            </if>
+        </where>
+    </select>
+
+
+    <update id="updateDepartment" >
+        update department
+        <set>
+            <if test="dename != null and dename != ''">
+                 dename = #{dename},
+            </if>
+            <if test="detail!=null and detail != ''">
+                 detail=#{detail},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+    <insert id="addDepartment">
+        insert into department
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="dename != null and dename != ''">
+               dename,
+            </if>
+            <if test="detail!=null and detail != ''">
+                detail,
+            </if>
+        </trim>
+        value
+        <!-- suffixOverrides=","后缀删掉-->
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="dename != null and dename != ''">
+                #{dename},
+            </if>
+            <if test="detail!=null and detail != ''">
+                #{detail},
+            </if>
+        </trim>
+    </insert>
+
+
+    <delete id="deleteDepartment">
+        delete from department where id = #{id}
+    </delete>
+
+
+
+
+
+</mapper>
