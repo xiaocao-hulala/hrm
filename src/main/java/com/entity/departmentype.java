@@ -1,5 +1,7 @@
 package com.entity;
 
+import lombok.Data;
+
 /**
  * @Author:caocong
  * @Description:
@@ -8,5 +10,8 @@ package com.entity;
 *部门类型表
 create by caocong on  2020/5/15
 */
+@Data
 public class departmentype {
+    private int departmentid;
+    private String departmentname;
 }
