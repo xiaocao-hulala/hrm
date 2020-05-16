@@ -1,7 +1,9 @@
 import com.dao.DepartmentDao;
 import com.dao.UserDao;
+import com.dao.WorkerDao;
 import com.entity.Department;
 import com.entity.User;
+import com.entity.Worker;
 import com.util.MyBatisUtils;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -53,21 +55,24 @@ public class MyBatisTest {
         /**
          * 映射实现
          */
-        DepartmentDao departmentDao = sqlSession.getMapper(DepartmentDao.class);
+        WorkerDao workerDao = sqlSession.getMapper(WorkerDao.class);
 
-        Department department = new Department();
+        Worker worker = new Worker();
+        worker.setId(1);
+        worker.setName("余小滴");
+        worker.setAddress("江西抚州崇仁县");
 
-        department.setId(1);
-
-        List<Department> list = departmentDao.selectByParams(department);
+        // List<Worker> list = workerDao.selectAll();
+        int result = workerDao.updateWorker(worker);
+        System.out.println(result);
 
       /*  for (User user : list) {
             System.out.println(user);
         }*/
 
-        for (Department depar : list) {
-            System.out.println(depar);
-        }
+      /*  for (Worker worker : list) {
+            System.out.println(worker);
+        }*/
     }
 
 
@@ -80,7 +85,7 @@ public class MyBatisTest {
 
         department.setId(1);*/
         int list = departmentDao.deleteDepartment(1);
-            System.out.println(list);
+        System.out.println(list);
     }
 
 }

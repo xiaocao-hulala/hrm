@@ -6,14 +6,35 @@
     <resultMap id="departmentmap" type="com.entity.Department">
         <!--   <result property="id" column="id"></result>-->
         <!-- 主键列推荐使用id,这样效率更高-->
-        <id property="id" column="id"></id>
-        <result property="dename" column="dename"></result>
+        <id property="id" column="departmentid"></id>
+        <result property="dename" column="departmentname"></result>
         <result property="detail" column="detail"></result>
+
+        <collection property="workers" javaType="ArrayList" ofType="com.entity.Worker">
+            <id property="id" column="workerid"></id>
+            <result property="name" column="name"></result>
+            <result column="tel" property="tel"></result>
+            <result column="email" property="email"></result>
+            <result column="position" property="position"></result>
+            <result column="xueli" property="xueli"></result>
+            <result column="idcard" property="idcard"></result>
+            <result column="workdepartmentid" property="departmentid"></result>
+            <result column="address" property="address"></result>
+            <result column="createtime" property="createtime"></result>
+        </collection>
     </resultMap>
 
+
+
     <select id="selectall" resultMap="departmentmap">
-        select dename,id,detail from department
+        <!-- 部门表下的员工集合也填充好了数据，使用returnMap 一对多的关联-->
+        select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid,
+        a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from
+        worker a inner join department d inner join
+        departmentype d2
+        on d.id = d2.departmentid and a.departmentid = d.id
     </select>
+
 
 
     <select id="selectByParams" resultMap="departmentmap">
@@ -29,14 +50,14 @@
     </select>
 
 
-    <update id="updateDepartment" >
+    <update id="updateDepartment">
         update department
         <set>
             <if test="dename != null and dename != ''">
-                 dename = #{dename},
+                dename = #{dename},
             </if>
             <if test="detail!=null and detail != ''">
-                 detail=#{detail},
+                detail=#{detail},
             </if>
         </set>
         where id = #{id}
@@ -47,7 +68,7 @@
         insert into department
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="dename != null and dename != ''">
-               dename,
+                dename,
             </if>
             <if test="detail!=null and detail != ''">
                 detail,
@@ -69,9 +90,6 @@
     <delete id="deleteDepartment">
         delete from department where id = #{id}
     </delete>
-
-
-
 
 
 </mapper>

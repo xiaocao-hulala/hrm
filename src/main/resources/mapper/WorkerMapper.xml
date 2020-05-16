@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.WorkerDao">
+
+
+    <insert id="addWorker">
+        insert into worker
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null and name !=''">name,</if>
+            <if test="tel!= null">tel,</if>
+            <if test="email != null and email !=''">email,</if>
+            <if test="position != null and position !=''">position,</if>
+            <if test="xueli != null and xueli !=''">xueli,</if>
+            <if test="idcard !=null and idcard !=''">idcard,</if>
+            <if test="departmentid !=null">departmentid,</if>
+            <if test="address!=null and address !=''">address,</if>
+            <if test="createtime!=null">createtime,</if>
+        </trim>
+        value
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null and name !=''">#{name},</if>
+            <if test="tel!= null">#{tel},</if>
+            <if test="email != null and email !=''">#{email},</if>
+            <if test="position != null and position !=''">#{position},</if>
+            <if test="xueli != null and xueli !=''">#{xueli},</if>
+            <if test="idcard !=null and idcard !=''">#{idcard},</if>
+            <if test="departmentid !=null">#{departmentid},</if>
+            <if test="address!=null and address !=''">#{address},</if>
+            <if test="createtime!=null">#{createtime},</if>
+        </trim>
+    </insert>
+
+
+    <delete id="deleteWorker">
+        delete  from  worker where  id=#{id}
+    </delete>
+
+
+    <resultMap id="workermap" type="com.entity.Worker">
+        <id property="id" column="workerid"></id>
+        <result property="name" column="name"></result>
+        <result property="tel" column="tel"></result>
+        <result property="email" column="email"></result>
+        <result column="position" property="position"></result>
+        <result column="xueli" property="xueli"></result>
+        <result column="idcard" property="idcard"></result>
+        <result property="departmentid" column="workdepartmentid"></result>
+        <result property="address" column="address"></result>
+        <result property="createtime" column="createtime"></result>
+
+
+        <association property="department" javaType="com.entity.Department">
+            <id property="id" column="departmentid"></id>
+            <result property="dename" column="departmentname"></result>
+            <result property="detail" column="detail"></result>
+        </association>
+    </resultMap>
+
+    <!-- 查询员工能够显示属于哪个部门一对多映射实现-->
+    <select id="selectAll" resultMap="workermap">
+        select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid,
+        a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from
+        worker a inner join department d inner join
+        departmentype d2
+        on d.id = d2.departmentid and a.departmentid = d.id
+
+    </select>
+
+
+    <select id="selectByParams" resultMap="workermap">
+        select * from worker
+        <where>
+            <if test="name != null and name !=''"> and name like concat('%',#{name},'%')</if>
+            <if test="email != null and email !=''">and email like concat('%',#{email},'%')</if>
+        </where>
+    </select>
+
+
+    <update id="updateWorker">
+        update worker
+        <set>
+            <if test="name != null and name !=''">name=#{name},</if>
+            <if test="tel!= null">tel=#{tel},</if>
+            <if test="email != null and email !=''">email=#{email},</if>
+            <if test="position != null and position !=''">position=#{position},</if>
+            <if test="xueli != null and xueli !=''">xueli=#{xueli},</if>
+            <if test="idcard !=null and idcard !=''">idcard=#{idcard},</if>
+            <if test="departmentid !=null">departmentid=#{departmentid},</if>
+            <if test="address!=null and address !=''">address=#{address},</if>
+            <if test="createtime!=null">createtime=#{createtime},</if>
+        </set>
+        where id =#{id}
+    </update>
+
+</mapper>

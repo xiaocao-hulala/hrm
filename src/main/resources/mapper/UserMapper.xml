@@ -20,9 +20,59 @@
         select id,loginname,username,state,createtime from user
     </select>
 
+    <select id="selectByParams" resultMap="usermap">
+
+      <!--  select * from department
+        <where>
+            <if test="dename != null and dename != ''">
+                and dename like concat('%',#{dename},'%')
+            </if>
+            <if test="id !=null">
+                and id =#{id}
+            </if>
+        </where>-->
+        select * from user
+        <where>
+            <if test="loginname !=null and loginname !=''">and loginname  like  concat('%',#{loginname},'%')</if>
+            <if test="username!=null and username!=''">and username like  concat('%',#{username},'%')</if>
+        </where>
+    </select>
 
 
+    <delete id="delete">
+        delete  from user where id = #{id}
+    </delete>
 
+
+    <update id="update" >
+        update user
+        <set>
+            <if test="loginname !=null and loginname !=''">loginname = #{loginname},</if>
+            <if test="username!=null and username!=''">username=#{username},</if>
+            <if test="state!=null">state=#{state},</if>
+            <if test="createtime!=null">createtime=#{createtime},</if>
+        </set>
+        where id =#{id}
+    </update>
+
+
+    <insert id="insert">
+        insert  into user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="loginname !=null and loginname !=''">loginname,</if>
+            <if test="username!=null and username!=''">username,</if>
+            <if test="state!=null">state,</if>
+            <if test="createtime!=null">createtime,</if>
+        </trim>
+
+        value
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="loginname !=null and loginname !=''">#{loginname},</if>
+            <if test="username!=null and username!=''">#{username},</if>
+            <if test="state!=null">#{state},</if>
+            <if test="createtime!=null">#{createtime},</if>
+        </trim>
+    </insert>
 
 
 </mapper>

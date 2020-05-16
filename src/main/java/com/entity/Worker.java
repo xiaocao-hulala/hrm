@@ -16,12 +16,15 @@ create by caocong on  2020/5/15
 public class Worker {
     private String name;
     private Integer id;
-    private int tel;
+    private Long tel;
     private String email;
     private String position;
     private String xueli;
     private String idcard;
-    private int departmentid;
+    private Integer departmentid;
     private String address;
     private Date createtime;
+
+    //多对一关联查询，查询员工的时候，同时把员工部门也查出来
+    private  Department department;
 }
