@@ -12,9 +12,9 @@ import java.util.List;
 *部门业务接口类
 create by caocong on  2020/5/13
 */
-public interface DepartmentServiceDao {
+public interface DepartmentService {
 
-    List<Department> selectall();
+    List<Department> selectall(Integer pageNum,Integer pageSize);
 
     List<Department>selectByParams(Department department);
 

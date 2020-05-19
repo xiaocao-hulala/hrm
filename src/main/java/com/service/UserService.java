@@ -12,8 +12,16 @@ import java.util.List;
 *用户业务接口
 create by caocong on  2020/5/13
 */
-public interface UserServiceDao {
+public interface UserService {
 
-    List<User>selectall();
+    List<User> selectall(int pageNum,int pageSize);
+
+    List<User> selectByParams(User user);
+
+    int update(User user);
+
+    int delete(int id);
+
+    int insert(User user);
 
 }
