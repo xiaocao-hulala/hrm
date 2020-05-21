@@ -4,17 +4,17 @@
 <!-- 全局配置文件-->
 <configuration>
 
-    <!-- 读取jdbc.propertites配置文件-->
+   <!--  读取jdbc.propertites配置文件
     <properties resource="jdbc.properties"></properties>
 
 
-    <!-- mybatis开启日志功能-->
+    &lt;!&ndash; mybatis开启日志功能&ndash;&gt;
     <settings>
         <setting name="logImpl" value="log4j"/>
     </settings>
 
     <environments default="mysql">
-        <!-- 环境可以有多个，方便可以实现配置多个-->
+        &lt;!&ndash; 环境可以有多个，方便可以实现配置多个&ndash;&gt;
         <environment id="mysql">
             <transactionManager type="JDBC"></transactionManager>
             <dataSource type="POOLED">
@@ -25,11 +25,18 @@
             </dataSource>
         </environment>
     </environments>
-    <!--引入mapper映射文件-->
+    &lt;!&ndash;引入mapper映射文件&ndash;&gt;
     <mappers>
         <mapper resource="mapper/UserMapper.xml"></mapper>
         <mapper resource="mapper/DepartmentMapper.xml"></mapper>
         <mapper resource="mapper/WorkerMapper.xml"></mapper>
-    </mappers>
+    </mappers>-->
+
+    <settings>
+        <!--开启mybatis支持延迟加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--false,每个延迟加载属性会按需加载,在 3.4.1 及之前的版本中默认为 true-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
 
 </configuration>

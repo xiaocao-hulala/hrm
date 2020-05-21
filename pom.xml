@@ -8,6 +8,7 @@
     <artifactId>SSM</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
     <!--打包方式war表示为web项目-->
     <packaging>war</packaging>
 
@@ -21,6 +22,7 @@
     </properties>
 
     <dependencies>
+
 
         <!-- mybatis依赖-->
         <dependency>
@@ -93,6 +95,14 @@
         </dependency>
 
 
+        <!-- 通用mapper插件-->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>4.1.5</version>
+        </dependency>
+
+
         <!-- aop框架-->
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -157,6 +167,14 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
+        </dependency>
+
+
+        <!-- 引入shrio安全框架-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>1.5.3</version>
         </dependency>
 
     </dependencies>

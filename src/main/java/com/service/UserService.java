@@ -24,4 +24,6 @@ public interface UserService {
 
     int insert(User user);
 
+    List<User>selectById(Integer id);
+
 }

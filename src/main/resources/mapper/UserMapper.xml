@@ -21,16 +21,6 @@
     </select>
 
     <select id="selectByParams" resultMap="usermap">
-
-      <!--  select * from department
-        <where>
-            <if test="dename != null and dename != ''">
-                and dename like concat('%',#{dename},'%')
-            </if>
-            <if test="id !=null">
-                and id =#{id}
-            </if>
-        </where>-->
         select * from user
         <where>
             <if test="loginname !=null and loginname !=''">and loginname  like  concat('%',#{loginname},'%')</if>
@@ -38,6 +28,10 @@
         </where>
     </select>
 
+
+    <select id="selectById" resultType="com.entity.User">
+        select * from user where  id = #{id}
+    </select>
 
     <delete id="delete">
         delete  from user where id = #{id}

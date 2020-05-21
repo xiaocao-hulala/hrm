@@ -12,10 +12,10 @@ import java.util.Date;
 create by caocong on  2020/5/15
 */
 @Data
-public class notice {
-    private int id;
-    private String name;
+public class Notice {
+    private Integer id;
+    private Integer userid;
     private String content;
     private Date createtime;
-    private String tellperson;
+    private User user;
 }

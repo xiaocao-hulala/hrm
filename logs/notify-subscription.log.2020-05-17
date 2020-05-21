@@ -1,0 +1,1465 @@
+2020-05-17 10:42:07,812 - Root WebApplicationContext: initialization started
+2020-05-17 10:42:07,928 - Refreshing Root WebApplicationContext
+2020-05-17 10:42:08,519 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 10:42:08,768 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 10:42:08,836 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 10:42:08,907 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 10:42:08,909 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 10:42:08,911 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 10:42:08,915 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 10:42:08,927 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@5e23276c]
+2020-05-17 10:42:08,929 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 10:42:08,964 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 10:42:08,966 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 10:42:08,967 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 10:42:08,967 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 10:42:09,000 - Root WebApplicationContext initialized in 1183 ms
+2020-05-17 10:42:09,120 - Initializing Servlet 'springmvc'
+2020-05-17 10:42:09,121 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 10:42:09,121 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 10:42:09,121 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 10:42:09,121 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 10:42:09,122 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 10:42:09,122 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 10:42:09,122 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 10:42:09,122 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 10:42:09,128 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 10:42:09,190 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 10:42:09,347 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 10:42:09,359 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 10:42:09,395 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 10:42:09,397 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 10:42:09,397 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 10:42:09,399 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 10:42:09,399 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 10:42:09,400 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 10:42:09,786 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@6818219a]
+2020-05-17 10:42:09,790 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 10:42:09,827 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 10:42:09,832 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 10:42:09,887 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 10:42:09,915 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 10:42:10,130 - 1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 10:42:10,236 - ControllerAdvice beans: none
+2020-05-17 10:42:10,317 - ControllerAdvice beans: none
+2020-05-17 10:42:10,332 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 10:42:10,333 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 10:42:10,333 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 10:42:10,333 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 10:42:10,334 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 10:42:10,334 - Completed initialization in 1214 ms
+2020-05-17 10:42:16,033 - GET "/", parameters={}
+2020-05-17 10:42:16,051 - No mapping for GET /
+2020-05-17 10:42:16,054 - Completed 404 NOT_FOUND
+2020-05-17 10:42:16,651 - GET "/favicon.ico", parameters={}
+2020-05-17 10:42:16,652 - No mapping for GET /favicon.ico
+2020-05-17 10:42:16,652 - Completed 404 NOT_FOUND
+2020-05-17 10:42:42,652 - GET "/worker/selectallworker", parameters={}
+2020-05-17 10:42:42,680 - Mapped to com.controller.WorkerController#selectAll(Model)
+2020-05-17 10:42:43,117 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 10:42:43,118 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 10:42:43,209 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:42:43,210 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:42:43,210 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:42:43,210 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:42:43,496 - Opening JDBC Connection
+2020-05-17 10:42:43,988 - Created connection 526804189.
+2020-05-17 10:42:43,988 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1f6664dd]
+2020-05-17 10:42:43,998 - ==>  Preparing: select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid, a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from worker a inner join department d inner join departmentype d2 on d.id = d2.departmentid and a.departmentid = d.id 
+2020-05-17 10:42:44,035 - ==> Parameters: 
+2020-05-17 10:42:44,088 - <==      Total: 3
+2020-05-17 10:42:44,088 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1f6664dd]
+2020-05-17 10:42:44,089 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1f6664dd]
+2020-05-17 10:42:44,089 - Returned connection 526804189 to pool.
+2020-05-17 10:42:44,121 - View name 'index', model {workerlist=[Worker(name=王大力, id=1, tel=18879401529, email=2116918787@qq.com, position=java开发工程师, xueli=本科, idcard=110203124, departmentid=1, address=江西南昌红谷滩山沟沟, createtime=Sun Oct 20 00:00:00 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null)), Worker(name=刘憨憨, id=2, tel=188794017492, email=2116928384@qq.com, position=销售人员, xueli=专科, idcard=364812344499229, departmentid=2, address=福建莆田勾勾里, createtime=Sat Oct 10 22:00:11 CST 2020, department=Department(dename=销售部, id=2, detail=软件开发后要进行销售由这部分工作人员完成, workers=null)), Worker(name=曹小生, id=3, tel=19970401839, email=1998012848@qq.com, position=c#开发工程师, xueli=研究生, idcard=362525200010205718, departmentid=1, address=北京市弯弯区, createtime=Tue Sep 10 10:20:23 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null))]}
+2020-05-17 10:42:44,132 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-17 10:42:46,959 - Error rendering view [org.springframework.web.servlet.view.JstlView: name 'index'; URL [/WEB-INF/jsp/index.jsp]]
+org.apache.jasper.JasperException: An exception occurred processing JSP page /WEB-INF/jsp/index.jsp at line 22
+
+19:     <table>
+20:         <tr>
+21:             <td>
+22:                     ${i.name}
+23:             </td>
+24:             <td>
+25:                     ${i.email}
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:568)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.el.PropertyNotFoundException: Property 'name' not found on type javax.servlet.jsp.jstl.core.LoopTagSupport$1Status
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:229)
+	at javax.el.BeanELResolver$BeanProperties.access$400(BeanELResolver.java:206)
+	at javax.el.BeanELResolver.property(BeanELResolver.java:317)
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:85)
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:104)
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:183)
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:185)
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:1026)
+	at org.apache.jsp.WEB_002dINF.jsp.index_jsp._jspx_meth_c_005fforEach_005f0(index_jsp.java:118)
+	at org.apache.jsp.WEB_002dINF.jsp.index_jsp._jspService(index_jsp.java:77)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	... 42 more
+2020-05-17 10:42:46,969 - Failed to complete request: org.apache.jasper.JasperException: An exception occurred processing JSP page /WEB-INF/jsp/index.jsp at line 22
+
+19:     <table>
+20:         <tr>
+21:             <td>
+22:                     ${i.name}
+23:             </td>
+24:             <td>
+25:                     ${i.email}
+
+
+Stacktrace:
+2020-05-17 10:44:49,598 - Root WebApplicationContext: initialization started
+2020-05-17 10:44:49,829 - Refreshing Root WebApplicationContext
+2020-05-17 10:44:50,323 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 10:44:50,368 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 10:44:50,423 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 10:44:50,496 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 10:44:50,499 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 10:44:50,502 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 10:44:50,505 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 10:44:50,518 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@2ff8bff8]
+2020-05-17 10:44:50,524 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 10:44:50,770 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 10:44:50,774 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 10:44:50,774 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 10:44:50,774 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 10:44:50,787 - Root WebApplicationContext initialized in 1189 ms
+2020-05-17 10:44:50,880 - Initializing Servlet 'springmvc'
+2020-05-17 10:44:50,881 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 10:44:50,881 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 10:44:50,881 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 10:44:50,881 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 10:44:50,881 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 10:44:50,881 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 10:44:50,881 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 10:44:50,882 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 10:44:50,885 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 10:44:50,962 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 10:44:50,993 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 10:44:51,009 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 10:44:51,048 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 10:44:51,048 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 10:44:51,049 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 10:44:51,050 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 10:44:51,051 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 10:44:51,052 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 10:44:51,154 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@56197260]
+2020-05-17 10:44:51,157 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 10:44:51,191 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 10:44:51,194 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 10:44:51,409 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 10:44:51,458 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 10:44:51,793 - 1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 10:44:52,195 - ControllerAdvice beans: none
+2020-05-17 10:44:52,266 - ControllerAdvice beans: none
+2020-05-17 10:44:52,285 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 10:44:52,285 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 10:44:52,285 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 10:44:52,286 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 10:44:52,288 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 10:44:52,288 - Completed initialization in 1408 ms
+2020-05-17 10:45:25,583 - GET "/worker/selectallworker", parameters={}
+2020-05-17 10:45:25,595 - Mapped to com.controller.WorkerController#selectAll(Model)
+2020-05-17 10:45:25,913 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 10:45:25,914 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 10:45:26,012 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:45:26,012 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:45:26,012 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:45:26,012 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:45:26,306 - Opening JDBC Connection
+2020-05-17 10:45:27,298 - Created connection 1463791100.
+2020-05-17 10:45:27,298 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@573fadfc]
+2020-05-17 10:45:27,314 - ==>  Preparing: select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid, a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from worker a inner join department d inner join departmentype d2 on d.id = d2.departmentid and a.departmentid = d.id 
+2020-05-17 10:45:27,365 - ==> Parameters: 
+2020-05-17 10:45:27,397 - <==      Total: 3
+2020-05-17 10:45:27,399 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@573fadfc]
+2020-05-17 10:45:27,399 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@573fadfc]
+2020-05-17 10:45:27,399 - Returned connection 1463791100 to pool.
+2020-05-17 10:45:27,427 - View name 'index', model {workerlist=[Worker(name=王大力, id=1, tel=18879401529, email=2116918787@qq.com, position=java开发工程师, xueli=本科, idcard=110203124, departmentid=1, address=江西南昌红谷滩山沟沟, createtime=Sun Oct 20 00:00:00 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null)), Worker(name=刘憨憨, id=2, tel=188794017492, email=2116928384@qq.com, position=销售人员, xueli=专科, idcard=364812344499229, departmentid=2, address=福建莆田勾勾里, createtime=Sat Oct 10 22:00:11 CST 2020, department=Department(dename=销售部, id=2, detail=软件开发后要进行销售由这部分工作人员完成, workers=null)), Worker(name=曹小生, id=3, tel=19970401839, email=1998012848@qq.com, position=c#开发工程师, xueli=研究生, idcard=362525200010205718, departmentid=1, address=北京市弯弯区, createtime=Tue Sep 10 10:20:23 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null))]}
+2020-05-17 10:45:27,439 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-17 10:45:29,157 - Completed 200 OK
+2020-05-17 10:54:05,403 - Root WebApplicationContext: initialization started
+2020-05-17 10:54:05,483 - Refreshing Root WebApplicationContext
+2020-05-17 10:54:06,267 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 10:54:06,333 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 10:54:06,380 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 10:54:06,463 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 10:54:06,467 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 10:54:06,499 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 10:54:06,502 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 10:54:06,535 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@4f09896b]
+2020-05-17 10:54:06,536 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 10:54:06,606 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 10:54:06,610 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 10:54:06,611 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 10:54:06,611 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 10:54:06,636 - Root WebApplicationContext initialized in 1232 ms
+2020-05-17 10:54:06,910 - Initializing Servlet 'springmvc'
+2020-05-17 10:54:06,911 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 10:54:06,911 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 10:54:06,912 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 10:54:06,912 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 10:54:06,912 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 10:54:06,912 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 10:54:06,915 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 10:54:06,916 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 10:54:06,920 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 10:54:06,998 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 10:54:07,022 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 10:54:07,031 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 10:54:07,050 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 10:54:07,050 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 10:54:07,050 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 10:54:07,053 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 10:54:07,053 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 10:54:07,054 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 10:54:07,104 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@357adce1]
+2020-05-17 10:54:07,106 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 10:54:07,139 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 10:54:07,171 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 10:54:07,233 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 10:54:07,259 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 10:54:07,440 - 1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 10:54:07,831 - ControllerAdvice beans: none
+2020-05-17 10:54:07,912 - ControllerAdvice beans: none
+2020-05-17 10:54:07,928 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 10:54:07,928 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 10:54:07,928 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 10:54:07,929 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 10:54:07,929 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 10:54:07,929 - Completed initialization in 1019 ms
+2020-05-17 10:54:36,850 - GET "/worker/selectallworker", parameters={}
+2020-05-17 10:54:36,868 - Mapped to com.controller.WorkerController#selectAll(Model)
+2020-05-17 10:54:37,250 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 10:54:37,252 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 10:54:37,329 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:54:37,330 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:54:37,330 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:54:37,330 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 10:54:37,873 - Opening JDBC Connection
+2020-05-17 10:54:38,225 - Created connection 939274447.
+2020-05-17 10:54:38,225 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@37fc30cf]
+2020-05-17 10:54:38,236 - ==>  Preparing: select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid, a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from worker a inner join department d inner join departmentype d2 on d.id = d2.departmentid and a.departmentid = d.id 
+2020-05-17 10:54:38,276 - ==> Parameters: 
+2020-05-17 10:54:38,299 - <==      Total: 3
+2020-05-17 10:54:38,300 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@37fc30cf]
+2020-05-17 10:54:38,300 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@37fc30cf]
+2020-05-17 10:54:38,301 - Returned connection 939274447 to pool.
+2020-05-17 10:54:38,330 - View name 'index', model {workerlist=[Worker(name=王大力, id=1, tel=18879401529, email=2116918787@qq.com, position=java开发工程师, xueli=本科, idcard=110203124, departmentid=1, address=江西南昌红谷滩山沟沟, createtime=Sun Oct 20 00:00:00 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null)), Worker(name=刘憨憨, id=2, tel=188794017492, email=2116928384@qq.com, position=销售人员, xueli=专科, idcard=364812344499229, departmentid=2, address=福建莆田勾勾里, createtime=Sat Oct 10 22:00:11 CST 2020, department=Department(dename=销售部, id=2, detail=软件开发后要进行销售由这部分工作人员完成, workers=null)), Worker(name=曹小生, id=3, tel=19970401839, email=1998012848@qq.com, position=c#开发工程师, xueli=研究生, idcard=362525200010205718, departmentid=1, address=北京市弯弯区, createtime=Tue Sep 10 10:20:23 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null))]}
+2020-05-17 10:54:38,338 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-17 10:54:40,722 - Completed 200 OK
+2020-05-17 11:30:19,807 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3f3afe78
+2020-05-17 11:30:20,506 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 11:30:20,603 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 11:30:20,664 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 11:30:20,787 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 11:30:20,791 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 11:30:20,793 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 11:30:20,793 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 11:30:20,797 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 11:30:20,817 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 11:30:21,293 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 11:30:21,381 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'workerController': Unsatisfied dependency expressed through field 'workerServiceDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.service.WorkerServiceDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-05-17 14:27:14,813 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3f3afe78
+2020-05-17 14:27:15,535 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 14:27:15,639 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 14:27:15,710 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:27:15,840 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:27:15,845 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:27:15,846 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 14:27:15,849 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:27:15,852 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:27:15,870 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 14:27:16,044 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 14:27:16,089 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'workerController': Unsatisfied dependency expressed through field 'workerServiceDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.service.WorkerServiceDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-05-17 14:28:32,588 - Root WebApplicationContext: initialization started
+2020-05-17 14:28:33,489 - Refreshing Root WebApplicationContext
+2020-05-17 14:28:35,142 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 14:28:35,209 - Loaded 7 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 14:28:35,256 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:28:35,310 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:28:35,312 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:28:35,315 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:28:35,316 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:28:35,330 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@313bb5fa]
+2020-05-17 14:28:35,337 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 14:28:35,352 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2020-05-17 14:28:35,373 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 14:28:35,480 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'dataSource' is required
+2020-05-17 14:28:35,494 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'dataSource' is required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Property 'dataSource' is required
+	at org.springframework.util.Assert.notNull(Assert.java:198)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:470)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 21 more
+2020-05-17 14:29:35,916 - Root WebApplicationContext: initialization started
+2020-05-17 14:29:36,042 - Refreshing Root WebApplicationContext
+2020-05-17 14:29:36,432 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 14:29:36,480 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 14:29:36,532 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:29:36,606 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:29:36,609 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:29:36,611 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:29:36,613 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:29:36,626 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@2d16f367]
+2020-05-17 14:29:36,627 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 14:29:36,824 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:29:36,829 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:29:36,829 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:29:36,829 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:29:36,860 - Root WebApplicationContext initialized in 941 ms
+2020-05-17 14:29:37,138 - Initializing Servlet 'springmvc'
+2020-05-17 14:29:37,140 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 14:29:37,140 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 14:29:37,140 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 14:29:37,140 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 14:29:37,141 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 14:29:37,141 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 14:29:37,141 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 14:29:37,141 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 14:29:37,152 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 14:29:37,220 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 14:29:37,246 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 14:29:37,255 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:29:37,271 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:29:37,272 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:29:37,272 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 14:29:37,273 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:29:37,273 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:29:37,274 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 14:29:37,328 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@7ce9cc46]
+2020-05-17 14:29:37,329 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 14:29:37,484 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 14:29:37,488 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 14:29:37,526 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 14:29:37,554 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 14:29:37,837 - 1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 14:29:38,021 - ControllerAdvice beans: none
+2020-05-17 14:29:38,113 - ControllerAdvice beans: none
+2020-05-17 14:29:38,127 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:29:38,128 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:29:38,128 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:29:38,128 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:29:38,129 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 14:29:38,129 - Completed initialization in 991 ms
+2020-05-17 14:30:24,826 - GET "/worker/selectallworker", parameters={}
+2020-05-17 14:30:24,841 - Mapped to com.controller.WorkerController#selectAll(Model)
+2020-05-17 14:30:25,217 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 14:30:25,219 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 14:30:25,293 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:30:25,293 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:30:25,293 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:30:25,293 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:30:25,650 - Opening JDBC Connection
+2020-05-17 14:30:27,036 - Created connection 1653769327.
+2020-05-17 14:30:27,037 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6292846f]
+2020-05-17 14:30:27,052 - ==>  Preparing: select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid, a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from worker a inner join department d inner join departmentype d2 on d.id = d2.departmentid and a.departmentid = d.id 
+2020-05-17 14:30:27,115 - ==> Parameters: 
+2020-05-17 14:30:27,167 - <==      Total: 3
+2020-05-17 14:30:27,167 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6292846f]
+2020-05-17 14:30:27,168 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6292846f]
+2020-05-17 14:30:27,168 - Returned connection 1653769327 to pool.
+2020-05-17 14:30:27,196 - View name 'index', model {workerlist=[Worker(name=王大力, id=1, tel=18879401529, email=2116918787@qq.com, position=java开发工程师, xueli=本科, idcard=110203124, departmentid=1, address=江西南昌红谷滩山沟沟, createtime=Sun Oct 20 00:00:00 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null)), Worker(name=刘憨憨, id=2, tel=188794017492, email=2116928384@qq.com, position=销售人员, xueli=专科, idcard=364812344499229, departmentid=2, address=福建莆田勾勾里, createtime=Sat Oct 10 22:00:11 CST 2020, department=Department(dename=销售部, id=2, detail=软件开发后要进行销售由这部分工作人员完成, workers=null)), Worker(name=曹小生, id=3, tel=19970401839, email=1998012848@qq.com, position=c#开发工程师, xueli=研究生, idcard=362525200010205718, departmentid=1, address=北京市弯弯区, createtime=Tue Sep 10 10:20:23 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null))]}
+2020-05-17 14:30:27,207 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-17 14:30:27,339 - Completed 200 OK
+2020-05-17 14:35:09,945 - Root WebApplicationContext: initialization started
+2020-05-17 14:35:10,036 - Refreshing Root WebApplicationContext
+2020-05-17 14:35:10,422 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 14:35:10,469 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 14:35:10,514 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:35:10,579 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:35:10,582 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:35:10,584 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:35:10,586 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:35:10,597 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@60be58d2]
+2020-05-17 14:35:10,598 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 14:35:10,638 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:35:10,641 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:35:10,641 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:35:10,642 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:35:10,681 - Root WebApplicationContext initialized in 735 ms
+2020-05-17 14:35:10,821 - Initializing Servlet 'springmvc'
+2020-05-17 14:35:10,821 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 14:35:10,821 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 14:35:10,821 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 14:35:10,822 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 14:35:10,822 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 14:35:10,822 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 14:35:10,822 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 14:35:10,822 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 14:35:10,826 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 14:35:10,978 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 14:35:11,007 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 14:35:11,017 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:35:11,040 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:35:11,040 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:35:11,041 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 14:35:11,041 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:35:11,042 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:35:11,042 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 14:35:11,100 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@1d376ee5]
+2020-05-17 14:35:11,102 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 14:35:11,127 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 14:35:11,130 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 14:35:11,179 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 14:35:11,205 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 14:35:12,104 - 1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 14:35:12,288 - ControllerAdvice beans: none
+2020-05-17 14:35:12,401 - ControllerAdvice beans: none
+2020-05-17 14:35:12,449 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:35:12,450 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:35:12,450 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:35:12,451 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:35:12,453 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 14:35:12,454 - Completed initialization in 1633 ms
+2020-05-17 14:35:32,854 - GET "/worker/selectallworker", parameters={}
+2020-05-17 14:35:32,867 - Mapped to com.controller.WorkerController#selectAll(Model)
+2020-05-17 14:35:33,154 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 14:35:33,156 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 14:35:33,213 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:35:33,213 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:35:33,213 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:35:33,213 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:35:33,506 - Opening JDBC Connection
+2020-05-17 14:35:34,343 - Created connection 46161259.
+2020-05-17 14:35:34,343 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c05d6b]
+2020-05-17 14:35:34,354 - ==>  Preparing: select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid, a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from worker a inner join department d inner join departmentype d2 on d.id = d2.departmentid and a.departmentid = d.id 
+2020-05-17 14:35:34,393 - ==> Parameters: 
+2020-05-17 14:35:34,423 - <==      Total: 3
+2020-05-17 14:35:34,424 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c05d6b]
+2020-05-17 14:35:34,424 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c05d6b]
+2020-05-17 14:35:34,425 - Returned connection 46161259 to pool.
+2020-05-17 14:35:34,447 - View name 'index', model {workerlist=[Worker(name=王大力, id=1, tel=18879401529, email=2116918787@qq.com, position=java开发工程师, xueli=本科, idcard=110203124, departmentid=1, address=江西南昌红谷滩山沟沟, createtime=Sun Oct 20 00:00:00 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null)), Worker(name=刘憨憨, id=2, tel=188794017492, email=2116928384@qq.com, position=销售人员, xueli=专科, idcard=364812344499229, departmentid=2, address=福建莆田勾勾里, createtime=Sat Oct 10 22:00:11 CST 2020, department=Department(dename=销售部, id=2, detail=软件开发后要进行销售由这部分工作人员完成, workers=null)), Worker(name=曹小生, id=3, tel=19970401839, email=1998012848@qq.com, position=c#开发工程师, xueli=研究生, idcard=362525200010205718, departmentid=1, address=北京市弯弯区, createtime=Tue Sep 10 10:20:23 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null))]}
+2020-05-17 14:35:34,459 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-17 14:35:34,589 - Completed 200 OK
+2020-05-17 14:35:43,957 - GET "/worker/selectallworker", parameters={}
+2020-05-17 14:35:43,960 - Mapped to com.controller.WorkerController#selectAll(Model)
+2020-05-17 14:35:43,961 - Opening JDBC Connection
+2020-05-17 14:35:43,962 - Checked out connection 46161259 from pool.
+2020-05-17 14:35:43,962 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c05d6b]
+2020-05-17 14:35:43,967 - ==>  Preparing: select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid, a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from worker a inner join department d inner join departmentype d2 on d.id = d2.departmentid and a.departmentid = d.id 
+2020-05-17 14:35:43,969 - ==> Parameters: 
+2020-05-17 14:35:43,975 - <==      Total: 3
+2020-05-17 14:35:43,975 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c05d6b]
+2020-05-17 14:35:43,975 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2c05d6b]
+2020-05-17 14:35:43,975 - Returned connection 46161259 to pool.
+2020-05-17 14:35:43,977 - View name 'index', model {workerlist=[Worker(name=王大力, id=1, tel=18879401529, email=2116918787@qq.com, position=java开发工程师, xueli=本科, idcard=110203124, departmentid=1, address=江西南昌红谷滩山沟沟, createtime=Sun Oct 20 00:00:00 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null)), Worker(name=刘憨憨, id=2, tel=188794017492, email=2116928384@qq.com, position=销售人员, xueli=专科, idcard=364812344499229, departmentid=2, address=福建莆田勾勾里, createtime=Sat Oct 10 22:00:11 CST 2020, department=Department(dename=销售部, id=2, detail=软件开发后要进行销售由这部分工作人员完成, workers=null)), Worker(name=曹小生, id=3, tel=19970401839, email=1998012848@qq.com, position=c#开发工程师, xueli=研究生, idcard=362525200010205718, departmentid=1, address=北京市弯弯区, createtime=Tue Sep 10 10:20:23 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null))]}
+2020-05-17 14:35:43,978 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-17 14:35:43,982 - Completed 200 OK
+2020-05-17 14:36:33,459 - Root WebApplicationContext: initialization started
+2020-05-17 14:36:34,060 - Refreshing Root WebApplicationContext
+2020-05-17 14:36:35,234 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 14:36:35,494 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 14:36:35,916 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:36:36,395 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:36:36,400 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:36:36,403 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:36:36,419 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:36:36,448 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@7880cf48]
+2020-05-17 14:36:36,450 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 14:36:36,530 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:36:36,552 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:36:36,554 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:36:36,555 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:36:36,611 - Root WebApplicationContext initialized in 3149 ms
+2020-05-17 14:36:36,985 - Initializing Servlet 'springmvc'
+2020-05-17 14:36:36,986 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 14:36:36,988 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 14:36:36,988 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 14:36:36,988 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 14:36:36,989 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 14:36:36,989 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 14:36:36,989 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 14:36:36,989 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 14:36:36,996 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 14:36:37,233 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 14:36:37,346 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 14:36:37,368 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:36:37,386 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:36:37,387 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:36:37,387 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 14:36:37,388 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:36:37,389 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:36:37,389 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 14:36:37,622 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@4dec2c4f]
+2020-05-17 14:36:37,623 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 14:36:37,739 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 14:36:37,742 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 14:36:37,889 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 14:36:38,005 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 14:36:38,278 - 1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 14:36:38,557 - ControllerAdvice beans: none
+2020-05-17 14:36:38,817 - ControllerAdvice beans: none
+2020-05-17 14:36:38,833 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:36:38,833 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:36:38,833 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:36:38,834 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:36:38,834 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 14:36:38,834 - Completed initialization in 1849 ms
+2020-05-17 14:39:56,459 - Root WebApplicationContext: initialization started
+2020-05-17 14:39:56,557 - Refreshing Root WebApplicationContext
+2020-05-17 14:39:57,447 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 14:39:57,546 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 14:39:57,618 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:39:57,824 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:39:57,832 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:39:57,837 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:39:57,840 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:39:57,880 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@1501f452]
+2020-05-17 14:39:57,885 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 14:39:57,986 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:39:57,990 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:39:57,990 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:39:57,990 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:39:58,009 - Root WebApplicationContext initialized in 1549 ms
+2020-05-17 14:39:58,198 - Initializing Servlet 'springmvc'
+2020-05-17 14:39:58,198 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 14:39:58,198 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 14:39:58,198 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 14:39:58,199 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 14:39:58,199 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 14:39:58,199 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 14:39:58,199 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 14:39:58,199 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 14:39:58,206 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 14:39:58,286 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 14:39:58,315 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 14:39:58,327 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:39:58,351 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:39:58,352 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:39:58,352 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 14:39:58,355 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:39:58,355 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:39:58,359 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 14:39:58,568 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@7b416254]
+2020-05-17 14:39:58,575 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 14:39:58,614 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 14:39:58,617 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 14:39:58,704 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 14:39:58,759 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 14:39:59,106 - 1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 14:39:59,216 - ControllerAdvice beans: none
+2020-05-17 14:39:59,290 - ControllerAdvice beans: none
+2020-05-17 14:39:59,305 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:39:59,306 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:39:59,306 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:39:59,306 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:39:59,307 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 14:39:59,307 - Completed initialization in 1109 ms
+2020-05-17 14:40:03,986 - GET "/", parameters={}
+2020-05-17 14:40:04,019 - No mapping for GET /
+2020-05-17 14:40:04,023 - Completed 404 NOT_FOUND
+2020-05-17 14:40:08,166 - GET "/worker/selectallworker", parameters={}
+2020-05-17 14:40:08,174 - Mapped to com.controller.WorkerController#selectAll(Model)
+2020-05-17 14:40:08,437 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 14:40:08,439 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 14:40:08,487 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:40:08,487 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:40:08,487 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:40:08,487 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:40:09,089 - Opening JDBC Connection
+2020-05-17 14:40:09,772 - Created connection 603333426.
+2020-05-17 14:40:09,773 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@23f62332]
+2020-05-17 14:40:09,780 - ==>  Preparing: select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid, a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from worker a inner join department d inner join departmentype d2 on d.id = d2.departmentid and a.departmentid = d.id 
+2020-05-17 14:40:09,827 - ==> Parameters: 
+2020-05-17 14:40:09,856 - <==      Total: 3
+2020-05-17 14:40:09,857 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@23f62332]
+2020-05-17 14:40:09,857 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@23f62332]
+2020-05-17 14:40:09,857 - Returned connection 603333426 to pool.
+2020-05-17 14:40:09,882 - View name 'index', model {workerlist=[Worker(name=王大力, id=1, tel=18879401529, email=2116918787@qq.com, position=java开发工程师, xueli=本科, idcard=110203124, departmentid=1, address=江西南昌红谷滩山沟沟, createtime=Sun Oct 20 00:00:00 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null)), Worker(name=刘憨憨, id=2, tel=188794017492, email=2116928384@qq.com, position=销售人员, xueli=专科, idcard=364812344499229, departmentid=2, address=福建莆田勾勾里, createtime=Sat Oct 10 22:00:11 CST 2020, department=Department(dename=销售部, id=2, detail=软件开发后要进行销售由这部分工作人员完成, workers=null)), Worker(name=曹小生, id=3, tel=19970401839, email=1998012848@qq.com, position=c#开发工程师, xueli=研究生, idcard=362525200010205718, departmentid=1, address=北京市弯弯区, createtime=Tue Sep 10 10:20:23 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null))]}
+2020-05-17 14:40:09,894 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-17 14:40:10,069 - Completed 200 OK
+2020-05-17 14:56:32,510 - Root WebApplicationContext: initialization started
+2020-05-17 14:56:32,616 - Refreshing Root WebApplicationContext
+2020-05-17 14:56:33,193 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 14:56:33,254 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 14:56:33,304 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:56:33,384 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:56:33,389 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:56:33,391 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:56:33,394 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:56:33,421 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@22d6074f]
+2020-05-17 14:56:33,423 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 14:56:33,491 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:56:33,494 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:56:33,494 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:56:33,494 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:56:33,511 - Root WebApplicationContext initialized in 999 ms
+2020-05-17 14:56:33,584 - Initializing Servlet 'springmvc'
+2020-05-17 14:56:33,585 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 14:56:33,585 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 14:56:33,585 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 14:56:33,586 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 14:56:33,586 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 14:56:33,586 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 14:56:33,586 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 14:56:33,586 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 14:56:33,591 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 14:56:33,652 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 14:56:33,677 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 14:56:33,684 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:56:33,705 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:56:33,706 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:56:33,706 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 14:56:33,707 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:56:33,707 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:56:33,707 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 14:56:34,029 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@364df293]
+2020-05-17 14:56:34,032 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 14:56:34,061 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 14:56:34,063 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 14:56:34,097 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 14:56:34,121 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 14:56:34,335 - 1 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 14:56:34,438 - ControllerAdvice beans: none
+2020-05-17 14:56:34,509 - ControllerAdvice beans: none
+2020-05-17 14:56:34,521 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:56:34,522 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:56:34,522 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:56:34,522 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:56:34,523 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 14:56:34,523 - Completed initialization in 939 ms
+2020-05-17 14:56:42,625 - GET "/", parameters={}
+2020-05-17 14:56:42,658 - No mapping for GET /
+2020-05-17 14:56:42,665 - Completed 404 NOT_FOUND
+2020-05-17 14:57:22,951 - Root WebApplicationContext: initialization started
+2020-05-17 14:57:23,059 - Refreshing Root WebApplicationContext
+2020-05-17 14:57:23,518 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 14:57:23,570 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 14:57:23,623 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:57:23,691 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:57:23,694 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:57:23,696 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:57:23,698 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:57:23,714 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@3a33dcbb]
+2020-05-17 14:57:23,716 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 14:57:23,816 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:57:23,818 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:57:23,818 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:57:23,819 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:57:23,839 - Root WebApplicationContext initialized in 887 ms
+2020-05-17 14:57:24,032 - Initializing Servlet 'springmvc'
+2020-05-17 14:57:24,034 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 14:57:24,035 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 14:57:24,035 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 14:57:24,036 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 14:57:24,036 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 14:57:24,037 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 14:57:24,041 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 14:57:24,042 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 14:57:24,048 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 14:57:24,123 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 14:57:24,150 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 14:57:24,158 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 14:57:24,177 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 14:57:24,177 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 14:57:24,177 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 14:57:24,178 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 14:57:24,179 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 14:57:24,179 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 14:57:24,266 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@48de17d9]
+2020-05-17 14:57:24,275 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 14:57:24,308 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 14:57:24,315 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 14:57:24,354 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 14:57:24,383 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 14:57:24,577 - 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 14:57:24,814 - ControllerAdvice beans: none
+2020-05-17 14:57:24,915 - ControllerAdvice beans: none
+2020-05-17 14:57:24,938 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 14:57:24,940 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 14:57:24,940 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 14:57:24,940 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 14:57:24,941 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 14:57:24,943 - Completed initialization in 910 ms
+2020-05-17 14:57:37,727 - GET "/", parameters={}
+2020-05-17 14:57:37,737 - No mapping for GET /
+2020-05-17 14:57:37,740 - Completed 404 NOT_FOUND
+2020-05-17 14:58:17,284 - GET "/", parameters={}
+2020-05-17 14:58:17,290 - No mapping for GET /
+2020-05-17 14:58:17,291 - Completed 404 NOT_FOUND
+2020-05-17 14:58:21,608 - GET "/worker/selectallworker", parameters={}
+2020-05-17 14:58:21,636 - Mapped to com.controller.WorkerController#selectAll(Model)
+2020-05-17 14:58:21,967 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 14:58:21,969 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 14:58:22,035 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:58:22,035 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:58:22,035 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:58:22,036 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 14:58:22,271 - Opening JDBC Connection
+2020-05-17 14:58:22,660 - Created connection 1780928887.
+2020-05-17 14:58:22,660 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a26d177]
+2020-05-17 14:58:22,666 - ==>  Preparing: select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid, a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from worker a inner join department d inner join departmentype d2 on d.id = d2.departmentid and a.departmentid = d.id 
+2020-05-17 14:58:22,700 - ==> Parameters: 
+2020-05-17 14:58:22,737 - <==      Total: 3
+2020-05-17 14:58:22,738 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a26d177]
+2020-05-17 14:58:22,738 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a26d177]
+2020-05-17 14:58:22,739 - Returned connection 1780928887 to pool.
+2020-05-17 14:58:22,762 - View name 'index', model {workerlist=[Worker(name=王大力, id=1, tel=18879401529, email=2116918787@qq.com, position=java开发工程师, xueli=本科, idcard=110203124, departmentid=1, address=江西南昌红谷滩山沟沟, createtime=Sun Oct 20 00:00:00 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null)), Worker(name=刘憨憨, id=2, tel=188794017492, email=2116928384@qq.com, position=销售人员, xueli=专科, idcard=364812344499229, departmentid=2, address=福建莆田勾勾里, createtime=Sat Oct 10 22:00:11 CST 2020, department=Department(dename=销售部, id=2, detail=软件开发后要进行销售由这部分工作人员完成, workers=null)), Worker(name=曹小生, id=3, tel=19970401839, email=1998012848@qq.com, position=c#开发工程师, xueli=研究生, idcard=362525200010205718, departmentid=1, address=北京市弯弯区, createtime=Tue Sep 10 10:20:23 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null))]}
+2020-05-17 14:58:22,773 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-17 14:58:22,946 - Completed 200 OK
+2020-05-17 14:58:38,196 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 14:58:38,205 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 14:58:38,307 - Opening JDBC Connection
+2020-05-17 14:58:38,308 - Checked out connection 1780928887 from pool.
+2020-05-17 14:58:38,309 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a26d177]
+2020-05-17 14:58:38,314 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 14:58:38,317 - ==> Parameters: null
+2020-05-17 14:58:38,324 - <==    Updates: 0
+2020-05-17 14:58:38,330 - View name 'worker/deleteworker', model {}
+2020-05-17 14:58:38,331 - Forwarding to [/WEB-INF/jsp/worker/deleteworker.jsp]
+2020-05-17 14:58:38,333 - Completed 404 NOT_FOUND
+2020-05-17 15:00:02,154 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:00:02,164 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:00:02,175 - Opening JDBC Connection
+2020-05-17 15:00:02,210 - Created connection 1595275799.
+2020-05-17 15:00:02,211 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5f15fa17]
+2020-05-17 15:00:02,211 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 15:00:02,213 - ==> Parameters: null
+2020-05-17 15:00:02,214 - <==    Updates: 0
+2020-05-17 15:00:02,220 - View name 'worker/deleteworker', model {}
+2020-05-17 15:00:02,220 - Forwarding to [/WEB-INF/jsp/worker/deleteworker.jsp]
+2020-05-17 15:00:02,221 - Completed 404 NOT_FOUND
+2020-05-17 15:00:03,781 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:00:03,782 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:00:03,784 - Opening JDBC Connection
+2020-05-17 15:00:03,796 - Created connection 1021085305.
+2020-05-17 15:00:03,796 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3cdc8679]
+2020-05-17 15:00:03,801 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 15:00:03,802 - ==> Parameters: null
+2020-05-17 15:00:03,803 - <==    Updates: 0
+2020-05-17 15:00:03,804 - View name 'worker/deleteworker', model {}
+2020-05-17 15:00:03,805 - Forwarding to [/WEB-INF/jsp/worker/deleteworker.jsp]
+2020-05-17 15:00:03,806 - Completed 404 NOT_FOUND
+2020-05-17 15:00:03,936 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:00:03,936 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:00:03,936 - Opening JDBC Connection
+2020-05-17 15:00:03,943 - Created connection 2083029481.
+2020-05-17 15:00:03,943 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7c2881e9]
+2020-05-17 15:00:03,943 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 15:00:03,944 - ==> Parameters: null
+2020-05-17 15:00:03,945 - <==    Updates: 0
+2020-05-17 15:00:03,946 - View name 'worker/deleteworker', model {}
+2020-05-17 15:00:03,946 - Forwarding to [/WEB-INF/jsp/worker/deleteworker.jsp]
+2020-05-17 15:00:03,947 - Completed 404 NOT_FOUND
+2020-05-17 15:01:18,370 - Root WebApplicationContext: initialization started
+2020-05-17 15:01:18,446 - Refreshing Root WebApplicationContext
+2020-05-17 15:01:18,882 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 15:01:18,982 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 15:01:19,045 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:01:19,116 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:01:19,119 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:01:19,122 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:01:19,124 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:01:19,136 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@d68002d]
+2020-05-17 15:01:19,137 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 15:01:19,319 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:01:19,324 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:01:19,324 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:01:19,325 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:01:19,337 - Root WebApplicationContext initialized in 966 ms
+2020-05-17 15:01:19,427 - Initializing Servlet 'springmvc'
+2020-05-17 15:01:19,427 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 15:01:19,428 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 15:01:19,428 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 15:01:19,428 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 15:01:19,428 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 15:01:19,429 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 15:01:19,429 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 15:01:19,429 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 15:01:19,433 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 15:01:19,495 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 15:01:19,517 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 15:01:19,525 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:01:19,558 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:01:19,558 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:01:19,559 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 15:01:19,561 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:01:19,562 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:01:19,562 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 15:01:19,636 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@fb44629]
+2020-05-17 15:01:19,641 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 15:01:19,667 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 15:01:19,670 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 15:01:19,702 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 15:01:19,732 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 15:01:20,098 - 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 15:01:20,189 - ControllerAdvice beans: none
+2020-05-17 15:01:20,261 - ControllerAdvice beans: none
+2020-05-17 15:01:20,280 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:01:20,281 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:01:20,281 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:01:20,281 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:01:20,282 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 15:01:20,282 - Completed initialization in 855 ms
+2020-05-17 15:02:52,765 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:02:52,783 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:02:53,100 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 15:02:53,101 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 15:02:53,155 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:02:53,155 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:02:53,155 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:02:53,155 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:02:53,340 - Opening JDBC Connection
+2020-05-17 15:02:53,838 - Created connection 1670792762.
+2020-05-17 15:02:53,838 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6396463a]
+2020-05-17 15:02:53,844 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 15:02:53,891 - ==> Parameters: null
+2020-05-17 15:02:53,893 - <==    Updates: 0
+2020-05-17 15:02:53,911 - View name 'worker/deleteworker', model {}
+2020-05-17 15:02:53,919 - Forwarding to [/WEB-INF/jsp/worker/deleteworker.jsp]
+2020-05-17 15:02:53,923 - Completed 404 NOT_FOUND
+2020-05-17 15:07:14,278 - Root WebApplicationContext: initialization started
+2020-05-17 15:07:14,367 - Refreshing Root WebApplicationContext
+2020-05-17 15:07:14,815 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 15:07:14,873 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 15:07:14,991 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:07:15,077 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:07:15,081 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:07:15,083 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:07:15,086 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:07:15,098 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@373af761]
+2020-05-17 15:07:15,100 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 15:07:15,140 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:07:15,143 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:07:15,144 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:07:15,144 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:07:15,156 - Root WebApplicationContext initialized in 877 ms
+2020-05-17 15:07:15,246 - Initializing Servlet 'springmvc'
+2020-05-17 15:07:15,246 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 15:07:15,246 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 15:07:15,246 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 15:07:15,247 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 15:07:15,247 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 15:07:15,247 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 15:07:15,247 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 15:07:15,247 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 15:07:15,254 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 15:07:15,361 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 15:07:15,394 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 15:07:15,406 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:07:15,430 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:07:15,431 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:07:15,431 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 15:07:15,433 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:07:15,434 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:07:15,434 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 15:07:15,519 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@14bcac2b]
+2020-05-17 15:07:15,521 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 15:07:15,548 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 15:07:15,551 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 15:07:15,591 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 15:07:15,623 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 15:07:15,885 - 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 15:07:16,126 - ControllerAdvice beans: none
+2020-05-17 15:07:16,199 - ControllerAdvice beans: none
+2020-05-17 15:07:16,214 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:07:16,214 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:07:16,214 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:07:16,215 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:07:16,215 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 15:07:16,215 - Completed initialization in 969 ms
+2020-05-17 15:07:57,128 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:07:57,152 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:07:57,536 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 15:07:57,537 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 15:07:57,579 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:07:57,579 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:07:57,579 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:07:57,579 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:07:57,820 - Opening JDBC Connection
+2020-05-17 15:07:58,188 - Created connection 1887493177.
+2020-05-17 15:07:58,189 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7080dc39]
+2020-05-17 15:07:58,196 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 15:07:58,226 - ==> Parameters: null
+2020-05-17 15:07:58,227 - <==    Updates: 0
+2020-05-17 15:07:58,246 - View name 'worker/deleteworker', model {}
+2020-05-17 15:07:58,254 - Forwarding to [/WEB-INF/jsp/worker/deleteworker.jsp]
+2020-05-17 15:07:58,260 - Completed 404 NOT_FOUND
+2020-05-17 15:10:22,678 - Root WebApplicationContext: initialization started
+2020-05-17 15:10:22,777 - Refreshing Root WebApplicationContext
+2020-05-17 15:10:23,282 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 15:10:23,315 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 15:10:23,349 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:10:23,455 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:10:23,458 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:10:23,460 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:10:23,462 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:10:23,469 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@3a33dcbb]
+2020-05-17 15:10:23,470 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 15:10:23,506 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:10:23,508 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:10:23,508 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:10:23,508 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:10:23,521 - Root WebApplicationContext initialized in 842 ms
+2020-05-17 15:10:23,663 - Initializing Servlet 'springmvc'
+2020-05-17 15:10:23,663 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 15:10:23,664 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 15:10:23,664 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 15:10:23,664 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 15:10:23,665 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 15:10:23,665 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 15:10:23,666 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 15:10:23,668 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 15:10:23,676 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 15:10:24,086 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 15:10:24,136 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 15:10:24,146 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:10:24,170 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:10:24,171 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:10:24,171 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 15:10:24,172 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:10:24,174 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:10:24,174 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 15:10:24,236 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@7c72206d]
+2020-05-17 15:10:24,238 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 15:10:24,260 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 15:10:24,266 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 15:10:24,309 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 15:10:24,343 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 15:10:24,553 - 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 15:10:24,646 - ControllerAdvice beans: none
+2020-05-17 15:10:24,722 - ControllerAdvice beans: none
+2020-05-17 15:10:24,742 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:10:24,743 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:10:24,743 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:10:24,743 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:10:24,744 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 15:10:24,744 - Completed initialization in 1081 ms
+2020-05-17 15:10:30,640 - GET "/", parameters={}
+2020-05-17 15:10:30,651 - No mapping for GET /
+2020-05-17 15:10:30,653 - Completed 404 NOT_FOUND
+2020-05-17 15:10:43,876 - GET "/worker/deleteworker", parameters={}
+2020-05-17 15:10:43,885 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:10:44,147 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 15:10:44,148 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 15:10:44,205 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:10:44,205 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:10:44,205 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:10:44,205 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:10:44,459 - Opening JDBC Connection
+2020-05-17 15:10:44,905 - Created connection 542357130.
+2020-05-17 15:10:44,905 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2053b68a]
+2020-05-17 15:10:44,919 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 15:10:45,109 - ==> Parameters: null
+2020-05-17 15:10:45,116 - <==    Updates: 0
+2020-05-17 15:10:45,202 - View name 'worker/deleteworker', model {}
+2020-05-17 15:10:45,219 - Forwarding to [/WEB-INF/jsp/worker/deleteworker.jsp]
+2020-05-17 15:10:45,225 - Completed 404 NOT_FOUND
+2020-05-17 15:15:27,872 - Root WebApplicationContext: initialization started
+2020-05-17 15:15:28,941 - Refreshing Root WebApplicationContext
+2020-05-17 15:15:30,701 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 15:15:31,241 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 15:15:31,567 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:15:32,153 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:15:32,159 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:15:32,163 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:15:32,168 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:15:32,222 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@7037c970]
+2020-05-17 15:15:32,230 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 15:15:32,376 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:15:32,392 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:15:32,393 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:15:32,394 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:15:32,437 - Root WebApplicationContext initialized in 4564 ms
+2020-05-17 15:15:32,767 - Initializing Servlet 'springmvc'
+2020-05-17 15:15:32,768 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 15:15:32,768 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 15:15:32,768 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 15:15:32,769 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 15:15:32,770 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 15:15:32,770 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 15:15:32,773 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 15:15:32,773 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 15:15:32,783 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 15:15:33,343 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 15:15:33,423 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 15:15:33,440 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:15:33,512 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:15:33,513 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:15:33,514 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 15:15:33,515 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:15:33,516 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:15:33,516 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 15:15:33,656 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@26d68ef]
+2020-05-17 15:15:33,659 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 15:15:33,690 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 15:15:33,695 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 15:15:33,747 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 15:15:33,793 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 15:15:34,285 - 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 15:15:34,515 - ControllerAdvice beans: none
+2020-05-17 15:15:34,956 - ControllerAdvice beans: none
+2020-05-17 15:15:35,004 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:15:35,006 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:15:35,006 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:15:35,007 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:15:35,010 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 15:15:35,010 - Completed initialization in 2243 ms
+2020-05-17 15:17:00,102 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:17:00,122 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:17:00,391 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 15:17:00,393 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 15:17:00,442 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:17:00,442 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:17:00,442 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:17:00,442 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:17:00,619 - Opening JDBC Connection
+2020-05-17 15:17:01,077 - Created connection 2042751752.
+2020-05-17 15:17:01,078 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@79c1eb08]
+2020-05-17 15:17:01,094 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 15:17:01,131 - ==> Parameters: null
+2020-05-17 15:17:01,138 - <==    Updates: 0
+2020-05-17 15:17:01,157 - View name 'worker/deleteworker', model {}
+2020-05-17 15:17:01,166 - Forwarding to [/WEB-INF/jsp/worker/deleteworker.jsp]
+2020-05-17 15:17:01,172 - Completed 404 NOT_FOUND
+2020-05-17 15:26:55,669 - Root WebApplicationContext: initialization started
+2020-05-17 15:26:55,836 - Refreshing Root WebApplicationContext
+2020-05-17 15:26:56,449 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 15:26:56,502 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 15:26:56,552 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:26:56,620 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:26:56,623 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:26:56,625 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:26:56,631 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:26:57,198 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@75111b6f]
+2020-05-17 15:26:57,202 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 15:26:57,299 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:26:57,302 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:26:57,302 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:26:57,312 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:26:57,326 - Root WebApplicationContext initialized in 1657 ms
+2020-05-17 15:26:57,421 - Initializing Servlet 'springmvc'
+2020-05-17 15:26:57,422 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 15:26:57,422 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 15:26:57,423 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 15:26:57,423 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 15:26:57,423 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 15:26:57,423 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 15:26:57,423 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 15:26:57,424 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 15:26:57,433 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 15:26:57,579 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 15:26:57,605 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 15:26:57,614 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:26:57,765 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:26:57,767 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:26:57,767 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 15:26:57,769 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:26:57,770 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:26:57,770 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 15:26:57,882 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@61f5f571]
+2020-05-17 15:26:57,889 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 15:26:57,931 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 15:26:57,935 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 15:26:58,155 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 15:26:58,209 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 15:26:58,399 - 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 15:26:58,502 - ControllerAdvice beans: none
+2020-05-17 15:26:58,613 - ControllerAdvice beans: none
+2020-05-17 15:26:58,628 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:26:58,629 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:26:58,629 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:26:58,629 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:26:58,630 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 15:26:58,630 - Completed initialization in 1208 ms
+2020-05-17 15:27:13,814 - GET "/", parameters={}
+2020-05-17 15:27:13,822 - No mapping for GET /
+2020-05-17 15:27:13,825 - Completed 404 NOT_FOUND
+2020-05-17 15:27:36,899 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:27:36,928 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:27:37,367 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 15:27:37,369 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 15:27:37,440 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:27:37,441 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:27:37,441 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:27:37,441 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:27:37,652 - Opening JDBC Connection
+2020-05-17 15:27:38,103 - Created connection 922618810.
+2020-05-17 15:27:38,104 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@36fe0bba]
+2020-05-17 15:27:38,114 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 15:27:38,148 - ==> Parameters: null
+2020-05-17 15:27:38,158 - <==    Updates: 0
+2020-05-17 15:27:38,177 - View name 'worker/deleteworker', model {}
+2020-05-17 15:27:38,185 - Forwarding to [/WEB-INF/jsp/worker/deleteworker.jsp]
+2020-05-17 15:27:38,190 - Completed 404 NOT_FOUND
+2020-05-17 15:38:14,517 - Root WebApplicationContext: initialization started
+2020-05-17 15:38:14,652 - Refreshing Root WebApplicationContext
+2020-05-17 15:38:15,242 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 15:38:15,288 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 15:38:15,334 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:38:15,455 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:38:15,458 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:38:15,460 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:38:15,463 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:38:15,474 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@26b0db67]
+2020-05-17 15:38:15,475 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 15:38:15,508 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:38:15,510 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:38:15,511 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:38:15,511 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:38:15,522 - Root WebApplicationContext initialized in 1001 ms
+2020-05-17 15:38:15,593 - Initializing Servlet 'springmvc'
+2020-05-17 15:38:15,594 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 15:38:15,594 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 15:38:15,594 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 15:38:15,594 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 15:38:15,594 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 15:38:15,595 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 15:38:15,595 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 15:38:15,595 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 15:38:15,603 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 15:38:15,708 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 15:38:15,869 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 15:38:15,884 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:38:15,917 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:38:15,917 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:38:15,917 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 15:38:15,919 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:38:15,919 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:38:15,920 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 15:38:15,994 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@38300005]
+2020-05-17 15:38:16,014 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 15:38:16,070 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 15:38:16,074 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 15:38:16,127 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 15:38:16,157 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 15:38:16,342 - 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 15:38:16,438 - ControllerAdvice beans: none
+2020-05-17 15:38:16,500 - ControllerAdvice beans: none
+2020-05-17 15:38:16,518 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:38:16,519 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:38:16,519 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:38:16,519 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:38:16,519 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 15:38:16,520 - Completed initialization in 927 ms
+2020-05-17 15:38:24,169 - GET "/", parameters={}
+2020-05-17 15:38:24,180 - No mapping for GET /
+2020-05-17 15:38:24,186 - Completed 404 NOT_FOUND
+2020-05-17 15:38:41,980 - GET "/worker/deleteworker?do=1", parameters={masked}
+2020-05-17 15:38:42,011 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:38:42,092 - Could not resolve parameter [0] in public java.lang.String com.controller.WorkerController.delete(int): Missing URI template variable 'id' for method parameter of type int
+2020-05-17 15:38:42,098 - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-17 15:38:42,098 - Completed 500 INTERNAL_SERVER_ERROR
+2020-05-17 15:39:43,706 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:39:43,717 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:39:43,724 - Could not resolve parameter [0] in public java.lang.String com.controller.WorkerController.delete(int): Missing URI template variable 'id' for method parameter of type int
+2020-05-17 15:39:43,727 - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-17 15:39:43,727 - Completed 500 INTERNAL_SERVER_ERROR
+2020-05-17 15:39:47,579 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:39:47,584 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:39:47,585 - Could not resolve parameter [0] in public java.lang.String com.controller.WorkerController.delete(int): Missing URI template variable 'id' for method parameter of type int
+2020-05-17 15:39:47,587 - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-17 15:39:47,588 - Completed 500 INTERNAL_SERVER_ERROR
+2020-05-17 15:39:47,725 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:39:47,726 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:39:47,726 - Could not resolve parameter [0] in public java.lang.String com.controller.WorkerController.delete(int): Missing URI template variable 'id' for method parameter of type int
+2020-05-17 15:39:47,726 - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-17 15:39:47,727 - Completed 500 INTERNAL_SERVER_ERROR
+2020-05-17 15:40:18,387 - Root WebApplicationContext: initialization started
+2020-05-17 15:40:18,481 - Refreshing Root WebApplicationContext
+2020-05-17 15:40:19,092 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 15:40:19,143 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 15:40:19,195 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:40:19,274 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:40:19,278 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:40:19,281 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:40:19,284 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:40:19,298 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@39cd9212]
+2020-05-17 15:40:19,300 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 15:40:19,355 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:40:19,358 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:40:19,358 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:40:19,358 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:40:19,378 - Root WebApplicationContext initialized in 990 ms
+2020-05-17 15:40:19,473 - Initializing Servlet 'springmvc'
+2020-05-17 15:40:19,473 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 15:40:19,473 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 15:40:19,473 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 15:40:19,474 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 15:40:19,474 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 15:40:19,474 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 15:40:19,474 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 15:40:19,474 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 15:40:19,478 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 15:40:19,687 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 15:40:19,721 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 15:40:19,733 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:40:19,798 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:40:19,800 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:40:19,801 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 15:40:19,803 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:40:19,804 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:40:19,805 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 15:40:20,152 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@53dbdc86]
+2020-05-17 15:40:20,155 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 15:40:20,194 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 15:40:20,203 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 15:40:20,278 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 15:40:20,311 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 15:40:20,481 - 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 15:40:20,600 - ControllerAdvice beans: none
+2020-05-17 15:40:20,676 - ControllerAdvice beans: none
+2020-05-17 15:40:20,695 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:40:20,697 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:40:20,698 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:40:20,699 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:40:20,701 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 15:40:20,701 - Completed initialization in 1228 ms
+2020-05-17 15:40:25,874 - GET "/", parameters={}
+2020-05-17 15:40:25,889 - No mapping for GET /
+2020-05-17 15:40:25,893 - Completed 404 NOT_FOUND
+2020-05-17 15:40:37,737 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:40:37,742 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:40:37,801 - Could not resolve parameter [0] in public java.lang.String com.controller.WorkerController.delete(int): Missing URI template variable 'id' for method parameter of type int
+2020-05-17 15:40:37,807 - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-17 15:40:37,807 - Completed 500 INTERNAL_SERVER_ERROR
+2020-05-17 15:43:26,894 - Root WebApplicationContext: initialization started
+2020-05-17 15:43:27,088 - Refreshing Root WebApplicationContext
+2020-05-17 15:43:28,136 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 15:43:28,259 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 15:43:28,379 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:43:28,491 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:43:28,496 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:43:28,507 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:43:28,510 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:43:28,527 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@41c18c50]
+2020-05-17 15:43:28,529 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 15:43:28,580 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:43:28,584 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:43:28,584 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:43:28,584 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:43:28,614 - Root WebApplicationContext initialized in 1716 ms
+2020-05-17 15:43:28,888 - Initializing Servlet 'springmvc'
+2020-05-17 15:43:28,888 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 15:43:28,889 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 15:43:28,889 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 15:43:28,889 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 15:43:28,889 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 15:43:28,889 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 15:43:28,895 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 15:43:28,895 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 15:43:28,910 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 15:43:29,246 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 15:43:29,298 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 15:43:29,308 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 15:43:29,329 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 15:43:29,330 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 15:43:29,330 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 15:43:29,331 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 15:43:29,332 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 15:43:29,332 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 15:43:29,404 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@77edc075]
+2020-05-17 15:43:29,406 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 15:43:29,434 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 15:43:29,437 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 15:43:29,487 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 15:43:29,566 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 15:43:29,744 - 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 15:43:29,863 - ControllerAdvice beans: none
+2020-05-17 15:43:29,934 - ControllerAdvice beans: none
+2020-05-17 15:43:29,994 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 15:43:29,996 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 15:43:29,996 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 15:43:29,997 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 15:43:29,998 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 15:43:29,999 - Completed initialization in 1110 ms
+2020-05-17 15:43:36,319 - GET "/", parameters={}
+2020-05-17 15:43:36,332 - No mapping for GET /
+2020-05-17 15:43:36,335 - Completed 404 NOT_FOUND
+2020-05-17 15:43:51,672 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:43:51,683 - No mapping for GET /worker/deleteworker
+2020-05-17 15:43:51,684 - Completed 404 NOT_FOUND
+2020-05-17 15:44:22,662 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:44:22,668 - No mapping for GET /worker/deleteworker
+2020-05-17 15:44:22,668 - Completed 404 NOT_FOUND
+2020-05-17 15:44:34,378 - GET "/worker/deleteworker?id=1", parameters={masked}
+2020-05-17 15:44:34,382 - No mapping for GET /worker/deleteworker
+2020-05-17 15:44:34,383 - Completed 404 NOT_FOUND
+2020-05-17 15:44:54,182 - GET "/worker/deleteworker/id=1", parameters={}
+2020-05-17 15:44:54,212 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:44:54,329 - Could not resolve parameter [0] in public java.lang.String com.controller.WorkerController.delete(int): Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "id=1"
+2020-05-17 15:44:54,333 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "id=1"]
+2020-05-17 15:44:54,333 - Completed 400 BAD_REQUEST
+2020-05-17 15:47:16,070 - GET "/worker/deleteworker/1", parameters={}
+2020-05-17 15:47:16,080 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:47:16,430 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 15:47:16,431 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 15:47:16,520 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:47:16,520 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:47:16,520 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:47:16,520 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 15:47:16,796 - Opening JDBC Connection
+2020-05-17 15:47:17,399 - Created connection 117709266.
+2020-05-17 15:47:17,400 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@70419d2]
+2020-05-17 15:47:17,414 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 15:47:17,455 - ==> Parameters: null
+2020-05-17 15:47:17,464 - <==    Updates: 0
+2020-05-17 15:47:17,495 - View name 'worker/deleteworker/1', model {}
+2020-05-17 15:47:17,508 - Forwarding to [/WEB-INF/jsp/worker/deleteworker/1.jsp]
+2020-05-17 15:47:17,514 - Completed 404 NOT_FOUND
+2020-05-17 15:47:29,760 - GET "/worker/deleteworker/1", parameters={}
+2020-05-17 15:47:29,770 - Mapped to com.controller.WorkerController#delete(int)
+2020-05-17 15:47:29,781 - Opening JDBC Connection
+2020-05-17 15:47:29,832 - Created connection 1101948159.
+2020-05-17 15:47:29,832 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@41ae64ff]
+2020-05-17 15:47:29,833 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 15:47:29,842 - ==> Parameters: null
+2020-05-17 15:47:29,843 - <==    Updates: 0
+2020-05-17 15:47:29,859 - View name 'worker/deleteworker/1', model {}
+2020-05-17 15:47:29,864 - Forwarding to [/WEB-INF/jsp/worker/deleteworker/1.jsp]
+2020-05-17 15:47:29,866 - Completed 404 NOT_FOUND
+2020-05-17 18:26:00,500 - Root WebApplicationContext: initialization started
+2020-05-17 18:26:01,011 - Refreshing Root WebApplicationContext
+2020-05-17 18:26:02,364 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-17 18:26:02,512 - Loaded 6 bean definitions from file [D:\idealworkspace\SSM\target\classes\applicationContext-bean.xml]
+2020-05-17 18:26:02,664 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 18:26:02,881 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 18:26:02,886 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 18:26:02,888 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 18:26:02,892 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 18:26:02,923 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@758c65cb]
+2020-05-17 18:26:02,927 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-17 18:26:02,990 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 18:26:02,994 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 18:26:02,995 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 18:26:02,995 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 18:26:03,032 - Root WebApplicationContext initialized in 2531 ms
+2020-05-17 18:26:03,148 - Initializing Servlet 'springmvc'
+2020-05-17 18:26:03,149 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-17 18:26:03,149 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-17 18:26:03,150 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-17 18:26:03,150 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-17 18:26:03,150 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-17 18:26:03,154 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-17 18:26:03,154 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-17 18:26:03,154 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-17 18:26:03,162 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-17 18:26:03,267 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-17 18:26:03,304 - Loaded 12 bean definitions from class path resource [springmvc.xml]
+2020-05-17 18:26:03,315 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-17 18:26:03,364 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-17 18:26:03,365 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-17 18:26:03,365 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-17 18:26:03,366 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-17 18:26:03,366 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-17 18:26:03,367 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-17 18:26:03,607 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@750e2b29]
+2020-05-17 18:26:03,608 - Creating shared instance of singleton bean 'workerController'
+2020-05-17 18:26:03,645 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-17 18:26:03,648 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-17 18:26:03,727 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-17 18:26:03,804 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-17 18:26:04,019 - 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-17 18:26:04,153 - ControllerAdvice beans: none
+2020-05-17 18:26:04,249 - ControllerAdvice beans: none
+2020-05-17 18:26:04,265 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-17 18:26:04,265 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-17 18:26:04,266 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-17 18:26:04,266 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-17 18:26:04,266 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-17 18:26:04,266 - Completed initialization in 1118 ms
+2020-05-17 18:26:24,205 - GET "/", parameters={}
+2020-05-17 18:26:24,222 - No mapping for GET /
+2020-05-17 18:26:24,229 - Completed 404 NOT_FOUND
+2020-05-17 18:26:50,814 - GET "/worker/deleteworker/1", parameters={}
+2020-05-17 18:26:50,852 - Mapped to com.controller.WorkerController#delete(int, Model)
+2020-05-17 18:26:51,284 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-17 18:26:51,287 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-05-17 18:26:51,457 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 18:26:51,457 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 18:26:51,457 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 18:26:51,457 - PooledDataSource forcefully closed/removed all connections.
+2020-05-17 18:26:52,079 - Opening JDBC Connection
+2020-05-17 18:26:52,595 - Created connection 731094832.
+2020-05-17 18:26:52,596 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2b939f30]
+2020-05-17 18:26:52,618 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 18:26:52,718 - ==> Parameters: null
+2020-05-17 18:26:52,734 - <==    Updates: 0
+2020-05-17 18:26:52,758 - View name 'deleteworker', model {result=0}
+2020-05-17 18:26:52,769 - Forwarding to [/WEB-INF/jsp/deleteworker.jsp]
+2020-05-17 18:26:54,585 - Completed 200 OK
+2020-05-17 18:27:29,272 - GET "/worker/deleteworker/1", parameters={}
+2020-05-17 18:27:29,284 - Mapped to com.controller.WorkerController#delete(int, Model)
+2020-05-17 18:27:29,297 - Opening JDBC Connection
+2020-05-17 18:27:29,329 - Created connection 1272679338.
+2020-05-17 18:27:29,330 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4bdb8baa]
+2020-05-17 18:27:29,331 - ==>  Preparing: delete from worker where id=? 
+2020-05-17 18:27:29,333 - ==> Parameters: null
+2020-05-17 18:27:29,337 - <==    Updates: 0
+2020-05-17 18:27:29,345 - View name 'deleteworker', model {result=0}
+2020-05-17 18:27:29,349 - Forwarding to [/WEB-INF/jsp/deleteworker.jsp]
+2020-05-17 18:27:29,356 - Completed 200 OK

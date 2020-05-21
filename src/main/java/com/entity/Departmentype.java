@@ -11,7 +11,7 @@ import lombok.Data;
 create by caocong on  2020/5/15
 */
 @Data
-public class departmentype {
+public class Departmentype {
     private int departmentid;
     private String departmentname;
 }

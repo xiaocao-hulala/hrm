@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
     <!-- 该xml文件主要负责数据源方面-->
 
     <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
@@ -17,6 +17,7 @@
 
     <!-- 创建sqlsession工厂-->
     <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+
         <!--连接上数据库-->
         <property name="dataSource" ref="dataSource"></property>
 
@@ -24,16 +25,28 @@
         <property name="mapperLocations" value="classpath:mapper/*.xml"></property>
 
 
-        <!-- 添加一些mybatis其他配置 -->
+
         <!-- 自定义配置类设置-->
         <property name="configuration">
             <bean class="org.apache.ibatis.session.Configuration">
                 <!--驼峰命名-->
                 <property name="mapUnderscoreToCamelCase" value="true"></property>
+
+
+                <!-- mybatis是seting中的内容 spring这样写添加延迟加载的设置-->
+                <property name="lazyLoadingEnabled" value="true"></property>
+
+                <property name="aggressiveLazyLoading" value="false"></property>
             </bean>
+
+
         </property>
 
-        <!-- 设置别名-->
+        <!-- 设置别名
+          <property name="typeAliasesPackage"
+          value="com.tongdatech.demo.domain;com.tongdatech.sys.domain;com.tongdatech.hr.domain" />   //这里配置了三个包下的所有类的别名
+        -->
+
         <property name="typeAliasesPackage" value="entity"></property>
 
 
@@ -47,9 +60,20 @@
 
     </bean>
 
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 指定mapper接口位置-->
         <property name="basePackage" value="com.dao"></property>
     </bean>
+
+
+ <!--   &lt;!&ndash; 声明事务管理&ndash;&gt;
+    <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        &lt;!&ndash;得到数据连接&ndash;&gt;
+        <property name="dataSource " ref="dataSource"></property>
+    </bean>
+    &lt;!&ndash; 添加了下面这行代码就是用注解声明事务就好,然后再要使用的方法上面添加 transactional就行&ndash;&gt;
+    <tx:annotation-driven></tx:annotation-driven>-->
+
+
 
 </beans>

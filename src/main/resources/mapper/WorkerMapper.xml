@@ -3,7 +3,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.dao.WorkerDao">
 
-
     <insert id="addWorker">
         insert into worker
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -56,6 +55,8 @@
             <result property="detail" column="detail"></result>
         </association>
     </resultMap>
+
+
 
     <!-- 查询员工能够显示属于哪个部门一对多映射实现-->
     <select id="selectAll" resultMap="workermap">

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.NoticeDao">
+    <resultMap id="noticemapper" type="com.entity.Notice">
+        <id property="id" column="id"></id>
+        <result property="content" column="content"></result>
+        <result property="createtime" column="createtime"></result>
+        <result property="userid" column="userid"></result>
+
+        <association property="user" javaType="com.entity.User"
+                     select="com.dao.UserDao.selectById" column="userid"></association>
+    </resultMap>
+
+
+    <!-- 该查询用到了延时加载，多表关联时候，查询数据根据需求一步一步执行sql语句,从而提高效率-->
+    <select id="queryAll" resultMap="noticemapper">
+        select *  from notice
+    </select>
+
+</mapper>

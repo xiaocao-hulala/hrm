@@ -23,4 +23,6 @@ public interface UserDao {
     int delete(int id);
 
     int insert(User user);
+
+    List<User>selectById(Integer id);
 }
