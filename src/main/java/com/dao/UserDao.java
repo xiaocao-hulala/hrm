@@ -3,6 +3,7 @@ package com.dao;
 import com.entity.User;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * @Author:caocong
@@ -25,4 +26,13 @@ public interface UserDao {
     int insert(User user);
 
     List<User>selectById(Integer id);
+
+    //shiro中根据用户名查询用户信息
+    User queryByUserName(String name);
+
+    //根据用户名查询用户角色名称集合
+    Set<String> queryRoleNameByUserName(String username);
+
+    //根据用户名查询权限名称集合
+    Set<String> querypressNameByUserName(String username);
 }

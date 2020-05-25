@@ -4,6 +4,11 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+    <welcome-file-list>
+        <welcome-file>index</welcome-file>
+    </welcome-file-list>
+    
+    
     <!-- spring整合web需要配置 1.监听器  2.上下文参数 目的在服务器启动时读取spring配置文件-->
 
     <listener>
@@ -12,8 +17,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <!--<param-value>classpath:applicationContext-*.xml</param-value>-->
-        <param-value>classpath:applicationContext-bean.xml,classpath:applicationContext-datasource.xml</param-value>
+        <param-value>classpath:applicationContext-*.xml</param-value>
     </context-param>
 
 
@@ -39,4 +43,18 @@
     </servlet-mapping>
 
 
+    <filter>
+        <filter-name>shiroFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+
+        <init-param>
+            <param-name>targetFilterLifecycycle</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>

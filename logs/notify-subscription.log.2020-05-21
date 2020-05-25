@@ -1,0 +1,1063 @@
+2020-05-21 10:31:25,429 - Root WebApplicationContext: initialization started
+2020-05-21 10:31:25,527 - Refreshing Root WebApplicationContext
+2020-05-21 10:31:26,224 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DepartmentImpl.class]
+2020-05-21 10:31:26,229 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DocumentServiceImpl.class]
+2020-05-21 10:31:26,230 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\NoticeServiceImpl.class]
+2020-05-21 10:31:26,231 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\PositionServiceImpl.class]
+2020-05-21 10:31:26,232 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\UserServiceImpl.class]
+2020-05-21 10:31:26,233 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-21 10:31:26,293 - Loaded 11 bean definitions from class path resource [applicationContext-bean.xml]
+2020-05-21 10:31:26,345 - Loaded 4 bean definitions from class path resource [applicationContext-datasource.xml]
+2020-05-21 10:31:26,425 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 10:31:26,563 - Creating shared instance of singleton bean 'tk.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-05-21 10:31:26,630 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DepartmentDao.class]
+2020-05-21 10:31:26,631 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DocumentDao.class]
+2020-05-21 10:31:26,631 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\NoticeDao.class]
+2020-05-21 10:31:26,632 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\PositionDao.class]
+2020-05-21 10:31:26,632 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\UserDao.class]
+2020-05-21 10:31:26,633 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\WorkerDao.class]
+2020-05-21 10:31:26,633 - Creating MapperFactoryBean with name 'departmentDao' and 'com.dao.DepartmentDao' mapperInterface
+2020-05-21 10:31:26,636 - Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2020-05-21 10:31:26,636 - Creating MapperFactoryBean with name 'documentDao' and 'com.dao.DocumentDao' mapperInterface
+2020-05-21 10:31:26,636 - Enabling autowire by type for MapperFactoryBean with name 'documentDao'.
+2020-05-21 10:31:26,636 - Creating MapperFactoryBean with name 'noticeDao' and 'com.dao.NoticeDao' mapperInterface
+2020-05-21 10:31:26,636 - Enabling autowire by type for MapperFactoryBean with name 'noticeDao'.
+2020-05-21 10:31:26,636 - Creating MapperFactoryBean with name 'positionDao' and 'com.dao.PositionDao' mapperInterface
+2020-05-21 10:31:26,636 - Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2020-05-21 10:31:26,636 - Creating MapperFactoryBean with name 'userDao' and 'com.dao.UserDao' mapperInterface
+2020-05-21 10:31:26,639 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-05-21 10:31:26,639 - Creating MapperFactoryBean with name 'workerDao' and 'com.dao.WorkerDao' mapperInterface
+2020-05-21 10:31:26,639 - Enabling autowire by type for MapperFactoryBean with name 'workerDao'.
+2020-05-21 10:31:26,660 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2020-05-21 10:31:26,772 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+2020-05-21 10:31:26,776 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].
+2020-05-21 10:31:26,776 - Looking up JNDI object with name [jdbc.url]
+2020-05-21 10:31:26,777 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].. Returning null.
+2020-05-21 10:31:26,777 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:31:26,777 - Looking up JNDI object with name [java:comp/env/jdbc.driver]
+2020-05-21 10:31:26,777 - Converted JNDI name [java:comp/env/jdbc.driver] not found - trying original name [jdbc.driver]. javax.naming.NameNotFoundException: Name [jdbc.driver] is not bound in this Context. Unable to find [jdbc.driver].
+2020-05-21 10:31:26,777 - Looking up JNDI object with name [jdbc.driver]
+2020-05-21 10:31:26,778 - JNDI lookup for name [jdbc.driver] threw NamingException with message: Name [jdbc.driver] is not bound in this Context. Unable to find [jdbc.driver].. Returning null.
+2020-05-21 10:31:26,778 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:31:26,778 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+2020-05-21 10:31:26,778 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+2020-05-21 10:31:26,779 - Looking up JNDI object with name [jdbc.password]
+2020-05-21 10:31:26,779 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+2020-05-21 10:31:26,780 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:31:26,780 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+2020-05-21 10:31:26,785 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].
+2020-05-21 10:31:26,785 - Looking up JNDI object with name [jdbc.username]
+2020-05-21 10:31:26,785 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].. Returning null.
+2020-05-21 10:31:26,785 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:31:26,792 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 10:31:26,795 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 10:31:26,800 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 10:31:26,802 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 10:31:26,815 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@4b880ebf]
+2020-05-21 10:31:26,816 - Creating shared instance of singleton bean 'departmentImpl'
+2020-05-21 10:31:26,993 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-21 10:31:27,029 - Creating shared instance of singleton bean 'departmentDao'
+2020-05-21 10:31:27,110 - Creating shared instance of singleton bean 'org.mybatis.spring.SqlSessionFactoryBean#0'
+2020-05-21 10:31:27,115 - Creating shared instance of singleton bean 'dataSource'
+2020-05-21 10:31:27,451 - Registered plugin: 'com.github.pagehelper.PageInterceptor@7a541d76'
+2020-05-21 10:31:27,669 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DepartmentMapper.xml]'
+2020-05-21 10:31:27,696 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DocumentMapper.xml]'
+2020-05-21 10:31:27,715 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\NoticeMapper.xml]'
+2020-05-21 10:31:27,729 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\PositionMapper.xml]'
+2020-05-21 10:31:27,745 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\UserMapper.xml]'
+2020-05-21 10:31:27,765 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\WorkerMapper.xml]'
+2020-05-21 10:31:27,784 - Creating shared instance of singleton bean 'documentServiceImpl'
+2020-05-21 10:31:27,796 - Creating shared instance of singleton bean 'documentDao'
+2020-05-21 10:31:27,800 - Creating shared instance of singleton bean 'noticeServiceImpl'
+2020-05-21 10:31:27,805 - Creating shared instance of singleton bean 'noticeDao'
+2020-05-21 10:31:27,807 - Creating shared instance of singleton bean 'positionServiceImpl'
+2020-05-21 10:31:27,813 - Creating shared instance of singleton bean 'positionDao'
+2020-05-21 10:31:27,816 - Creating shared instance of singleton bean 'userServiceImpl'
+2020-05-21 10:31:27,817 - Creating shared instance of singleton bean 'userDao'
+2020-05-21 10:31:27,820 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-21 10:31:27,824 - Creating shared instance of singleton bean 'workerDao'
+2020-05-21 10:31:28,027 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-21 10:31:28,029 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-21 10:31:28,029 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-21 10:31:28,030 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-21 10:31:28,054 - Root WebApplicationContext initialized in 2620 ms
+2020-05-21 10:31:28,126 - Initializing Servlet 'springmvc'
+2020-05-21 10:31:28,126 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-21 10:31:28,127 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-21 10:31:28,127 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-21 10:31:28,127 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-21 10:31:28,127 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-21 10:31:28,128 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-21 10:31:28,128 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-21 10:31:28,129 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-21 10:31:28,132 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-21 10:31:28,180 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\DepartmentController.class]
+2020-05-21 10:31:28,181 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\DocumentController.class]
+2020-05-21 10:31:28,182 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\NoticeController.class]
+2020-05-21 10:31:28,183 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\PositionController.class]
+2020-05-21 10:31:28,184 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\UserController.class]
+2020-05-21 10:31:28,185 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-21 10:31:28,210 - Loaded 17 bean definitions from class path resource [springmvc.xml]
+2020-05-21 10:31:28,223 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 10:31:28,291 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 10:31:28,292 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 10:31:28,292 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-21 10:31:28,293 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 10:31:28,293 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 10:31:28,294 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-21 10:31:28,393 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@345243a3]
+2020-05-21 10:31:28,394 - Creating shared instance of singleton bean 'departmentController'
+2020-05-21 10:31:28,397 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-21 10:31:28,401 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-21 10:31:28,432 - Creating shared instance of singleton bean 'documentController'
+2020-05-21 10:31:28,434 - Creating shared instance of singleton bean 'noticeController'
+2020-05-21 10:31:28,436 - Creating shared instance of singleton bean 'positionController'
+2020-05-21 10:31:28,437 - Creating shared instance of singleton bean 'userController'
+2020-05-21 10:31:28,442 - Creating shared instance of singleton bean 'workerController'
+2020-05-21 10:31:28,446 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-21 10:31:28,471 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-21 10:31:28,783 - 12 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-21 10:31:28,893 - ControllerAdvice beans: none
+2020-05-21 10:31:29,307 - ControllerAdvice beans: none
+2020-05-21 10:31:29,325 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-21 10:31:29,326 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-21 10:31:29,326 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-21 10:31:29,330 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-21 10:31:29,335 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-21 10:31:29,336 - Completed initialization in 1210 ms
+2020-05-21 10:31:42,491 - GET "/", parameters={}
+2020-05-21 10:31:42,522 - No mapping for GET /
+2020-05-21 10:31:42,526 - Completed 404 NOT_FOUND
+2020-05-21 10:31:42,812 - GET "/favicon.ico", parameters={}
+2020-05-21 10:31:42,813 - No mapping for GET /favicon.ico
+2020-05-21 10:31:42,813 - Completed 404 NOT_FOUND
+2020-05-21 10:32:10,229 - GET "/worker/selectaworkerall", parameters={}
+2020-05-21 10:32:10,241 - No mapping for GET /worker/selectaworkerall
+2020-05-21 10:32:10,241 - Completed 404 NOT_FOUND
+2020-05-21 10:32:19,907 - GET "/worker/selectaworkerall", parameters={}
+2020-05-21 10:32:19,913 - No mapping for GET /worker/selectaworkerall
+2020-05-21 10:32:19,915 - Completed 404 NOT_FOUND
+2020-05-21 10:33:19,632 - Root WebApplicationContext: initialization started
+2020-05-21 10:33:19,723 - Refreshing Root WebApplicationContext
+2020-05-21 10:33:20,537 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DepartmentImpl.class]
+2020-05-21 10:33:20,541 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DocumentServiceImpl.class]
+2020-05-21 10:33:20,542 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\NoticeServiceImpl.class]
+2020-05-21 10:33:20,542 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\PositionServiceImpl.class]
+2020-05-21 10:33:20,547 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\UserServiceImpl.class]
+2020-05-21 10:33:20,548 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-21 10:33:20,604 - Loaded 11 bean definitions from class path resource [applicationContext-bean.xml]
+2020-05-21 10:33:20,677 - Loaded 4 bean definitions from class path resource [applicationContext-datasource.xml]
+2020-05-21 10:33:20,992 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 10:33:21,212 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-05-21 10:33:21,372 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-21 10:33:21,387 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DepartmentDao.class]
+2020-05-21 10:33:21,403 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DocumentDao.class]
+2020-05-21 10:33:21,404 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\NoticeDao.class]
+2020-05-21 10:33:21,404 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\PositionDao.class]
+2020-05-21 10:33:21,405 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\UserDao.class]
+2020-05-21 10:33:21,405 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\WorkerDao.class]
+2020-05-21 10:33:21,407 - Creating MapperFactoryBean with name 'departmentDao' and 'com.dao.DepartmentDao' mapperInterface
+2020-05-21 10:33:21,418 - Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2020-05-21 10:33:21,418 - Creating MapperFactoryBean with name 'documentDao' and 'com.dao.DocumentDao' mapperInterface
+2020-05-21 10:33:21,418 - Enabling autowire by type for MapperFactoryBean with name 'documentDao'.
+2020-05-21 10:33:21,418 - Creating MapperFactoryBean with name 'noticeDao' and 'com.dao.NoticeDao' mapperInterface
+2020-05-21 10:33:21,418 - Enabling autowire by type for MapperFactoryBean with name 'noticeDao'.
+2020-05-21 10:33:21,418 - Creating MapperFactoryBean with name 'positionDao' and 'com.dao.PositionDao' mapperInterface
+2020-05-21 10:33:21,418 - Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2020-05-21 10:33:21,419 - Creating MapperFactoryBean with name 'userDao' and 'com.dao.UserDao' mapperInterface
+2020-05-21 10:33:21,419 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-05-21 10:33:21,420 - Creating MapperFactoryBean with name 'workerDao' and 'com.dao.WorkerDao' mapperInterface
+2020-05-21 10:33:21,420 - Enabling autowire by type for MapperFactoryBean with name 'workerDao'.
+2020-05-21 10:33:21,434 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2020-05-21 10:33:21,477 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+2020-05-21 10:33:21,481 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].
+2020-05-21 10:33:21,482 - Looking up JNDI object with name [jdbc.url]
+2020-05-21 10:33:21,483 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].. Returning null.
+2020-05-21 10:33:21,483 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:33:21,483 - Looking up JNDI object with name [java:comp/env/jdbc.driver]
+2020-05-21 10:33:21,483 - Converted JNDI name [java:comp/env/jdbc.driver] not found - trying original name [jdbc.driver]. javax.naming.NameNotFoundException: Name [jdbc.driver] is not bound in this Context. Unable to find [jdbc.driver].
+2020-05-21 10:33:21,484 - Looking up JNDI object with name [jdbc.driver]
+2020-05-21 10:33:21,484 - JNDI lookup for name [jdbc.driver] threw NamingException with message: Name [jdbc.driver] is not bound in this Context. Unable to find [jdbc.driver].. Returning null.
+2020-05-21 10:33:21,484 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:33:21,484 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+2020-05-21 10:33:21,485 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+2020-05-21 10:33:21,485 - Looking up JNDI object with name [jdbc.password]
+2020-05-21 10:33:21,485 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+2020-05-21 10:33:21,485 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:33:21,485 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+2020-05-21 10:33:21,485 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].
+2020-05-21 10:33:21,485 - Looking up JNDI object with name [jdbc.username]
+2020-05-21 10:33:21,486 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].. Returning null.
+2020-05-21 10:33:21,486 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:33:21,487 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 10:33:21,491 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 10:33:21,499 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 10:33:21,501 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 10:33:21,532 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@706c060a]
+2020-05-21 10:33:21,541 - Creating shared instance of singleton bean 'departmentImpl'
+2020-05-21 10:33:21,693 - Creating shared instance of singleton bean 'departmentDao'
+2020-05-21 10:33:21,767 - Creating shared instance of singleton bean 'org.mybatis.spring.SqlSessionFactoryBean#0'
+2020-05-21 10:33:21,774 - Creating shared instance of singleton bean 'dataSource'
+2020-05-21 10:33:22,404 - Registered plugin: 'com.github.pagehelper.PageInterceptor@5a0ed490'
+2020-05-21 10:33:22,701 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DepartmentMapper.xml]'
+2020-05-21 10:33:22,729 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DocumentMapper.xml]'
+2020-05-21 10:33:22,751 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\NoticeMapper.xml]'
+2020-05-21 10:33:22,771 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\PositionMapper.xml]'
+2020-05-21 10:33:22,802 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\UserMapper.xml]'
+2020-05-21 10:33:22,835 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\WorkerMapper.xml]'
+2020-05-21 10:33:22,871 - Creating shared instance of singleton bean 'documentServiceImpl'
+2020-05-21 10:33:22,928 - Creating shared instance of singleton bean 'documentDao'
+2020-05-21 10:33:22,971 - Creating shared instance of singleton bean 'noticeServiceImpl'
+2020-05-21 10:33:22,985 - Creating shared instance of singleton bean 'noticeDao'
+2020-05-21 10:33:22,994 - Creating shared instance of singleton bean 'positionServiceImpl'
+2020-05-21 10:33:23,025 - Creating shared instance of singleton bean 'positionDao'
+2020-05-21 10:33:23,031 - Creating shared instance of singleton bean 'userServiceImpl'
+2020-05-21 10:33:23,035 - Creating shared instance of singleton bean 'userDao'
+2020-05-21 10:33:23,038 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-21 10:33:23,050 - Creating shared instance of singleton bean 'workerDao'
+2020-05-21 10:33:23,183 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-21 10:33:23,186 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-21 10:33:23,186 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-21 10:33:23,187 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-21 10:33:23,192 - Root WebApplicationContext initialized in 3559 ms
+2020-05-21 10:33:23,285 - Initializing Servlet 'springmvc'
+2020-05-21 10:33:23,286 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-21 10:33:23,286 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-21 10:33:23,286 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-21 10:33:23,286 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-21 10:33:23,287 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-21 10:33:23,288 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-21 10:33:23,288 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-21 10:33:23,288 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-21 10:33:23,292 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-21 10:33:23,349 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\DepartmentController.class]
+2020-05-21 10:33:23,350 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\DocumentController.class]
+2020-05-21 10:33:23,351 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\NoticeController.class]
+2020-05-21 10:33:23,352 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\PositionController.class]
+2020-05-21 10:33:23,353 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\UserController.class]
+2020-05-21 10:33:23,355 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-21 10:33:23,380 - Loaded 17 bean definitions from class path resource [springmvc.xml]
+2020-05-21 10:33:23,396 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 10:33:23,439 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 10:33:23,440 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 10:33:23,441 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-21 10:33:23,443 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 10:33:23,443 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 10:33:23,444 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-21 10:33:23,537 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@67a03ed7]
+2020-05-21 10:33:23,538 - Creating shared instance of singleton bean 'departmentController'
+2020-05-21 10:33:23,541 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-21 10:33:23,544 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-21 10:33:23,577 - Creating shared instance of singleton bean 'documentController'
+2020-05-21 10:33:23,578 - Creating shared instance of singleton bean 'noticeController'
+2020-05-21 10:33:23,580 - Creating shared instance of singleton bean 'positionController'
+2020-05-21 10:33:23,581 - Creating shared instance of singleton bean 'userController'
+2020-05-21 10:33:23,583 - Creating shared instance of singleton bean 'workerController'
+2020-05-21 10:33:23,586 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-21 10:33:23,616 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-21 10:33:24,058 - 12 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-21 10:33:24,375 - ControllerAdvice beans: none
+2020-05-21 10:33:24,470 - ControllerAdvice beans: none
+2020-05-21 10:33:24,485 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-21 10:33:24,486 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-21 10:33:24,486 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-21 10:33:24,487 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-21 10:33:24,487 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-21 10:33:24,487 - Completed initialization in 1201 ms
+2020-05-21 10:33:37,879 - GET "/worker/selectaworkerall", parameters={}
+2020-05-21 10:33:37,892 - No mapping for GET /worker/selectaworkerall
+2020-05-21 10:33:37,901 - Completed 404 NOT_FOUND
+2020-05-21 10:33:38,835 - GET "/worker/selectaworkerall", parameters={}
+2020-05-21 10:33:38,837 - No mapping for GET /worker/selectaworkerall
+2020-05-21 10:33:38,837 - Completed 404 NOT_FOUND
+2020-05-21 10:33:39,378 - GET "/worker/selectaworkerall", parameters={}
+2020-05-21 10:33:39,382 - No mapping for GET /worker/selectaworkerall
+2020-05-21 10:33:39,383 - Completed 404 NOT_FOUND
+2020-05-21 10:33:39,509 - GET "/worker/selectaworkerall", parameters={}
+2020-05-21 10:33:39,510 - No mapping for GET /worker/selectaworkerall
+2020-05-21 10:33:39,510 - Completed 404 NOT_FOUND
+2020-05-21 10:33:39,673 - GET "/worker/selectaworkerall", parameters={}
+2020-05-21 10:33:39,674 - No mapping for GET /worker/selectaworkerall
+2020-05-21 10:33:39,674 - Completed 404 NOT_FOUND
+2020-05-21 10:33:40,115 - GET "/worker/selectaworkerall", parameters={}
+2020-05-21 10:33:40,123 - No mapping for GET /worker/selectaworkerall
+2020-05-21 10:33:40,124 - Completed 404 NOT_FOUND
+2020-05-21 10:34:40,218 - Root WebApplicationContext: initialization started
+2020-05-21 10:34:40,309 - Refreshing Root WebApplicationContext
+2020-05-21 10:34:40,734 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DepartmentImpl.class]
+2020-05-21 10:34:40,738 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DocumentServiceImpl.class]
+2020-05-21 10:34:40,739 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\NoticeServiceImpl.class]
+2020-05-21 10:34:40,741 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\PositionServiceImpl.class]
+2020-05-21 10:34:40,742 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\UserServiceImpl.class]
+2020-05-21 10:34:40,743 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-21 10:34:40,793 - Loaded 11 bean definitions from class path resource [applicationContext-bean.xml]
+2020-05-21 10:34:40,867 - Loaded 4 bean definitions from class path resource [applicationContext-datasource.xml]
+2020-05-21 10:34:40,975 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 10:34:41,150 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-05-21 10:34:41,264 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-21 10:34:41,279 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DepartmentDao.class]
+2020-05-21 10:34:41,280 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DocumentDao.class]
+2020-05-21 10:34:41,280 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\NoticeDao.class]
+2020-05-21 10:34:41,281 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\PositionDao.class]
+2020-05-21 10:34:41,281 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\UserDao.class]
+2020-05-21 10:34:41,282 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\WorkerDao.class]
+2020-05-21 10:34:41,284 - Creating MapperFactoryBean with name 'departmentDao' and 'com.dao.DepartmentDao' mapperInterface
+2020-05-21 10:34:41,288 - Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2020-05-21 10:34:41,288 - Creating MapperFactoryBean with name 'documentDao' and 'com.dao.DocumentDao' mapperInterface
+2020-05-21 10:34:41,288 - Enabling autowire by type for MapperFactoryBean with name 'documentDao'.
+2020-05-21 10:34:41,288 - Creating MapperFactoryBean with name 'noticeDao' and 'com.dao.NoticeDao' mapperInterface
+2020-05-21 10:34:41,288 - Enabling autowire by type for MapperFactoryBean with name 'noticeDao'.
+2020-05-21 10:34:41,288 - Creating MapperFactoryBean with name 'positionDao' and 'com.dao.PositionDao' mapperInterface
+2020-05-21 10:34:41,288 - Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2020-05-21 10:34:41,288 - Creating MapperFactoryBean with name 'userDao' and 'com.dao.UserDao' mapperInterface
+2020-05-21 10:34:41,288 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-05-21 10:34:41,288 - Creating MapperFactoryBean with name 'workerDao' and 'com.dao.WorkerDao' mapperInterface
+2020-05-21 10:34:41,289 - Enabling autowire by type for MapperFactoryBean with name 'workerDao'.
+2020-05-21 10:34:41,296 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2020-05-21 10:34:41,327 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+2020-05-21 10:34:41,330 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].
+2020-05-21 10:34:41,330 - Looking up JNDI object with name [jdbc.url]
+2020-05-21 10:34:41,331 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].. Returning null.
+2020-05-21 10:34:41,331 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:34:41,332 - Looking up JNDI object with name [java:comp/env/jdbc.driver]
+2020-05-21 10:34:41,332 - Converted JNDI name [java:comp/env/jdbc.driver] not found - trying original name [jdbc.driver]. javax.naming.NameNotFoundException: Name [jdbc.driver] is not bound in this Context. Unable to find [jdbc.driver].
+2020-05-21 10:34:41,332 - Looking up JNDI object with name [jdbc.driver]
+2020-05-21 10:34:41,332 - JNDI lookup for name [jdbc.driver] threw NamingException with message: Name [jdbc.driver] is not bound in this Context. Unable to find [jdbc.driver].. Returning null.
+2020-05-21 10:34:41,332 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:34:41,332 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+2020-05-21 10:34:41,333 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+2020-05-21 10:34:41,333 - Looking up JNDI object with name [jdbc.password]
+2020-05-21 10:34:41,333 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+2020-05-21 10:34:41,333 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:34:41,333 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+2020-05-21 10:34:41,334 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].
+2020-05-21 10:34:41,334 - Looking up JNDI object with name [jdbc.username]
+2020-05-21 10:34:41,334 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].. Returning null.
+2020-05-21 10:34:41,334 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:34:41,345 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 10:34:41,350 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 10:34:41,354 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 10:34:41,356 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 10:34:41,375 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@1b4861]
+2020-05-21 10:34:41,377 - Creating shared instance of singleton bean 'departmentImpl'
+2020-05-21 10:34:41,441 - Creating shared instance of singleton bean 'departmentDao'
+2020-05-21 10:34:41,488 - Creating shared instance of singleton bean 'org.mybatis.spring.SqlSessionFactoryBean#0'
+2020-05-21 10:34:41,499 - Creating shared instance of singleton bean 'dataSource'
+2020-05-21 10:34:41,833 - Registered plugin: 'com.github.pagehelper.PageInterceptor@12649fb'
+2020-05-21 10:34:42,251 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DepartmentMapper.xml]'
+2020-05-21 10:34:42,265 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DocumentMapper.xml]'
+2020-05-21 10:34:42,278 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\NoticeMapper.xml]'
+2020-05-21 10:34:42,287 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\PositionMapper.xml]'
+2020-05-21 10:34:42,305 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\UserMapper.xml]'
+2020-05-21 10:34:42,321 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\WorkerMapper.xml]'
+2020-05-21 10:34:42,345 - Creating shared instance of singleton bean 'documentServiceImpl'
+2020-05-21 10:34:42,360 - Creating shared instance of singleton bean 'documentDao'
+2020-05-21 10:34:42,365 - Creating shared instance of singleton bean 'noticeServiceImpl'
+2020-05-21 10:34:42,377 - Creating shared instance of singleton bean 'noticeDao'
+2020-05-21 10:34:42,380 - Creating shared instance of singleton bean 'positionServiceImpl'
+2020-05-21 10:34:42,387 - Creating shared instance of singleton bean 'positionDao'
+2020-05-21 10:34:42,391 - Creating shared instance of singleton bean 'userServiceImpl'
+2020-05-21 10:34:42,393 - Creating shared instance of singleton bean 'userDao'
+2020-05-21 10:34:42,401 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-21 10:34:42,406 - Creating shared instance of singleton bean 'workerDao'
+2020-05-21 10:34:42,451 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-21 10:34:42,451 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-21 10:34:42,451 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-21 10:34:42,452 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-21 10:34:42,456 - Root WebApplicationContext initialized in 2232 ms
+2020-05-21 10:34:42,567 - Initializing Servlet 'springmvc'
+2020-05-21 10:34:42,568 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-21 10:34:42,569 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-21 10:34:42,574 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-21 10:34:42,574 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-21 10:34:42,574 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-21 10:34:42,576 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-21 10:34:42,576 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-21 10:34:42,576 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-21 10:34:42,579 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-21 10:34:42,702 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\DepartmentController.class]
+2020-05-21 10:34:42,703 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\DocumentController.class]
+2020-05-21 10:34:42,704 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\NoticeController.class]
+2020-05-21 10:34:42,704 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\PositionController.class]
+2020-05-21 10:34:42,705 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\UserController.class]
+2020-05-21 10:34:42,706 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-21 10:34:42,730 - Loaded 17 bean definitions from class path resource [springmvc.xml]
+2020-05-21 10:34:42,750 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 10:34:42,878 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 10:34:42,879 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 10:34:42,880 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-21 10:34:42,901 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 10:34:42,906 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 10:34:42,910 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-21 10:34:43,183 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@6c13bc55]
+2020-05-21 10:34:43,187 - Creating shared instance of singleton bean 'departmentController'
+2020-05-21 10:34:43,191 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-21 10:34:43,196 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-21 10:34:43,232 - Creating shared instance of singleton bean 'documentController'
+2020-05-21 10:34:43,233 - Creating shared instance of singleton bean 'noticeController'
+2020-05-21 10:34:43,236 - Creating shared instance of singleton bean 'positionController'
+2020-05-21 10:34:43,236 - Creating shared instance of singleton bean 'userController'
+2020-05-21 10:34:43,238 - Creating shared instance of singleton bean 'workerController'
+2020-05-21 10:34:43,246 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-21 10:34:43,272 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-21 10:34:43,567 - 12 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-21 10:34:43,672 - ControllerAdvice beans: none
+2020-05-21 10:34:43,757 - ControllerAdvice beans: none
+2020-05-21 10:34:43,775 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-21 10:34:43,777 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-21 10:34:43,777 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-21 10:34:43,779 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-21 10:34:43,781 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-21 10:34:43,781 - Completed initialization in 1214 ms
+2020-05-21 10:35:00,739 - GET "/", parameters={}
+2020-05-21 10:35:00,753 - No mapping for GET /
+2020-05-21 10:35:00,755 - Completed 404 NOT_FOUND
+2020-05-21 10:35:20,643 - GET "/user/selectall", parameters={}
+2020-05-21 10:35:20,676 - Mapped to com.controller.UserController#selectall(Model, Integer, Integer)
+2020-05-21 10:35:20,819 - Creating a new SqlSession
+2020-05-21 10:35:20,852 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@936ffe3] was not registered for synchronization because synchronization is not active
+2020-05-21 10:35:21,077 - {dataSource-1} inited
+2020-05-21 10:35:21,483 - Cache Hit Ratio [SQL_CACHE]: 0.0
+2020-05-21 10:35:21,565 - Fetching JDBC Connection from DataSource
+2020-05-21 10:35:21,566 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@16bb2112] will not be managed by Spring
+2020-05-21 10:35:21,581 - ==>  Preparing: SELECT count(0) FROM user 
+2020-05-21 10:35:21,642 - ==> Parameters: 
+2020-05-21 10:35:21,686 - <==      Total: 1
+2020-05-21 10:35:21,689 - ==>  Preparing: select id,loginname,username,state,createtime from user LIMIT ? 
+2020-05-21 10:35:21,690 - ==> Parameters: 2(Integer)
+2020-05-21 10:35:21,695 - <==      Total: 2
+2020-05-21 10:35:21,696 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@936ffe3]
+2020-05-21 10:35:21,733 - View name 'index', model {}
+2020-05-21 10:35:21,741 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-21 10:35:21,807 - Completed 200 OK
+2020-05-21 10:35:32,516 - GET "/user/selectall", parameters={}
+2020-05-21 10:35:32,528 - Mapped to com.controller.UserController#selectall(Model, Integer, Integer)
+2020-05-21 10:35:32,542 - Creating a new SqlSession
+2020-05-21 10:35:32,548 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f2ceeea] was not registered for synchronization because synchronization is not active
+2020-05-21 10:35:32,551 - Cache Hit Ratio [SQL_CACHE]: 0.5
+2020-05-21 10:35:32,554 - Fetching JDBC Connection from DataSource
+2020-05-21 10:35:32,555 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@16bb2112] will not be managed by Spring
+2020-05-21 10:35:32,556 - ==>  Preparing: SELECT count(0) FROM user 
+2020-05-21 10:35:32,560 - ==> Parameters: 
+2020-05-21 10:35:32,568 - <==      Total: 1
+2020-05-21 10:35:32,570 - ==>  Preparing: select id,loginname,username,state,createtime from user LIMIT ? 
+2020-05-21 10:35:32,570 - ==> Parameters: 2(Integer)
+2020-05-21 10:35:32,573 - <==      Total: 2
+2020-05-21 10:35:32,574 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f2ceeea]
+2020-05-21 10:35:32,579 - View name 'index', model {}
+2020-05-21 10:35:32,581 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-21 10:35:32,585 - Completed 200 OK
+2020-05-21 10:36:20,475 - GET "/worker/selectworkerall", parameters={}
+2020-05-21 10:36:20,489 - Mapped to com.controller.WorkerController#selectWorker(Model, Integer, Integer)
+2020-05-21 10:36:20,530 - Creating a new SqlSession
+2020-05-21 10:36:20,531 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1737820a] was not registered for synchronization because synchronization is not active
+2020-05-21 10:36:20,533 - Cache Hit Ratio [SQL_CACHE]: 0.3333333333333333
+2020-05-21 10:36:20,554 - Fetching JDBC Connection from DataSource
+2020-05-21 10:36:20,556 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@16bb2112] will not be managed by Spring
+2020-05-21 10:36:20,557 - ==>  Preparing: SELECT count(0) FROM worker a INNER JOIN department d INNER JOIN departmentype d2 ON d.id = d2.departmentid AND a.departmentid = d.id 
+2020-05-21 10:36:20,563 - ==> Parameters: 
+2020-05-21 10:36:20,591 - <==      Total: 1
+2020-05-21 10:36:20,595 - ==>  Preparing: select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid, a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from worker a inner join department d inner join departmentype d2 on d.id = d2.departmentid and a.departmentid = d.id LIMIT ? 
+2020-05-21 10:36:20,596 - ==> Parameters: 2(Integer)
+2020-05-21 10:36:20,608 - <==      Total: 2
+2020-05-21 10:36:20,608 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1737820a]
+2020-05-21 10:36:20,623 - View name 'index', model {pageInfo=PageInfo{pageNum=1, pageSize=2, size=2, startRow=1, endRow=2, total=2, pages=1, list=Page{count=true, pageNum=1, pageSize=2, startRow=0, endRow=2, total=2, pages=1, reasonable=false, pageSizeZero=false}[Worker(name=曹小生, id=3, tel=19970401839, email=1998012848@qq.com, position=c#开发工程师, xueli=研究生, idcard=362525200010205718, departmentid=1, address=北京市弯弯区, createtime=Tue Sep 10 10:20:23 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null)), Worker(name=刘憨憨, id=2, tel=188794017492, email=2116928384@qq.com, position=销售人员, xueli=专科, idcard=364812344499229, departmentid=2, address=福建莆田勾勾里, createtime=Sat Oct 10 22:00:11 CST 2020, department=Department(dename=销售部, id=2, detail=软件开发后要进行销售由这部分工作人员完成, workers=null))], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}, org.springframework.validation.BindingResult.pageInfo=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2020-05-21 10:36:20,624 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-21 10:36:20,630 - Completed 200 OK
+2020-05-21 10:37:12,832 - Root WebApplicationContext: initialization started
+2020-05-21 10:37:12,941 - Refreshing Root WebApplicationContext
+2020-05-21 10:37:13,362 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DepartmentImpl.class]
+2020-05-21 10:37:13,365 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DocumentServiceImpl.class]
+2020-05-21 10:37:13,367 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\NoticeServiceImpl.class]
+2020-05-21 10:37:13,368 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\PositionServiceImpl.class]
+2020-05-21 10:37:13,368 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\UserServiceImpl.class]
+2020-05-21 10:37:13,369 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-21 10:37:13,411 - Loaded 11 bean definitions from class path resource [applicationContext-bean.xml]
+2020-05-21 10:37:13,473 - Loaded 4 bean definitions from class path resource [applicationContext-datasource.xml]
+2020-05-21 10:37:13,554 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 10:37:13,648 - Creating shared instance of singleton bean 'tk.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-05-21 10:37:13,730 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DepartmentDao.class]
+2020-05-21 10:37:13,731 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DocumentDao.class]
+2020-05-21 10:37:13,732 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\NoticeDao.class]
+2020-05-21 10:37:13,732 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\PositionDao.class]
+2020-05-21 10:37:13,732 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\UserDao.class]
+2020-05-21 10:37:13,732 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\WorkerDao.class]
+2020-05-21 10:37:13,733 - Creating MapperFactoryBean with name 'departmentDao' and 'com.dao.DepartmentDao' mapperInterface
+2020-05-21 10:37:13,735 - Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2020-05-21 10:37:13,735 - Creating MapperFactoryBean with name 'documentDao' and 'com.dao.DocumentDao' mapperInterface
+2020-05-21 10:37:13,735 - Enabling autowire by type for MapperFactoryBean with name 'documentDao'.
+2020-05-21 10:37:13,735 - Creating MapperFactoryBean with name 'noticeDao' and 'com.dao.NoticeDao' mapperInterface
+2020-05-21 10:37:13,736 - Enabling autowire by type for MapperFactoryBean with name 'noticeDao'.
+2020-05-21 10:37:13,736 - Creating MapperFactoryBean with name 'positionDao' and 'com.dao.PositionDao' mapperInterface
+2020-05-21 10:37:13,736 - Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2020-05-21 10:37:13,736 - Creating MapperFactoryBean with name 'userDao' and 'com.dao.UserDao' mapperInterface
+2020-05-21 10:37:13,736 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-05-21 10:37:13,736 - Creating MapperFactoryBean with name 'workerDao' and 'com.dao.WorkerDao' mapperInterface
+2020-05-21 10:37:13,736 - Enabling autowire by type for MapperFactoryBean with name 'workerDao'.
+2020-05-21 10:37:13,744 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2020-05-21 10:37:13,777 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+2020-05-21 10:37:13,780 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].
+2020-05-21 10:37:13,780 - Looking up JNDI object with name [jdbc.url]
+2020-05-21 10:37:13,780 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].. Returning null.
+2020-05-21 10:37:13,780 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:37:13,781 - Looking up JNDI object with name [java:comp/env/jdbc.driver]
+2020-05-21 10:37:13,781 - Converted JNDI name [java:comp/env/jdbc.driver] not found - trying original name [jdbc.driver]. javax.naming.NameNotFoundException: Name [jdbc.driver] is not bound in this Context. Unable to find [jdbc.driver].
+2020-05-21 10:37:13,781 - Looking up JNDI object with name [jdbc.driver]
+2020-05-21 10:37:13,781 - JNDI lookup for name [jdbc.driver] threw NamingException with message: Name [jdbc.driver] is not bound in this Context. Unable to find [jdbc.driver].. Returning null.
+2020-05-21 10:37:13,781 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:37:13,781 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+2020-05-21 10:37:13,782 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+2020-05-21 10:37:13,782 - Looking up JNDI object with name [jdbc.password]
+2020-05-21 10:37:13,782 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+2020-05-21 10:37:13,783 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:37:13,783 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+2020-05-21 10:37:13,783 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].
+2020-05-21 10:37:13,783 - Looking up JNDI object with name [jdbc.username]
+2020-05-21 10:37:13,783 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].. Returning null.
+2020-05-21 10:37:13,783 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:37:13,785 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 10:37:13,788 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 10:37:13,791 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 10:37:13,794 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 10:37:13,814 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@108a4a07]
+2020-05-21 10:37:13,825 - Creating shared instance of singleton bean 'departmentImpl'
+2020-05-21 10:37:13,912 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-21 10:37:13,951 - Creating shared instance of singleton bean 'departmentDao'
+2020-05-21 10:37:14,097 - Creating shared instance of singleton bean 'org.mybatis.spring.SqlSessionFactoryBean#0'
+2020-05-21 10:37:14,101 - Creating shared instance of singleton bean 'dataSource'
+2020-05-21 10:37:14,346 - Registered plugin: 'com.github.pagehelper.PageInterceptor@731bf62b'
+2020-05-21 10:37:14,547 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DepartmentMapper.xml]'
+2020-05-21 10:37:14,560 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DocumentMapper.xml]'
+2020-05-21 10:37:14,577 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\NoticeMapper.xml]'
+2020-05-21 10:37:14,585 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\PositionMapper.xml]'
+2020-05-21 10:37:14,607 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\UserMapper.xml]'
+2020-05-21 10:37:14,627 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\WorkerMapper.xml]'
+2020-05-21 10:37:14,640 - Creating shared instance of singleton bean 'documentServiceImpl'
+2020-05-21 10:37:14,651 - Creating shared instance of singleton bean 'documentDao'
+2020-05-21 10:37:14,654 - Creating shared instance of singleton bean 'noticeServiceImpl'
+2020-05-21 10:37:14,659 - Creating shared instance of singleton bean 'noticeDao'
+2020-05-21 10:37:14,661 - Creating shared instance of singleton bean 'positionServiceImpl'
+2020-05-21 10:37:14,665 - Creating shared instance of singleton bean 'positionDao'
+2020-05-21 10:37:14,668 - Creating shared instance of singleton bean 'userServiceImpl'
+2020-05-21 10:37:14,669 - Creating shared instance of singleton bean 'userDao'
+2020-05-21 10:37:14,672 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-21 10:37:14,678 - Creating shared instance of singleton bean 'workerDao'
+2020-05-21 10:37:14,727 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-21 10:37:14,728 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-21 10:37:14,728 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-21 10:37:14,728 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-21 10:37:14,731 - Root WebApplicationContext initialized in 1898 ms
+2020-05-21 10:37:14,795 - Initializing Servlet 'springmvc'
+2020-05-21 10:37:14,796 - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2020-05-21 10:37:14,799 - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2020-05-21 10:37:14,801 - Looking up JNDI object with name [spring.profiles.active]
+2020-05-21 10:37:14,801 - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2020-05-21 10:37:14,801 - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2020-05-21 10:37:14,802 - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2020-05-21 10:37:14,802 - Looking up JNDI object with name [spring.profiles.default]
+2020-05-21 10:37:14,803 - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2020-05-21 10:37:14,805 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+2020-05-21 10:37:15,102 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\DepartmentController.class]
+2020-05-21 10:37:15,103 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\DocumentController.class]
+2020-05-21 10:37:15,104 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\NoticeController.class]
+2020-05-21 10:37:15,105 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\PositionController.class]
+2020-05-21 10:37:15,106 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\UserController.class]
+2020-05-21 10:37:15,108 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\controller\WorkerController.class]
+2020-05-21 10:37:15,142 - Loaded 17 bean definitions from class path resource [springmvc.xml]
+2020-05-21 10:37:15,158 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 10:37:15,188 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 10:37:15,189 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 10:37:15,190 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-05-21 10:37:15,190 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 10:37:15,191 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 10:37:15,193 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-05-21 10:37:15,257 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@1f7f1867]
+2020-05-21 10:37:15,261 - Creating shared instance of singleton bean 'departmentController'
+2020-05-21 10:37:15,266 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-05-21 10:37:15,270 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2020-05-21 10:37:15,307 - Creating shared instance of singleton bean 'documentController'
+2020-05-21 10:37:15,308 - Creating shared instance of singleton bean 'noticeController'
+2020-05-21 10:37:15,311 - Creating shared instance of singleton bean 'positionController'
+2020-05-21 10:37:15,312 - Creating shared instance of singleton bean 'userController'
+2020-05-21 10:37:15,315 - Creating shared instance of singleton bean 'workerController'
+2020-05-21 10:37:15,318 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2020-05-21 10:37:15,343 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2020-05-21 10:37:15,665 - 12 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2020-05-21 10:37:15,892 - ControllerAdvice beans: none
+2020-05-21 10:37:15,966 - ControllerAdvice beans: none
+2020-05-21 10:37:15,984 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2020-05-21 10:37:15,985 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2020-05-21 10:37:15,985 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2020-05-21 10:37:15,985 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2020-05-21 10:37:15,986 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-21 10:37:15,986 - Completed initialization in 1190 ms
+2020-05-21 10:37:41,446 - GET "/worker/selectworkerall", parameters={}
+2020-05-21 10:37:41,455 - Mapped to com.controller.WorkerController#selectWorker(Model, Integer, Integer)
+2020-05-21 10:37:41,520 - Creating a new SqlSession
+2020-05-21 10:37:41,537 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a4db348] was not registered for synchronization because synchronization is not active
+2020-05-21 10:37:41,640 - {dataSource-1} inited
+2020-05-21 10:37:41,986 - Cache Hit Ratio [SQL_CACHE]: 0.0
+2020-05-21 10:37:42,070 - Fetching JDBC Connection from DataSource
+2020-05-21 10:37:42,070 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@78a870a8] will not be managed by Spring
+2020-05-21 10:37:42,080 - ==>  Preparing: SELECT count(0) FROM worker a INNER JOIN department d INNER JOIN departmentype d2 ON d.id = d2.departmentid AND a.departmentid = d.id 
+2020-05-21 10:37:42,145 - ==> Parameters: 
+2020-05-21 10:37:42,183 - <==      Total: 1
+2020-05-21 10:37:42,189 - ==>  Preparing: select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid, a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from worker a inner join department d inner join departmentype d2 on d.id = d2.departmentid and a.departmentid = d.id LIMIT ? 
+2020-05-21 10:37:42,192 - ==> Parameters: 2(Integer)
+2020-05-21 10:37:42,204 - <==      Total: 2
+2020-05-21 10:37:42,207 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a4db348]
+2020-05-21 10:37:42,263 - View name 'index', model {pageInfo=PageInfo{pageNum=1, pageSize=2, size=2, startRow=1, endRow=2, total=2, pages=1, list=Page{count=true, pageNum=1, pageSize=2, startRow=0, endRow=2, total=2, pages=1, reasonable=false, pageSizeZero=false}[Worker(name=曹小生, id=3, tel=19970401839, email=1998012848@qq.com, position=c#开发工程师, xueli=研究生, idcard=362525200010205718, departmentid=1, address=北京市弯弯区, createtime=Tue Sep 10 10:20:23 CST 2019, department=Department(dename=技术部, id=1, detail=技术方面的开发实现, workers=null)), Worker(name=刘憨憨, id=2, tel=188794017492, email=2116928384@qq.com, position=销售人员, xueli=专科, idcard=364812344499229, departmentid=2, address=福建莆田勾勾里, createtime=Sat Oct 10 22:00:11 CST 2020, department=Department(dename=销售部, id=2, detail=软件开发后要进行销售由这部分工作人员完成, workers=null))], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}, org.springframework.validation.BindingResult.pageInfo=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2020-05-21 10:37:42,278 - Forwarding to [/WEB-INF/jsp/index.jsp]
+2020-05-21 10:37:42,411 - Completed 200 OK
+2020-05-21 10:57:21,331 - SpringJUnit4ClassRunner constructor called with [class PostionMapperTest]
+2020-05-21 10:57:21,338 - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2020-05-21 10:57:21,359 - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2020-05-21 10:57:21,450 - Instantiating TestContextBootstrapper for test class [PostionMapperTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2020-05-21 10:57:21,519 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@369f73a2 declaringClass = 'PostionMapperTest', classes = '{}', locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2020-05-21 10:57:21,582 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [PostionMapperTest]
+2020-05-21 10:57:21,583 - @TestExecutionListeners is not present for class [PostionMapperTest]: using defaults.
+2020-05-21 10:57:21,585 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-05-21 10:57:21,619 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4abdb505, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7ce6a65d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1500955a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e874448, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29b5cd00, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@60285225, org.springframework.test.context.event.EventPublishingTestExecutionListener@7113b13f]
+2020-05-21 10:57:21,625 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 10:57:21,627 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 10:57:21,649 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 10:57:21,649 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 10:57:21,652 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 10:57:21,652 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 10:57:21,653 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 10:57:21,653 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 10:57:21,658 - Before test class: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 10:57:21,662 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 10:57:21,662 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 10:57:21,671 - Performing dependency injection for test context [[DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]].
+2020-05-21 10:57:21,672 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2020-05-21 10:57:21,673 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2020-05-21 10:57:21,766 - Activating profiles []
+2020-05-21 10:57:22,266 - Loaded 4 bean definitions from class path resource [applicationContext-datasource.xml]
+2020-05-21 10:57:22,449 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DepartmentImpl.class]
+2020-05-21 10:57:22,453 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DocumentServiceImpl.class]
+2020-05-21 10:57:22,455 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\NoticeServiceImpl.class]
+2020-05-21 10:57:22,456 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\PositionServiceImpl.class]
+2020-05-21 10:57:22,457 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\UserServiceImpl.class]
+2020-05-21 10:57:22,459 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-21 10:57:22,500 - Loaded 11 bean definitions from class path resource [applicationContext-bean.xml]
+2020-05-21 10:57:22,500 - Refreshing org.springframework.context.support.GenericApplicationContext@545997b1
+2020-05-21 10:57:22,616 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 10:57:22,703 - Creating shared instance of singleton bean 'tk.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-05-21 10:57:22,780 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DepartmentDao.class]
+2020-05-21 10:57:22,780 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DocumentDao.class]
+2020-05-21 10:57:22,781 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\NoticeDao.class]
+2020-05-21 10:57:22,782 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\PositionDao.class]
+2020-05-21 10:57:22,782 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\UserDao.class]
+2020-05-21 10:57:22,783 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\WorkerDao.class]
+2020-05-21 10:57:22,786 - Creating MapperFactoryBean with name 'departmentDao' and 'com.dao.DepartmentDao' mapperInterface
+2020-05-21 10:57:22,790 - Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2020-05-21 10:57:22,790 - Creating MapperFactoryBean with name 'documentDao' and 'com.dao.DocumentDao' mapperInterface
+2020-05-21 10:57:22,791 - Enabling autowire by type for MapperFactoryBean with name 'documentDao'.
+2020-05-21 10:57:22,791 - Creating MapperFactoryBean with name 'noticeDao' and 'com.dao.NoticeDao' mapperInterface
+2020-05-21 10:57:22,791 - Enabling autowire by type for MapperFactoryBean with name 'noticeDao'.
+2020-05-21 10:57:22,791 - Creating MapperFactoryBean with name 'positionDao' and 'com.dao.PositionDao' mapperInterface
+2020-05-21 10:57:22,791 - Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2020-05-21 10:57:22,791 - Creating MapperFactoryBean with name 'userDao' and 'com.dao.UserDao' mapperInterface
+2020-05-21 10:57:22,791 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-05-21 10:57:22,791 - Creating MapperFactoryBean with name 'workerDao' and 'com.dao.WorkerDao' mapperInterface
+2020-05-21 10:57:22,791 - Enabling autowire by type for MapperFactoryBean with name 'workerDao'.
+2020-05-21 10:57:22,800 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2020-05-21 10:57:23,029 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:57:23,030 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:57:23,030 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:57:23,031 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:57:23,036 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 10:57:23,044 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 10:57:23,054 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 10:57:23,184 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 10:57:23,215 - Creating shared instance of singleton bean 'dataSource'
+2020-05-21 10:57:23,624 - Creating shared instance of singleton bean 'org.mybatis.spring.SqlSessionFactoryBean#0'
+2020-05-21 10:57:23,657 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-21 10:57:24,223 - Registered plugin: 'com.github.pagehelper.PageInterceptor@78e4deb0'
+2020-05-21 10:57:24,545 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DepartmentMapper.xml]'
+2020-05-21 10:57:24,560 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DocumentMapper.xml]'
+2020-05-21 10:57:24,597 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\NoticeMapper.xml]'
+2020-05-21 10:57:24,707 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\PositionMapper.xml]'
+2020-05-21 10:57:24,780 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\UserMapper.xml]'
+2020-05-21 10:57:24,805 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\WorkerMapper.xml]'
+2020-05-21 10:57:24,810 - Creating shared instance of singleton bean 'departmentImpl'
+2020-05-21 10:57:24,847 - Creating shared instance of singleton bean 'departmentDao'
+2020-05-21 10:57:24,919 - Creating shared instance of singleton bean 'documentServiceImpl'
+2020-05-21 10:57:24,936 - Creating shared instance of singleton bean 'documentDao'
+2020-05-21 10:57:24,942 - Creating shared instance of singleton bean 'noticeServiceImpl'
+2020-05-21 10:57:24,950 - Creating shared instance of singleton bean 'noticeDao'
+2020-05-21 10:57:24,956 - Creating shared instance of singleton bean 'positionServiceImpl'
+2020-05-21 10:57:24,957 - Creating shared instance of singleton bean 'userServiceImpl'
+2020-05-21 10:57:24,958 - Creating shared instance of singleton bean 'userDao'
+2020-05-21 10:57:24,962 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-21 10:57:24,968 - Creating shared instance of singleton bean 'workerDao'
+2020-05-21 10:57:24,971 - Creating shared instance of singleton bean 'positionDao'
+2020-05-21 10:57:25,401 - Storing ApplicationContext [1415157681] in cache under key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:57:25,402 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2020-05-21 10:57:25,410 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:57:25,410 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2020-05-21 10:57:25,416 - Before test method: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = test@PostionMapperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 10:57:25,506 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:57:25,506 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2020-05-21 10:57:25,509 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:57:25,510 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2020-05-21 10:57:25,529 - Creating a new SqlSession
+2020-05-21 10:57:25,556 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ee4d9ab] was not registered for synchronization because synchronization is not active
+2020-05-21 10:57:25,660 - Fetching JDBC Connection from DataSource
+2020-05-21 10:57:26,007 - {dataSource-1} inited
+2020-05-21 10:57:26,551 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@7ae42ce3] will not be managed by Spring
+2020-05-21 10:57:26,565 - ==>  Preparing: SELECT id,posiname,posidetail FROM position 
+2020-05-21 10:57:26,616 - ==> Parameters: 
+2020-05-21 10:57:26,653 - <==      Total: 1
+2020-05-21 10:57:26,656 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ee4d9ab]
+2020-05-21 10:57:26,659 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:57:26,660 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2020-05-21 10:57:26,663 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:57:26,664 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2020-05-21 10:57:26,665 - After test method: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = test@PostionMapperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 10:57:26,668 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:57:26,668 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2020-05-21 10:57:26,669 - After test class: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 10:57:26,680 - Closing org.springframework.context.support.GenericApplicationContext@545997b1, started on Thu May 21 10:57:22 CST 2020
+2020-05-21 10:57:26,683 - {dataSource-1} closing ...
+2020-05-21 10:57:26,690 - {dataSource-1} closed
+2020-05-21 10:57:55,992 - SpringJUnit4ClassRunner constructor called with [class PostionMapperTest]
+2020-05-21 10:57:55,997 - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2020-05-21 10:57:56,012 - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2020-05-21 10:57:56,120 - Instantiating TestContextBootstrapper for test class [PostionMapperTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2020-05-21 10:57:56,193 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@369f73a2 declaringClass = 'PostionMapperTest', classes = '{}', locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2020-05-21 10:57:56,262 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [PostionMapperTest]
+2020-05-21 10:57:56,263 - @TestExecutionListeners is not present for class [PostionMapperTest]: using defaults.
+2020-05-21 10:57:56,264 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-05-21 10:57:56,296 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4abdb505, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7ce6a65d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1500955a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e874448, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29b5cd00, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@60285225, org.springframework.test.context.event.EventPublishingTestExecutionListener@7113b13f]
+2020-05-21 10:57:56,300 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 10:57:56,302 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 10:57:56,327 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 10:57:56,327 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 10:57:56,329 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 10:57:56,329 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 10:57:56,330 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 10:57:56,330 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 10:57:56,336 - Before test class: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 10:57:56,340 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 10:57:56,340 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 10:57:56,351 - Performing dependency injection for test context [[DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]].
+2020-05-21 10:57:56,352 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2020-05-21 10:57:56,353 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2020-05-21 10:57:56,438 - Activating profiles []
+2020-05-21 10:57:56,777 - Loaded 4 bean definitions from class path resource [applicationContext-datasource.xml]
+2020-05-21 10:57:56,959 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DepartmentImpl.class]
+2020-05-21 10:57:56,963 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DocumentServiceImpl.class]
+2020-05-21 10:57:56,965 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\NoticeServiceImpl.class]
+2020-05-21 10:57:56,967 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\PositionServiceImpl.class]
+2020-05-21 10:57:56,968 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\UserServiceImpl.class]
+2020-05-21 10:57:56,976 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-21 10:57:57,010 - Loaded 11 bean definitions from class path resource [applicationContext-bean.xml]
+2020-05-21 10:57:57,011 - Refreshing org.springframework.context.support.GenericApplicationContext@545997b1
+2020-05-21 10:57:57,110 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 10:57:57,203 - Creating shared instance of singleton bean 'tk.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-05-21 10:57:57,266 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DepartmentDao.class]
+2020-05-21 10:57:57,267 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DocumentDao.class]
+2020-05-21 10:57:57,268 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\NoticeDao.class]
+2020-05-21 10:57:57,268 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\PositionDao.class]
+2020-05-21 10:57:57,269 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\UserDao.class]
+2020-05-21 10:57:57,270 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\WorkerDao.class]
+2020-05-21 10:57:57,272 - Creating MapperFactoryBean with name 'departmentDao' and 'com.dao.DepartmentDao' mapperInterface
+2020-05-21 10:57:57,277 - Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2020-05-21 10:57:57,277 - Creating MapperFactoryBean with name 'documentDao' and 'com.dao.DocumentDao' mapperInterface
+2020-05-21 10:57:57,278 - Enabling autowire by type for MapperFactoryBean with name 'documentDao'.
+2020-05-21 10:57:57,278 - Creating MapperFactoryBean with name 'noticeDao' and 'com.dao.NoticeDao' mapperInterface
+2020-05-21 10:57:57,278 - Enabling autowire by type for MapperFactoryBean with name 'noticeDao'.
+2020-05-21 10:57:57,278 - Creating MapperFactoryBean with name 'positionDao' and 'com.dao.PositionDao' mapperInterface
+2020-05-21 10:57:57,278 - Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2020-05-21 10:57:57,278 - Creating MapperFactoryBean with name 'userDao' and 'com.dao.UserDao' mapperInterface
+2020-05-21 10:57:57,278 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-05-21 10:57:57,278 - Creating MapperFactoryBean with name 'workerDao' and 'com.dao.WorkerDao' mapperInterface
+2020-05-21 10:57:57,278 - Enabling autowire by type for MapperFactoryBean with name 'workerDao'.
+2020-05-21 10:57:57,287 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2020-05-21 10:57:57,435 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:57:57,435 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:57:57,435 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:57:57,436 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2020-05-21 10:57:57,439 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 10:57:57,449 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 10:57:57,453 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 10:57:57,455 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 10:57:57,478 - Creating shared instance of singleton bean 'dataSource'
+2020-05-21 10:57:57,722 - Creating shared instance of singleton bean 'org.mybatis.spring.SqlSessionFactoryBean#0'
+2020-05-21 10:57:57,751 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-21 10:57:58,243 - Registered plugin: 'com.github.pagehelper.PageInterceptor@78e4deb0'
+2020-05-21 10:57:58,701 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DepartmentMapper.xml]'
+2020-05-21 10:57:58,733 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DocumentMapper.xml]'
+2020-05-21 10:57:58,752 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\NoticeMapper.xml]'
+2020-05-21 10:57:58,876 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\PositionMapper.xml]'
+2020-05-21 10:57:59,007 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\UserMapper.xml]'
+2020-05-21 10:57:59,160 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\WorkerMapper.xml]'
+2020-05-21 10:57:59,170 - Creating shared instance of singleton bean 'departmentImpl'
+2020-05-21 10:57:59,224 - Creating shared instance of singleton bean 'departmentDao'
+2020-05-21 10:57:59,266 - Creating shared instance of singleton bean 'documentServiceImpl'
+2020-05-21 10:57:59,292 - Creating shared instance of singleton bean 'documentDao'
+2020-05-21 10:57:59,318 - Creating shared instance of singleton bean 'noticeServiceImpl'
+2020-05-21 10:57:59,322 - Creating shared instance of singleton bean 'noticeDao'
+2020-05-21 10:57:59,338 - Creating shared instance of singleton bean 'positionServiceImpl'
+2020-05-21 10:57:59,339 - Creating shared instance of singleton bean 'userServiceImpl'
+2020-05-21 10:57:59,340 - Creating shared instance of singleton bean 'userDao'
+2020-05-21 10:57:59,343 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-21 10:57:59,353 - Creating shared instance of singleton bean 'workerDao'
+2020-05-21 10:57:59,359 - Creating shared instance of singleton bean 'positionDao'
+2020-05-21 10:58:00,200 - Storing ApplicationContext [1415157681] in cache under key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:58:00,201 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2020-05-21 10:58:00,264 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:58:00,264 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2020-05-21 10:58:00,294 - Before test method: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = test@PostionMapperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 10:58:00,308 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:58:00,308 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2020-05-21 10:58:00,310 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:58:00,310 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2020-05-21 10:58:00,326 - Creating a new SqlSession
+2020-05-21 10:58:00,473 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ee4d9ab] was not registered for synchronization because synchronization is not active
+2020-05-21 10:58:00,531 - Fetching JDBC Connection from DataSource
+2020-05-21 10:58:00,763 - {dataSource-1} inited
+2020-05-21 10:58:01,309 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@7ae42ce3] will not be managed by Spring
+2020-05-21 10:58:01,319 - ==>  Preparing: SELECT id,posiname,posidetail FROM position 
+2020-05-21 10:58:01,355 - ==> Parameters: 
+2020-05-21 10:58:01,372 - <==      Total: 1
+2020-05-21 10:58:01,373 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ee4d9ab]
+2020-05-21 10:58:01,377 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:58:01,377 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2020-05-21 10:58:01,380 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:58:01,380 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2020-05-21 10:58:01,382 - After test method: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = test@PostionMapperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 10:58:01,384 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 10:58:01,384 - Spring test ApplicationContext cache statistics: [DefaultContextCache@78a773fd size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2020-05-21 10:58:01,385 - After test class: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 10:58:01,394 - Closing org.springframework.context.support.GenericApplicationContext@545997b1, started on Thu May 21 10:57:57 CST 2020
+2020-05-21 10:58:01,397 - {dataSource-1} closing ...
+2020-05-21 10:58:01,403 - {dataSource-1} closed
+2020-05-21 11:08:09,017 - SpringJUnit4ClassRunner constructor called with [class PostionMapperTest]
+2020-05-21 11:08:09,023 - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2020-05-21 11:08:09,041 - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2020-05-21 11:08:09,172 - Instantiating TestContextBootstrapper for test class [PostionMapperTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2020-05-21 11:08:09,253 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@369f73a2 declaringClass = 'PostionMapperTest', classes = '{}', locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2020-05-21 11:08:09,307 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [PostionMapperTest]
+2020-05-21 11:08:09,309 - @TestExecutionListeners is not present for class [PostionMapperTest]: using defaults.
+2020-05-21 11:08:09,310 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-05-21 11:08:09,339 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4abdb505, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7ce6a65d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1500955a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e874448, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29b5cd00, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@60285225, org.springframework.test.context.event.EventPublishingTestExecutionListener@7113b13f]
+2020-05-21 11:08:09,344 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 11:08:09,346 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 11:08:09,371 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 11:08:09,372 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 11:08:09,374 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 11:08:09,374 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 11:08:09,376 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 11:08:09,376 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 11:08:09,381 - Before test class: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 11:08:09,385 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 11:08:09,386 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 11:08:09,395 - Performing dependency injection for test context [[DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]].
+2020-05-21 11:08:09,397 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2020-05-21 11:08:09,397 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2020-05-21 11:08:09,506 - Activating profiles []
+2020-05-21 11:08:09,856 - Loaded 4 bean definitions from class path resource [applicationContext-datasource.xml]
+2020-05-21 11:08:10,162 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DepartmentImpl.class]
+2020-05-21 11:08:10,166 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DocumentServiceImpl.class]
+2020-05-21 11:08:10,167 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\NoticeServiceImpl.class]
+2020-05-21 11:08:10,169 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\PositionServiceImpl.class]
+2020-05-21 11:08:10,170 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\UserServiceImpl.class]
+2020-05-21 11:08:10,171 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-21 11:08:10,210 - Loaded 11 bean definitions from class path resource [applicationContext-bean.xml]
+2020-05-21 11:08:10,211 - Refreshing org.springframework.context.support.GenericApplicationContext@545997b1
+2020-05-21 11:08:10,293 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 11:08:10,389 - Creating shared instance of singleton bean 'tk.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-05-21 11:08:10,474 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DepartmentDao.class]
+2020-05-21 11:08:10,474 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DocumentDao.class]
+2020-05-21 11:08:10,483 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\NoticeDao.class]
+2020-05-21 11:08:10,483 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\PositionDao.class]
+2020-05-21 11:08:10,485 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\UserDao.class]
+2020-05-21 11:08:10,485 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\WorkerDao.class]
+2020-05-21 11:08:10,487 - Creating MapperFactoryBean with name 'departmentDao' and 'com.dao.DepartmentDao' mapperInterface
+2020-05-21 11:08:10,490 - Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2020-05-21 11:08:10,491 - Creating MapperFactoryBean with name 'documentDao' and 'com.dao.DocumentDao' mapperInterface
+2020-05-21 11:08:10,491 - Enabling autowire by type for MapperFactoryBean with name 'documentDao'.
+2020-05-21 11:08:10,491 - Creating MapperFactoryBean with name 'noticeDao' and 'com.dao.NoticeDao' mapperInterface
+2020-05-21 11:08:10,491 - Enabling autowire by type for MapperFactoryBean with name 'noticeDao'.
+2020-05-21 11:08:10,497 - Creating MapperFactoryBean with name 'positionDao' and 'com.dao.PositionDao' mapperInterface
+2020-05-21 11:08:10,497 - Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2020-05-21 11:08:10,497 - Creating MapperFactoryBean with name 'userDao' and 'com.dao.UserDao' mapperInterface
+2020-05-21 11:08:10,497 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-05-21 11:08:10,497 - Creating MapperFactoryBean with name 'workerDao' and 'com.dao.WorkerDao' mapperInterface
+2020-05-21 11:08:10,497 - Enabling autowire by type for MapperFactoryBean with name 'workerDao'.
+2020-05-21 11:08:10,506 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2020-05-21 11:08:10,566 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2020-05-21 11:08:10,570 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2020-05-21 11:08:10,570 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2020-05-21 11:08:10,570 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2020-05-21 11:08:10,572 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 11:08:10,593 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 11:08:10,614 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 11:08:10,626 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 11:08:10,693 - Creating shared instance of singleton bean 'dataSource'
+2020-05-21 11:08:10,988 - Creating shared instance of singleton bean 'org.mybatis.spring.SqlSessionFactoryBean#0'
+2020-05-21 11:08:11,151 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-21 11:08:11,540 - Registered plugin: 'com.github.pagehelper.PageInterceptor@78e4deb0'
+2020-05-21 11:08:12,131 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DepartmentMapper.xml]'
+2020-05-21 11:08:12,163 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DocumentMapper.xml]'
+2020-05-21 11:08:12,185 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\NoticeMapper.xml]'
+2020-05-21 11:08:12,264 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\PositionMapper.xml]'
+2020-05-21 11:08:12,312 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\UserMapper.xml]'
+2020-05-21 11:08:12,341 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\WorkerMapper.xml]'
+2020-05-21 11:08:12,349 - Creating shared instance of singleton bean 'departmentImpl'
+2020-05-21 11:08:12,389 - Creating shared instance of singleton bean 'departmentDao'
+2020-05-21 11:08:12,439 - Creating shared instance of singleton bean 'documentServiceImpl'
+2020-05-21 11:08:12,449 - Creating shared instance of singleton bean 'documentDao'
+2020-05-21 11:08:12,453 - Creating shared instance of singleton bean 'noticeServiceImpl'
+2020-05-21 11:08:12,457 - Creating shared instance of singleton bean 'noticeDao'
+2020-05-21 11:08:12,465 - Creating shared instance of singleton bean 'positionServiceImpl'
+2020-05-21 11:08:12,466 - Creating shared instance of singleton bean 'userServiceImpl'
+2020-05-21 11:08:12,469 - Creating shared instance of singleton bean 'userDao'
+2020-05-21 11:08:12,472 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-21 11:08:12,482 - Creating shared instance of singleton bean 'workerDao'
+2020-05-21 11:08:12,486 - Creating shared instance of singleton bean 'positionDao'
+2020-05-21 11:08:12,873 - Storing ApplicationContext [1415157681] in cache under key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:12,874 - Spring test ApplicationContext cache statistics: [DefaultContextCache@518caac3 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2020-05-21 11:08:12,900 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:12,900 - Spring test ApplicationContext cache statistics: [DefaultContextCache@518caac3 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2020-05-21 11:08:12,945 - Before test method: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = test@PostionMapperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 11:08:12,958 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:12,958 - Spring test ApplicationContext cache statistics: [DefaultContextCache@518caac3 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2020-05-21 11:08:12,962 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:12,962 - Spring test ApplicationContext cache statistics: [DefaultContextCache@518caac3 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2020-05-21 11:08:13,272 - Creating a new SqlSession
+2020-05-21 11:08:13,304 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@302f7971] was not registered for synchronization because synchronization is not active
+2020-05-21 11:08:13,365 - Fetching JDBC Connection from DataSource
+2020-05-21 11:08:13,555 - {dataSource-1} inited
+2020-05-21 11:08:14,089 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@32c726ee] will not be managed by Spring
+2020-05-21 11:08:14,156 - ==>  Preparing: SELECT id,posiname,posidetail FROM position WHERE id = ? 
+2020-05-21 11:08:14,229 - ==> Parameters: 1(Integer)
+2020-05-21 11:08:14,258 - <==      Total: 1
+2020-05-21 11:08:14,260 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@302f7971]
+2020-05-21 11:08:14,264 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:14,264 - Spring test ApplicationContext cache statistics: [DefaultContextCache@518caac3 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2020-05-21 11:08:14,268 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:14,268 - Spring test ApplicationContext cache statistics: [DefaultContextCache@518caac3 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2020-05-21 11:08:14,270 - After test method: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = test@PostionMapperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 11:08:14,274 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:14,274 - Spring test ApplicationContext cache statistics: [DefaultContextCache@518caac3 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2020-05-21 11:08:14,275 - After test class: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 11:08:14,284 - Closing org.springframework.context.support.GenericApplicationContext@545997b1, started on Thu May 21 11:08:10 CST 2020
+2020-05-21 11:08:14,289 - {dataSource-1} closing ...
+2020-05-21 11:08:14,297 - {dataSource-1} closed
+2020-05-21 11:08:43,486 - SpringJUnit4ClassRunner constructor called with [class PostionMapperTest]
+2020-05-21 11:08:43,490 - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2020-05-21 11:08:43,505 - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2020-05-21 11:08:43,607 - Instantiating TestContextBootstrapper for test class [PostionMapperTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2020-05-21 11:08:43,675 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@369f73a2 declaringClass = 'PostionMapperTest', classes = '{}', locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2020-05-21 11:08:43,748 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [PostionMapperTest]
+2020-05-21 11:08:43,750 - @TestExecutionListeners is not present for class [PostionMapperTest]: using defaults.
+2020-05-21 11:08:43,751 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-05-21 11:08:43,788 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4abdb505, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7ce6a65d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1500955a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e874448, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29b5cd00, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@60285225, org.springframework.test.context.event.EventPublishingTestExecutionListener@7113b13f]
+2020-05-21 11:08:43,801 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 11:08:43,802 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 11:08:43,826 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 11:08:43,827 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 11:08:43,829 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 11:08:43,830 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 11:08:43,831 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 11:08:43,831 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 11:08:43,836 - Before test class: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 11:08:43,839 - Retrieved @ProfileValueSourceConfiguration [null] for test class [PostionMapperTest]
+2020-05-21 11:08:43,839 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [PostionMapperTest]
+2020-05-21 11:08:43,867 - Performing dependency injection for test context [[DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]]].
+2020-05-21 11:08:43,868 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2020-05-21 11:08:43,868 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2020-05-21 11:08:44,087 - Activating profiles []
+2020-05-21 11:08:44,664 - Loaded 4 bean definitions from class path resource [applicationContext-datasource.xml]
+2020-05-21 11:08:44,907 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DepartmentImpl.class]
+2020-05-21 11:08:44,918 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\DocumentServiceImpl.class]
+2020-05-21 11:08:44,919 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\NoticeServiceImpl.class]
+2020-05-21 11:08:44,920 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\PositionServiceImpl.class]
+2020-05-21 11:08:44,922 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\UserServiceImpl.class]
+2020-05-21 11:08:44,923 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\service\serviceimpl\WorkerServiceDaoImpl.class]
+2020-05-21 11:08:45,017 - Loaded 11 bean definitions from class path resource [applicationContext-bean.xml]
+2020-05-21 11:08:45,017 - Refreshing org.springframework.context.support.GenericApplicationContext@545997b1
+2020-05-21 11:08:45,198 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-05-21 11:08:45,411 - Creating shared instance of singleton bean 'tk.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-05-21 11:08:45,651 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DepartmentDao.class]
+2020-05-21 11:08:45,652 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\DocumentDao.class]
+2020-05-21 11:08:45,653 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\NoticeDao.class]
+2020-05-21 11:08:45,654 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\PositionDao.class]
+2020-05-21 11:08:45,654 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\UserDao.class]
+2020-05-21 11:08:45,655 - Identified candidate component class: file [D:\idealworkspace\SSM\target\classes\com\dao\WorkerDao.class]
+2020-05-21 11:08:45,656 - Creating MapperFactoryBean with name 'departmentDao' and 'com.dao.DepartmentDao' mapperInterface
+2020-05-21 11:08:45,662 - Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2020-05-21 11:08:45,662 - Creating MapperFactoryBean with name 'documentDao' and 'com.dao.DocumentDao' mapperInterface
+2020-05-21 11:08:45,662 - Enabling autowire by type for MapperFactoryBean with name 'documentDao'.
+2020-05-21 11:08:45,663 - Creating MapperFactoryBean with name 'noticeDao' and 'com.dao.NoticeDao' mapperInterface
+2020-05-21 11:08:45,663 - Enabling autowire by type for MapperFactoryBean with name 'noticeDao'.
+2020-05-21 11:08:45,667 - Creating MapperFactoryBean with name 'positionDao' and 'com.dao.PositionDao' mapperInterface
+2020-05-21 11:08:45,667 - Enabling autowire by type for MapperFactoryBean with name 'positionDao'.
+2020-05-21 11:08:45,667 - Creating MapperFactoryBean with name 'userDao' and 'com.dao.UserDao' mapperInterface
+2020-05-21 11:08:45,667 - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-05-21 11:08:45,667 - Creating MapperFactoryBean with name 'workerDao' and 'com.dao.WorkerDao' mapperInterface
+2020-05-21 11:08:45,667 - Enabling autowire by type for MapperFactoryBean with name 'workerDao'.
+2020-05-21 11:08:45,675 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2020-05-21 11:08:46,026 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+2020-05-21 11:08:46,026 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+2020-05-21 11:08:46,028 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2020-05-21 11:08:46,028 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+2020-05-21 11:08:46,031 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-05-21 11:08:46,088 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-05-21 11:08:46,282 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-05-21 11:08:46,288 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-05-21 11:08:46,335 - Creating shared instance of singleton bean 'dataSource'
+2020-05-21 11:08:46,882 - Creating shared instance of singleton bean 'org.mybatis.spring.SqlSessionFactoryBean#0'
+2020-05-21 11:08:47,006 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-05-21 11:08:47,753 - Registered plugin: 'com.github.pagehelper.PageInterceptor@78e4deb0'
+2020-05-21 11:08:48,531 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DepartmentMapper.xml]'
+2020-05-21 11:08:48,609 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\DocumentMapper.xml]'
+2020-05-21 11:08:48,652 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\NoticeMapper.xml]'
+2020-05-21 11:08:48,804 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\PositionMapper.xml]'
+2020-05-21 11:08:48,926 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\UserMapper.xml]'
+2020-05-21 11:08:49,054 - Parsed mapper file: 'file [D:\idealworkspace\SSM\target\classes\mapper\WorkerMapper.xml]'
+2020-05-21 11:08:49,058 - Creating shared instance of singleton bean 'departmentImpl'
+2020-05-21 11:08:49,124 - Creating shared instance of singleton bean 'departmentDao'
+2020-05-21 11:08:49,221 - Creating shared instance of singleton bean 'documentServiceImpl'
+2020-05-21 11:08:49,251 - Creating shared instance of singleton bean 'documentDao'
+2020-05-21 11:08:49,265 - Creating shared instance of singleton bean 'noticeServiceImpl'
+2020-05-21 11:08:49,269 - Creating shared instance of singleton bean 'noticeDao'
+2020-05-21 11:08:49,278 - Creating shared instance of singleton bean 'positionServiceImpl'
+2020-05-21 11:08:49,279 - Creating shared instance of singleton bean 'userServiceImpl'
+2020-05-21 11:08:49,282 - Creating shared instance of singleton bean 'userDao'
+2020-05-21 11:08:49,287 - Creating shared instance of singleton bean 'workerServiceDaoImpl'
+2020-05-21 11:08:49,293 - Creating shared instance of singleton bean 'workerDao'
+2020-05-21 11:08:49,307 - Creating shared instance of singleton bean 'positionDao'
+2020-05-21 11:08:49,873 - Storing ApplicationContext [1415157681] in cache under key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:49,874 - Spring test ApplicationContext cache statistics: [DefaultContextCache@135606db size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2020-05-21 11:08:49,907 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:49,907 - Spring test ApplicationContext cache statistics: [DefaultContextCache@135606db size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2020-05-21 11:08:49,934 - Before test method: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = test@PostionMapperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 11:08:50,054 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:50,054 - Spring test ApplicationContext cache statistics: [DefaultContextCache@135606db size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2020-05-21 11:08:50,056 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:50,056 - Spring test ApplicationContext cache statistics: [DefaultContextCache@135606db size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2020-05-21 11:08:50,075 - Creating a new SqlSession
+2020-05-21 11:08:50,188 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13d4992d] was not registered for synchronization because synchronization is not active
+2020-05-21 11:08:50,269 - Fetching JDBC Connection from DataSource
+2020-05-21 11:08:50,517 - {dataSource-1} inited
+2020-05-21 11:08:51,014 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@e57b96d] will not be managed by Spring
+2020-05-21 11:08:51,025 - ==>  Preparing: SELECT id,posiname,posidetail FROM position WHERE id = ? AND posiname = ? AND posidetail = ? 
+2020-05-21 11:08:51,096 - ==> Parameters: 1(Integer), 1(Integer), 1(Integer)
+2020-05-21 11:08:51,135 - <==      Total: 0
+2020-05-21 11:08:51,138 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13d4992d]
+2020-05-21 11:08:51,142 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:51,142 - Spring test ApplicationContext cache statistics: [DefaultContextCache@135606db size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2020-05-21 11:08:51,146 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:51,146 - Spring test ApplicationContext cache statistics: [DefaultContextCache@135606db size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2020-05-21 11:08:51,148 - After test method: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = PostionMapperTest@74a10858, testMethod = test@PostionMapperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 11:08:51,151 - Retrieved ApplicationContext [1415157681] from cache with key [[MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2020-05-21 11:08:51,151 - Spring test ApplicationContext cache statistics: [DefaultContextCache@135606db size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2020-05-21 11:08:51,152 - After test class: context [DefaultTestContext@8646db9 testClass = PostionMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@37374a5e testClass = PostionMapperTest, locations = '{classpath:applicationContext-datasource.xml, classpath:applicationContext-bean.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2020-05-21 11:08:51,167 - Closing org.springframework.context.support.GenericApplicationContext@545997b1, started on Thu May 21 11:08:45 CST 2020
+2020-05-21 11:08:51,172 - {dataSource-1} closing ...
+2020-05-21 11:08:51,189 - {dataSource-1} closed

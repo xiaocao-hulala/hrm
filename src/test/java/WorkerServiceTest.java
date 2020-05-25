@@ -1,3 +1,5 @@
+import com.dao.UserDao;
+import com.entity.User;
 import com.entity.Worker;
 import com.service.WorkServiceDao;
 import org.junit.Test;
@@ -7,6 +9,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * @Author:caocong
@@ -21,11 +24,30 @@ create by caocong on  2020/5/18
 public class WorkerServiceTest {
     @Autowired
     WorkServiceDao workServiceDao;
+
+    @Autowired
+    UserDao userDao;
+
     @Test
     public  void test(){
         Worker  worker = new Worker();
         worker.setName("曹");
         List<Worker> list =  workServiceDao.selectByParams(worker);
         System.out.println(list);
+    }
+
+
+
+    @Test
+    public  void test2(){
+        User user = userDao.queryByUserName("管理员a");
+
+
+        Set<String> sets = userDao.querypressNameByUserName("管理员a");
+
+        System.out.println("sets:"+sets);
+        System.out.println(userDao.queryRoleNameByUserName("管理员a"));
+        System.out.println(user);
+
     }
 }

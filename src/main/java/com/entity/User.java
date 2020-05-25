@@ -16,4 +16,5 @@ public class User {
     private  String username;
     private  Integer state;
     private Date createtime;
+    private  String password;
 }

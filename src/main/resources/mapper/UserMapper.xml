@@ -23,8 +23,8 @@
     <select id="selectByParams" resultMap="usermap">
         select * from user
         <where>
-            <if test="loginname !=null and loginname !=''">and loginname  like  concat('%',#{loginname},'%')</if>
-            <if test="username!=null and username!=''">and username like  concat('%',#{username},'%')</if>
+            <if test="loginname !=null and loginname !=''">and loginname like concat('%',#{loginname},'%')</if>
+            <if test="username!=null and username!=''">and username like concat('%',#{username},'%')</if>
         </where>
     </select>
 
@@ -33,12 +33,39 @@
         select * from user where  id = #{id}
     </select>
 
+
+    <select id="queryByUserName" resultType="com.entity.User">
+        select * from user where username = #{username}
+
+    </select>
+
+
+    <select id="queryRoleNameByUserName" resultType="String">
+        select name from role where  id in(
+          select role_id from user_role
+          where id in (select id from  user
+          where username=#{username})
+        )
+    </select>
+
+
+    <select id="querypressNameByUserName" resultType="String">
+      select name from permission where  id in(
+      select perm_id from  role_perms where  role_id in (
+       select role_id from user_role
+      where id in (select id from  user
+      where username=#{username})
+      )
+    )
+    </select>
+
+
     <delete id="delete">
         delete  from user where id = #{id}
     </delete>
 
 
-    <update id="update" >
+    <update id="update">
         update user
         <set>
             <if test="loginname !=null and loginname !=''">loginname = #{loginname},</if>
@@ -51,7 +78,7 @@
 
 
     <insert id="insert">
-        insert  into user
+        insert into user
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="loginname !=null and loginname !=''">loginname,</if>
             <if test="username!=null and username!=''">username,</if>

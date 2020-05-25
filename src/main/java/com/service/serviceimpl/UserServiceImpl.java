@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * @Author:caocong
@@ -55,6 +56,21 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> selectById(Integer id) {
         return userDao.selectById(id);
+    }
+
+    @Override
+    public User queryByUserName(String name) {
+        return userDao.queryByUserName(name);
+    }
+
+    @Override
+    public Set<String> queryRoleNameByUserName(String username) {
+        return userDao.queryRoleNameByUserName(username);
+    }
+
+    @Override
+    public Set<String> querypressNameByUserName(String username) {
+        return userDao.querypressNameByUserName(username);
     }
 
 }
