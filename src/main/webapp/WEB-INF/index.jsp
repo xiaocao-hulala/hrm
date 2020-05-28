@@ -49,8 +49,8 @@
         <li class="layui-nav-item">
           <a class="" href="javascript:;">用户管理</a>
           <dl class="layui-nav-child">
-            <dd><a href="javascript:;">用户查询</a></dd>
-            <dd><a href="javascript:;">添加用户</a></dd>
+            <dd><a href="../jumpuser"  target="viewContent">用户查询</a></dd>
+            <dd><a href="../adduser"  target="viewContent">添加用户</a></dd>
           </dl>
         </li>
         
@@ -114,11 +114,13 @@
   
   <div class="layui-body">
     <!-- 内容主体区域 -->
-    <div style="padding: 15px;">内容主体区域</div>
+    <div style="padding: 15px;">
+        <iframe name="viewContent"  width="100%"height=1000px frameborder="0">欢迎来到学校官网后台管理</iframe>
+    </div>
   </div>
-  
-  
-  <div class="layui-footer">
+
+
+    <div class="layui-footer">
   </div>
   
   

@@ -30,24 +30,29 @@ public class WorkerServiceTest {
 
     @Test
     public  void test(){
-        Worker  worker = new Worker();
+  /*      Worker  worker = new Worker();
         worker.setName("曹");
-        List<Worker> list =  workServiceDao.selectByParams(worker);
-        System.out.println(list);
+        List<Worker> list =  workServiceDao.selectByParams(worker);*/
+
+
     }
 
 
 
     @Test
     public  void test2(){
-        User user = userDao.queryByUserName("管理员a");
+       /* User user = userDao.queryByUserName("管理员a");
 
 
         Set<String> sets = userDao.querypressNameByUserName("管理员a");
 
         System.out.println("sets:"+sets);
         System.out.println(userDao.queryRoleNameByUserName("管理员a"));
-        System.out.println(user);
+        System.out.println(user);*/
 
+       List<User> list = userDao.selectall();
+
+
+        System.out.println(list);
     }
 }

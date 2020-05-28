@@ -1,14 +1,16 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>用户添加</title>
+		<title>用户修改</title>
 	</head>
-	<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
-	<script src="../../layui/layui.js"></script>
+	<link rel="stylesheet" href="../../../static/layui/css/layui.css" media="all" />
+	<script src="../../../static/layui/layui.js"></script>
 	<body>
 		<fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-			<legend>用户添加页面</legend>
+			<legend>用户修改页面</legend>
 		</fieldset>
 
 		<form class="layui-form layui-form-pane" action="">

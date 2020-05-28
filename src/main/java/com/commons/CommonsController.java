@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @Author:caocong
  * @Description:
@@ -28,4 +30,27 @@ public class CommonsController {
         return "/WEB-INF/index";
     }
 
+
+    @RequestMapping("jumpuser")
+    public String user(HttpServletRequest request) {
+
+        return request.getContextPath() + "/WEB-INF/jsp/user/show";
+    }
+
+
+
+    @RequestMapping("adduser")
+    public String adduser(HttpServletRequest request){
+
+        return  request.getContextPath()+"/WEB-INF/jsp/user/add";
+    }
+
+
+    @RequestMapping("jumpdeleteuser")
+    public  String deleteuser(HttpServletRequest request){
+
+
+        return "null";
+
+    }
 }

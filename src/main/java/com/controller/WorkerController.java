@@ -36,10 +36,10 @@ public class WorkerController {
     }
 
 
-    @RequestMapping(value = "/deleteworker/{id}")
-    public String deleteWorker(@PathVariable(value = "id") int id) {
-        workServiceDao.deleteWorker(id);
-        return "删除成功";
+    @RequestMapping("deleteworker/{id}")
+        public String deleteWorker(@PathVariable(value = "id") int id) {
+            workServiceDao.deleteWorker(id);
+            return "删除成功";
     }
 
     @RequestMapping("addWorker")

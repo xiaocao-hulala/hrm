@@ -14,10 +14,11 @@
         <result property="username" column="username"></result>
         <result property="state" column="state"></result>
         <result property="createtime" column="createtime"></result>
+        <result property="password" column="password"></result>
     </resultMap>
 
     <select id="selectall" resultMap="usermap">
-        select id,loginname,username,state,createtime from user
+        select id,loginname,username,state,createtime,password from user
     </select>
 
     <select id="selectByParams" resultMap="usermap">
@@ -83,6 +84,7 @@
             <if test="loginname !=null and loginname !=''">loginname,</if>
             <if test="username!=null and username!=''">username,</if>
             <if test="state!=null">state,</if>
+            <if test="password!=null and password !=''">password,</if>
             <if test="createtime!=null">createtime,</if>
         </trim>
 
@@ -91,6 +93,7 @@
             <if test="loginname !=null and loginname !=''">#{loginname},</if>
             <if test="username!=null and username!=''">#{username},</if>
             <if test="state!=null">#{state},</if>
+            <if test="password!=null and password !=''">#{password},</if>
             <if test="createtime!=null">#{createtime},</if>
         </trim>
     </insert>

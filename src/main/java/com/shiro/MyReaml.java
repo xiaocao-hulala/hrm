@@ -3,6 +3,7 @@ package com.shiro;
 import com.dao.UserDao;
 import com.entity.User;
 import jdk.nashorn.internal.parser.Token;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
@@ -57,6 +58,11 @@ public class MyReaml extends AuthorizingRealm {
         if (user == null) {
             throw new UnknownAccountException("用户名不存在");
         } else {
+
+
+            //把登陆的用户对象储存到session中，方便上传文件储存userid
+            SecurityUtils.getSubject().getSession().setAttribute("user",user);
+
             //3.如果用户名存在获取用户正确密码
             //4.有对应用户名密码则交给shiro，我们提供正确用户名和密码
             SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(username, user.getPassword(), this.getName());

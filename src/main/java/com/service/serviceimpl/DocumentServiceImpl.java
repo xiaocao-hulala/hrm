@@ -14,11 +14,15 @@ import org.springframework.stereotype.Service;
 *文件业务层实现类
 create by caocong on  2020/5/20
 */
+
+
+
 @Service
 public class DocumentServiceImpl extends BaseServiceImpl<Document> {
 
     @Autowired
     public void setBaseDao(DocumentDao documentDao) {
+
         super.baseDao = documentDao;
     }
 }

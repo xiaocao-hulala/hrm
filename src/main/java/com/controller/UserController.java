@@ -9,6 +9,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import com.util.jsonUtil;
+
 /**
  * @Author:caocong
  * @Description:
@@ -18,18 +26,37 @@ import org.springframework.web.bind.annotation.RequestParam;
 create by caocong on  2020/5/19
 */
 @Controller
-@RequestMapping("user")
-public class UserController {
+    @RequestMapping("user")
+    public class UserController {
 
-    @Autowired
+        @Autowired
     UserService userService;
 
     @RequestMapping("selectall")
-    public String selectall(Model model, @RequestParam(required = false, defaultValue = "1") Integer pageNum,
-                            @RequestParam(required = true, defaultValue = "2") Integer pageSize
+    public void selectall(HttpServletRequest request , HttpServletResponse response,Model model, @RequestParam(required = false, defaultValue = "1") Integer pageNum,
+                          @RequestParam(required = true, defaultValue = "10") Integer pageSize
     ) {
-        userService.selectall(pageNum, pageSize);
-        return "index";
+       List<User>  userlist =  userService.selectall(pageNum, pageSize);
+       int count = userService.selectall(1,1000).size();
+        Map<String,Object> map = new HashMap<String, Object>();
+
+        map.put("code",0);
+        map.put("msg","查询成功");
+        map.put("data",userlist);
+        map.put("count",count);
+    /*    String result="";
+        try {
+            result =  objectMapper.writeValueAsString(map);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }*/
+        try {
+           jsonUtil.responseWriteJson(response,map);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        /*model.addAttribute("result",result);*/
+       /* return request.getContextPath()+"/WEB-INF/jsp/user/show";*/
     }
 
     @RequestMapping("selectByParams")
@@ -38,10 +65,10 @@ public class UserController {
         return "index";
     }
 
-    @RequestMapping(value = "/deleteuser/{id}")
-    public String delete(@PathVariable(value = "id") Integer id) {
+    @RequestMapping("deleteuser/{id}")
+    public String delete(@PathVariable(value = "id") Integer id,HttpServletRequest request) {
         userService.delete(id);
-        return "index";
+        return request.getContextPath()+"/WEB-INF/jsp/user/show";
     }
 
 
@@ -52,9 +79,9 @@ public class UserController {
     }
 
     @RequestMapping("adduser")
-    public String add(User user) {
+    public String add(User user,HttpServletRequest request) {
         userService.insert(user);
-        return "index";
+        return request.getContextPath()+"/WEB-INF/jsp/user/show";
     }
 
 }
