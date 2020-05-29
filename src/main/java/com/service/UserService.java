@@ -15,9 +15,9 @@ create by caocong on  2020/5/13
 */
 public interface UserService {
 
-    List<User> selectall(int pageNum,int pageSize);
+    List<User> selectall(User user);
 
-    List<User> selectByParams(User user);
+    List<User> selectByParams(User user,int pageNum,int pageSize);
 
     int update(User user);
 

@@ -46,11 +46,8 @@ public class CommonsController {
     }
 
 
-    @RequestMapping("jumpdeleteuser")
+    @RequestMapping("jumpselectuser.jsp")
     public  String deleteuser(HttpServletRequest request){
-
-
-        return "null";
-
+        return request.getContextPath() + "/WEB-INF/jsp/user/selectshow";
     }
 }

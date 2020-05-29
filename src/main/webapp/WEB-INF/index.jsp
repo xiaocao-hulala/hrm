@@ -115,7 +115,7 @@
   <div class="layui-body">
     <!-- 内容主体区域 -->
     <div style="padding: 15px;">
-        <iframe name="viewContent"  width="100%"height=1000px frameborder="0">欢迎来到学校官网后台管理</iframe>
+        <iframe name="viewContent"  width="100%"height=600px frameborder="0">欢迎来到学校官网后台管理</iframe>
     </div>
   </div>
 

@@ -28,13 +28,13 @@ public class UserServiceImpl implements UserService {
     UserDao userDao;
 
     @Override
-    public List<User> selectall(int pageNum, int pageSize) {
-        PageHelper.startPage(pageNum, pageSize);
-        return userDao.selectall();
+    public List<User> selectall(User user) {
+        return userDao.selectall(user);
     }
 
     @Override
-    public List<User> selectByParams(User user) {
+    public List<User> selectByParams(User user,int pageNum,int pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
         return userDao.selectByParams(user);
     }
 

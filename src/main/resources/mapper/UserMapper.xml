@@ -19,10 +19,14 @@
 
     <select id="selectall" resultMap="usermap">
         select id,loginname,username,state,createtime,password from user
+        <where>
+            <if test="loginname !=null and loginname !=''">and loginname like concat('%',#{loginname},'%')</if>
+            <if test="username!=null and username!=''">and username like concat('%',#{username},'%')</if>
+        </where>
     </select>
 
     <select id="selectByParams" resultMap="usermap">
-        select * from user
+        select id,loginname,username,state,createtime,password from user
         <where>
             <if test="loginname !=null and loginname !=''">and loginname like concat('%',#{loginname},'%')</if>
             <if test="username!=null and username!=''">and username like concat('%',#{username},'%')</if>
@@ -73,6 +77,7 @@
             <if test="username!=null and username!=''">username=#{username},</if>
             <if test="state!=null">state=#{state},</if>
             <if test="createtime!=null">createtime=#{createtime},</if>
+            <if test="password!=null">password=#{password},</if>
         </set>
         where id =#{id}
     </update>

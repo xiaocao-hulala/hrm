@@ -15,7 +15,7 @@ create by caocong on  2020/5/13
 */
 public interface UserDao {
 
-    List<User> selectall();
+    List<User> selectall(User user);
 
     List<User> selectByParams(User user);
 

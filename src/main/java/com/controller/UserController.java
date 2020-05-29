@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import com.util.jsonUtil;
 
 /**
@@ -26,24 +27,23 @@ import com.util.jsonUtil;
 create by caocong on  2020/5/19
 */
 @Controller
-    @RequestMapping("user")
-    public class UserController {
+@RequestMapping("user")
+public class UserController {
 
-        @Autowired
+    @Autowired
     UserService userService;
 
     @RequestMapping("selectall")
-    public void selectall(HttpServletRequest request , HttpServletResponse response,Model model, @RequestParam(required = false, defaultValue = "1") Integer pageNum,
-                          @RequestParam(required = true, defaultValue = "10") Integer pageSize
+    public void selectall(User user, HttpServletRequest request, HttpServletResponse response, Model model
     ) {
-       List<User>  userlist =  userService.selectall(pageNum, pageSize);
-       int count = userService.selectall(1,1000).size();
-        Map<String,Object> map = new HashMap<String, Object>();
+        List<User> userlist = userService.selectall(user);
+        int count = userService.selectall(user).size();
+        Map<String, Object> map = new HashMap<String, Object>();
 
-        map.put("code",0);
-        map.put("msg","查询成功");
-        map.put("data",userlist);
-        map.put("count",count);
+        map.put("code", 0);
+        map.put("msg", "查询成功");
+        map.put("data", userlist);
+        map.put("count", count);
     /*    String result="";
         try {
             result =  objectMapper.writeValueAsString(map);
@@ -51,37 +51,57 @@ create by caocong on  2020/5/19
             e.printStackTrace();
         }*/
         try {
-           jsonUtil.responseWriteJson(response,map);
+            jsonUtil.responseWriteJson(response, map);
         } catch (IOException e) {
             e.printStackTrace();
         }
         /*model.addAttribute("result",result);*/
-       /* return request.getContextPath()+"/WEB-INF/jsp/user/show";*/
+        /* return request.getContextPath()+"/WEB-INF/jsp/user/show";*/
     }
 
     @RequestMapping("selectByParams")
-    public String selectByParams(User user) {
-        userService.selectByParams(user);
-        return "index";
+    public void selectByParams(@RequestParam(value = "loginname", required = false) String loginname
+            , @RequestParam(value = "username", required = false) String username
+            , HttpServletResponse response, HttpServletRequest request
+            , @RequestParam(value = "page", required = false) Integer page
+            , @RequestParam(value = "limit", required = false) Integer limit
+    ) {
+        User user = new User();
+        user.setLoginname(loginname);
+        user.setUsername(username);
+
+        List<User> list = userService.selectByParams(user, page, limit);
+
+        int count = userService.selectall(user).size();
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("code", 0);
+        map.put("msg", "查询成功");
+        map.put("data", list);
+        map.put("count", count);
+        try {
+            jsonUtil.responseWriteJson(response, map);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @RequestMapping("deleteuser/{id}")
-    public String delete(@PathVariable(value = "id") Integer id,HttpServletRequest request) {
+    public String delete(@PathVariable(value = "id") Integer id, HttpServletRequest request) {
         userService.delete(id);
-        return request.getContextPath()+"/WEB-INF/jsp/user/show";
+        return request.getContextPath() + "/WEB-INF/jsp/user/show";
     }
 
 
     @RequestMapping("updateuser")
-    public String update(User user) {
+    public String update(User user, HttpServletRequest request) {
         userService.update(user);
-        return "index";
+        return request.getContextPath() + "/WEB-INF/jsp/user/show";
     }
 
     @RequestMapping("adduser")
-    public String add(User user,HttpServletRequest request) {
+    public String add(User user, HttpServletRequest request) {
         userService.insert(user);
-        return request.getContextPath()+"/WEB-INF/jsp/user/show";
+        return request.getContextPath() + "/WEB-INF/jsp/user/show";
     }
 
 }
