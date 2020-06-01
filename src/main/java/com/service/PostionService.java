@@ -12,7 +12,7 @@ import tk.mybatis.mapper.common.Mapper;
 *职位业务层接口
 create by caocong on  2020/5/19
 */
-public interface PostionService {
+public interface PostionService  extends  BaseService<Position>{
 
 
 }

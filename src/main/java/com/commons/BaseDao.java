@@ -29,6 +29,8 @@ public interface BaseDao<T> {
     List<T> queryAll(T t);
 
 
+    List<T> selectall(T t);
+
     //新增数据，t为新增的对象
     int insert(T t);
 

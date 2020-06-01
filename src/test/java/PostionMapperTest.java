@@ -1,4 +1,7 @@
 import com.dao.PositionDao;
+import com.dao.UserDao;
+import com.entity.Position;
+import com.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,13 +23,21 @@ public class PostionMapperTest {
     @Autowired
     PositionDao positionDao;
 
+
+    @Autowired
+    UserDao userDao;
     @Test
     public void test() {
-     /*   positionDao.selectAll().forEach(position -> {
+        Position position = new Position();
+        System.out.println(positionDao.selectall(position));
 
-            System.out.println(position);
-        });*/
+        position.setPosiname("java");
+       System.out.println(positionDao.queryAll(position));
 
-        System.out.println(positionDao.selectByPrimaryKey(1));
+
+       /* User user = new User();
+        user.setUsername("管理员");
+        System.out.println(userDao.selectByParams(user));*/
+
     }
 }

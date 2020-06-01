@@ -4,92 +4,170 @@
 <mapper namespace="com.dao.DepartmentDao">
 
     <resultMap id="departmentmap" type="com.entity.Department">
-        <!--   <result property="id" column="id"></result>-->
-        <!-- 主键列推荐使用id,这样效率更高-->
-        <id property="id" column="departmentid"></id>
-        <result property="dename" column="departmentname"></result>
-        <result property="detail" column="detail"></result>
 
-        <collection property="workers" javaType="ArrayList" ofType="com.entity.Worker">
-            <id property="id" column="workerid"></id>
-            <result property="name" column="name"></result>
-            <result column="tel" property="tel"></result>
-            <result column="email" property="email"></result>
-            <result column="position" property="position"></result>
-            <result column="xueli" property="xueli"></result>
-            <result column="idcard" property="idcard"></result>
-            <result column="workdepartmentid" property="departmentid"></result>
-            <result column="address" property="address"></result>
-            <result column="createtime" property="createtime"></result>
-        </collection>
+
+        <id property="id" column="id"></id>
+        <result property="detail" column="detail"></result>
+        <result property="departmentname" column="departmentname"></result>
+
     </resultMap>
 
 
-
     <select id="selectall" resultMap="departmentmap">
-        <!-- 部门表下的员工集合也填充好了数据，使用returnMap 一对多的关联-->
-        select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid,
-        a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from
-        worker a inner join department d inner join
-        departmentype d2
-        on d.id = d2.departmentid and a.departmentid = d.id
-    </select>
 
+
+        select id,departmentname,detail from department inner join departmentype d on department.id = d.departmentid
+        <where>
+            <if test="departmentname != null and departmentname != ''">
+                and departmentname like concat('%',#{departmentname},'%')
+            </if>
+            <if test="detail != null and detail != ''">
+                and detail like concat('%',#{detail},'%')
+            </if>
+        </where>
+
+
+    </select>
 
 
     <select id="selectByParams" resultMap="departmentmap">
-        select * from department
+        <!-- select * from department
+         <where>
+             <if test="dename != null and dename != ''">
+                 and dename like concat('%',#{dename},'%')
+             </if>
+             <if test="id !=null">
+                 and id =#{id}
+             </if>
+         </where>-->
+
+        select id,departmentname,detail from department inner join departmentype d on department.id = d.departmentid
         <where>
-            <if test="dename != null and dename != ''">
-                and dename like concat('%',#{dename},'%')
+            <if test="departmentname != null and departmentname != ''">
+                and departmentname like concat('%',#{departmentname},'%')
             </if>
-            <if test="id !=null">
-                and id =#{id}
+            <if test="detail != null and detail != ''">
+                and detail like concat('%',#{detail},'%')
             </if>
         </where>
+
     </select>
 
 
-    <update id="updateDepartment">
-        update department
-        <set>
-            <if test="dename != null and dename != ''">
-                dename = #{dename},
-            </if>
-            <if test="detail!=null and detail != ''">
-                detail=#{detail},
-            </if>
-        </set>
-        where id = #{id}
-    </update>
+    <!-- <update id="updateDepartment">
+       &lt;!&ndash;  update department
+         <set>
+             <if test="dename != null and dename != ''">
+                 dename = #{dename},
+             </if>
+             <if test="detail!=null and detail != ''">
+                 detail=#{detail},
+             </if>
+         </set>
+         where id = #{id}&ndash;&gt;
+     </update>-->
 
 
-    <insert id="addDepartment">
-        insert into department
-        <trim prefix="(" suffix=")" suffixOverrides=",">
-            <if test="dename != null and dename != ''">
-                dename,
-            </if>
-            <if test="detail!=null and detail != ''">
-                detail,
-            </if>
-        </trim>
-        value
-        <!-- suffixOverrides=","后缀删掉-->
-        <trim prefix="(" suffix=")" suffixOverrides=",">
-            <if test="dename != null and dename != ''">
-                #{dename},
-            </if>
-            <if test="detail!=null and detail != ''">
-                #{detail},
-            </if>
-        </trim>
-    </insert>
+    <!--    <insert id="addDepartment">
+           &lt;!&ndash; insert into department
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+                <if test="dename != null and dename != ''">
+                    dename,
+                </if>
+                <if test="detail!=null and detail != ''">
+                    detail,
+                </if>
+            </trim>
+            value
+            &lt;!&ndash; suffixOverrides=","后缀删掉&ndash;&gt;
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+                <if test="dename != null and dename != ''">
+                    #{dename},
+                </if>
+                <if test="detail!=null and detail != ''">
+                    #{detail},
+                </if>
+            </trim>&ndash;&gt;
+        </insert>-->
 
 
     <delete id="deleteDepartment">
-        delete from department where id = #{id}
+        <!-- from后面子表在前面-->
+        delete t2,t1 from departmentype t2 inner join
+        department t1 on t1.id = t2.departmentid where t1.id= #{id}
     </delete>
 
+
+    <!--<update id="update">
+        update user
+        <set>
+            <if test="loginname !=null and loginname !=''">loginname = #{loginname},</if>
+            <if test="username!=null and username!=''">username=#{username},</if>
+            <if test="state!=null">state=#{state},</if>
+            <if test="createtime!=null">createtime=#{createtime},</if>
+            <if test="password!=null">password=#{password},</if>
+        </set>
+        where id =#{id}
+    </update>
+-->
+
+
+    <update id="updateDepartment">
+        update departmentype left join department d on departmentype.departmentid = d.id
+        <set>
+            <if test="detail!=null and detail!=''">d.detail=#{detail},</if>
+            <if test="departmentname!=null and departmentname!=''">departmentype.departmentname=#{departmentname},</if>
+        </set>
+        where d.id=#{id}
+    </update>
+    <!-- update   departmentype  left join   department d on departmentype.departmentid = d.id
+     set  departmentype.departmentname='技术部' , d.detail='憨憨' where  d.id=1-->
+
+    <!--<insert id="addDepartment" parameterType="Department" useGeneratedKeys="true" keyProperty="id">
+        insert into department
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="detail!=null and detail !=''">detail,</if>
+        </trim>
+        value
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="detail!=null and detail!=''">#{detail}</if>
+        </trim>
+    </insert>-->
+
+
+<!--    <insert id="addDepartment" parameterType="Department" useGeneratedKeys="true" keyProperty="id">
+        insert into department(detail) value (#{detail})
+    </insert>-->
+
+<!--    <insert id="addDepartmentype">
+        insert into departmentype departmentid,
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="departmentname!=null and departmentname!=''">departmentname,</if>
+        </trim>
+        value
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="departmentname!=null and departmentname!=''">#{departmentname},</if>
+        </trim>
+        id,
+    </insert>-->
+
+
+    <!--  insert into user
+      <trim prefix="(" suffix=")" suffixOverrides=",">
+          <if test="loginname !=null and loginname !=''">loginname,</if>
+          <if test="username!=null and username!=''">username,</if>
+          <if test="state!=null">state,</if>
+          <if test="password!=null and password !=''">password,</if>
+          <if test="createtime!=null">createtime,</if>
+      </trim>
+
+      value
+      <trim prefix="(" suffix=")" suffixOverrides=",">
+          <if test="loginname !=null and loginname !=''">#{loginname},</if>
+          <if test="username!=null and username!=''">#{username},</if>
+          <if test="state!=null">#{state},</if>
+          <if test="password!=null and password !=''">#{password},</if>
+          <if test="createtime!=null">#{createtime},</if>
+      </trim>-->
 
 </mapper>

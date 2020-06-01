@@ -15,10 +15,10 @@ create by caocong on  2020/5/13
 
 @Data
 public class Department {
-    private  String dename;
-    private  Integer id;
-    private  String detail;
-
+    private String departmentname;
+    private Integer id;
+    private String detail;
+    private Integer departmentid;
     //一个部门有多个员工
     private List<Worker> workers;
 

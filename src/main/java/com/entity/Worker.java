@@ -1,6 +1,7 @@
 package com.entity;
 
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -23,8 +24,9 @@ public class Worker {
     private String idcard;
     private Integer departmentid;
     private String address;
+    @DateTimeFormat(pattern = "yyyy-mm-dd")
     private Date createtime;
 
     //多对一关联查询，查询员工的时候，同时把员工部门也查出来
-    private  Department department;
+    private Department department;
 }

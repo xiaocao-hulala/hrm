@@ -3,6 +3,7 @@ package com.service.serviceimpl;
 import com.commons.BaseServiceImpl;
 import com.dao.DocumentDao;
 import com.entity.Document;
+import com.service.DocumentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +19,7 @@ create by caocong on  2020/5/20
 
 
 @Service
-public class DocumentServiceImpl extends BaseServiceImpl<Document> {
+public class DocumentServiceImpl extends BaseServiceImpl<Document> implements DocumentService {
 
     @Autowired
     public void setBaseDao(DocumentDao documentDao) {

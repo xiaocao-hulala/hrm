@@ -24,8 +24,10 @@ public interface BaseService<T> {
     //offset查询起始位置
     List<T> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
 
+    List<T> selectall(T t);
+
     //通过实体类作为条件查询
-    List<T> queryAll(T t);
+    List<T> queryAll(T t,Integer pageNum,Integer pageSize);
 
 
     //新增数据，t为新增的对象

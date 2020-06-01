@@ -16,10 +16,11 @@
 <body>
 
 <div class="demoTable">
-    搜索部门名：
+    搜索内容：
     <div class="layui-inline">
-        <input class="layui-input" name="username" id="username2" autocomplete="off">
+        <input class="layui-input" name="content" id="username2" autocomplete="off">
     </div>
+
     <button class="layui-btn" data-type="reload">搜索</button>
 </div>
 
@@ -32,11 +33,12 @@
 </script>
 
 <script>
-    var changeurl = "../../../department/selectByParams";
+    var changeurl = "../../../notice/selectByParams";
     var currdata;//当前点击的这行数据
-    layui.use(['layer', 'table'], function () {
+    layui.use(['layer', 'table', 'laypage'], function () {
         var table = layui.table;
         var layer = layui.layer;
+        var laypage = layui.laypage;
         //展示已知数据
         table.render({
             elem: '#Demo',
@@ -53,18 +55,20 @@
                         field: 'id',
                         title: 'ID',
                         sort: true,
-                        width: 80,
+                        width: 80
                     }, {
-                    field: 'departmentname',
-                    title: '部门名字',
+                    field: 'content',
+                    title: '公告内容',
                     width: 120
-                }
-                    , {
-                    field: 'detail',
-                    title: '部门简介',
-                    width: 120
-                }
-                    , {
+                }, {
+                    field: 'createtime',
+                    title: '发布时间',
+                    width: 200
+                }, , {
+                    field: 'username',
+                    title: '发布人',
+                    width: 102
+                }, {
                     fixed: 'right',
                     width: 165,
                     align: 'center',
@@ -88,17 +92,17 @@
                     layer.close(index);
                     //向服务端发送删除指令
                     /*  // console.log(data.id);*/
-                    location.href = "../../../department/delete/" + data.id;
+                    location.href = "../../../notice/delete/" + data.id;
                 });
             } else if (layEvent === 'edit') { //编辑
                 //iframe层
                 layer.open({
                     type: 2,
-                    title: '部门修改页面',
+                    title: '用户修改页面',
                     shadeClose: true,
                     shade: 0.8,
                     area: ['380px', '70%'],
-                    content: '../../../alterpage/alterdepartment.jsp' //iframe的url
+                    content: '../../../alterpage/alternotice.jsp' //iframe的url
                 });
 
             }
@@ -113,7 +117,7 @@
                         curr: 1 //重新从第 1 页开始
                     }
                     , where: {
-                        departmentname: usernameaa
+                        content: usernameaa,
                     }
                 }, 'data');
             }

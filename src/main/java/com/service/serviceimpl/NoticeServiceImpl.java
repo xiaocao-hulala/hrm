@@ -18,11 +18,11 @@ create by caocong on  2020/5/19
 
 
 @Service
-public class NoticeServiceImpl  extends BaseServiceImpl<Notice> {
+public class NoticeServiceImpl extends BaseServiceImpl<Notice> implements  NoticeService{
 
     //给父类中的baseDao赋值
     @Autowired
-     public  void  setBaseDao(NoticeDao noticeDao){
-         super.baseDao=noticeDao;
-     }
+    public void setBaseDao(NoticeDao noticeDao) {
+        super.baseDao = noticeDao;
+    }
 }

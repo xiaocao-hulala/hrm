@@ -16,9 +16,9 @@
 <body>
 
 <div class="demoTable">
-    搜索部门名：
+    搜索职位名：
     <div class="layui-inline">
-        <input class="layui-input" name="username" id="username2" autocomplete="off">
+        <input class="layui-input" name="posiname" id="posi" autocomplete="off">
     </div>
     <button class="layui-btn" data-type="reload">搜索</button>
 </div>
@@ -32,7 +32,7 @@
 </script>
 
 <script>
-    var changeurl = "../../../department/selectByParams";
+    var changeurl = "../../../position/selectall";
     var currdata;//当前点击的这行数据
     layui.use(['layer', 'table'], function () {
         var table = layui.table;
@@ -53,18 +53,16 @@
                         field: 'id',
                         title: 'ID',
                         sort: true,
-                        width: 80,
+                        width: 80
                     }, {
-                    field: 'departmentname',
-                    title: '部门名字',
+                    field: 'posiname',
+                    title: '职位名字',
                     width: 120
-                }
-                    , {
-                    field: 'detail',
-                    title: '部门简介',
-                    width: 120
-                }
-                    , {
+                }, {
+                    field: 'posidetail',
+                    title: '职位简介',
+                    width: 200
+                }, {
                     fixed: 'right',
                     width: 165,
                     align: 'center',
@@ -88,32 +86,31 @@
                     layer.close(index);
                     //向服务端发送删除指令
                     /*  // console.log(data.id);*/
-                    location.href = "../../../department/delete/" + data.id;
+                    location.href = "../../../position/delete/" + data.id;
                 });
             } else if (layEvent === 'edit') { //编辑
                 //iframe层
                 layer.open({
                     type: 2,
-                    title: '部门修改页面',
+                    title: '职位修改页面',
                     shadeClose: true,
                     shade: 0.8,
                     area: ['380px', '70%'],
-                    content: '../../../alterpage/alterdepartment.jsp' //iframe的url
+                    content: '../../../alterpage/alterposition.jsp' //iframe的url
                 });
-
             }
         });
 
         var $ = layui.$, active = {
             reload: function () {
-                var usernameaa = $('#username2').val();
+                var loginnameaa = $('#posi').val();
                 //执行重载
                 table.reload('testReload', {
                     page: {
                         curr: 1 //重新从第 1 页开始
                     }
                     , where: {
-                        departmentname: usernameaa
+                        posiname: loginnameaa
                     }
                 }, 'data');
             }

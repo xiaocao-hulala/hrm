@@ -1,6 +1,7 @@
 package com.entity;
 
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 /**
@@ -16,6 +17,9 @@ public class Notice {
     private Integer id;
     private Integer userid;
     private String content;
+
+    @DateTimeFormat(pattern = "yyyy-mm-dd")
     private Date createtime;
     private User user;
+    private String username;
 }

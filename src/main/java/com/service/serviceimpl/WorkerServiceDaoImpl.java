@@ -27,14 +27,14 @@ public class WorkerServiceDaoImpl implements WorkServiceDao {
 
 
     @Override
-    public List<Worker> selectAll(int pageNum,int pageSize) {
-        PageHelper.startPage(pageNum,pageSize);
-        return workerDao.selectAll();
+    public List<Worker> selectAll(Worker worker) {
+        return workerDao.selectAll(worker);
     }
 
 
     @Override
-    public List<Worker> selectByParams(Worker worker) {
+    public List<Worker> selectByParams(Worker worker, Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
         return workerDao.selectByParams(worker);
     }
 

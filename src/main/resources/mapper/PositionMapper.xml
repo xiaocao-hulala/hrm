@@ -4,4 +4,69 @@
 <mapper namespace="com.dao.PositionDao">
 
 
+    <resultMap id="positionmap" type="com.entity.Position">
+        <id property="id" column="id"></id>
+        <result property="posiname" column="posiname"></result>
+        <result property="posidetail" column="posidetail"></result>
+    </resultMap>
+
+
+    <select id="queryAll" resultMap="positionmap">
+        select id,posiname,posidetail from position
+        <where>
+            <if test="posiname !=null and posiname!=''">and posiname like concat('%',#{posiname},'%')</if>
+        </where>
+    </select>
+
+
+    <select id="selectall" resultMap="positionmap">
+        select id,posiname,posidetail from position
+        <where>
+            <if test="posiname !=null and posiname!=''">and posiname like concat('%',#{posiname},'%')</if>
+        </where>
+
+    </select>
+
+
+    <delete id="deleteById">
+        delete  from position  where id = #{id}
+    </delete>
+
+
+    <insert id="insert">
+        insert into position
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="posiname!=null and posiname !=''">
+                posiname,
+            </if>
+            <if test="posidetail!=null and posidetail !=''">
+                posidetail,
+            </if>
+        </trim>
+        value
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="posiname!=null and posiname !=''">
+                #{posiname},
+            </if>
+            <if test="posidetail!=null and posidetail !=''">
+                #{posidetail},
+            </if>
+        </trim>
+    </insert>
+
+
+    <update id="update">
+        update position
+        <set>
+            <if test="posiname!=null and posiname!=''">
+                posiname=#{posiname},
+            </if>
+            <if test="posidetail!=null and posidetail!=''">
+                posidetail=#{posidetail},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+
 </mapper>

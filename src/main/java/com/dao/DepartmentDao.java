@@ -1,6 +1,7 @@
 package com.dao;
 
 import com.entity.Department;
+import com.entity.Departmentype;
 
 import java.util.List;
 
@@ -14,7 +15,7 @@ create by caocong on  2020/5/13
 */
 public interface DepartmentDao {
 
-    List<Department> selectall();
+    List<Department> selectall(Department department);
 
     List<Department> selectByParams(Department department);
 
@@ -23,6 +24,8 @@ public interface DepartmentDao {
     int deleteDepartment(int id);
 
     int updateDepartment(Department department);
+
+    int addDepartmentype(Departmentype departmentype);
 
 }
 

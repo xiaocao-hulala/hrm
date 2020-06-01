@@ -14,9 +14,9 @@ create by caocong on  2020/5/16
 */
 public interface WorkServiceDao {
 
-    List<Worker> selectAll(int pageNum,int pageSize);
+    List<Worker> selectAll(Worker worker);
 
-    List<Worker> selectByParams(Worker worker);
+    List<Worker> selectByParams(Worker worker,Integer pageNum,Integer pageSize);
 
     int addWorker(Worker worker);
 

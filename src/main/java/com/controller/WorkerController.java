@@ -3,10 +3,18 @@ package com.controller;
 import com.entity.Worker;
 import com.github.pagehelper.PageInfo;
 import com.service.WorkServiceDao;
+import com.util.jsonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Author:caocong
@@ -24,42 +32,57 @@ public class WorkerController {
     @Autowired
     WorkServiceDao workServiceDao;
 
-    @RequestMapping("selectworkerall")
-    public String selectWorker(Model model, @RequestParam(required = false, defaultValue = "1") Integer pageNum,
-                               @RequestParam(required = false, defaultValue = "2") Integer pageSize) {
-        PageInfo<Worker> pageInfo = new PageInfo<>(workServiceDao.selectAll(pageNum, pageSize));
-
-        //pageinfo所有分页信息都在里面，页面显示遍历出来时 pageinfo.list 集合  当前显示条数时pageinfo.starRow 当前显示几条 pageinfo.endRow
-        //一共多少条:pageinfo.total,当前几条
-        model.addAttribute("pageInfo",pageInfo);
-        return "index";
-    }
-
-
-    @RequestMapping("deleteworker/{id}")
-        public String deleteWorker(@PathVariable(value = "id") int id) {
-            workServiceDao.deleteWorker(id);
-            return "删除成功";
-    }
-
-    @RequestMapping("addWorker")
-    public String addWorker(@ModelAttribute Worker worker) {
-        workServiceDao.addWorker(worker);
-        return "添加成功";
-    }
 
 
     @RequestMapping("selectByParams")
-    public String selectByParams(Worker worker) {
-        workServiceDao.selectByParams(worker);
-        return "查询成功";
+    public void selectByParams(HttpServletRequest request,
+                               HttpServletResponse response,
+                               @RequestParam(value = "page", required = false) Integer page,
+                               @RequestParam(value = "limit", required = false) Integer limit,
+                               @RequestParam(value = "name", required = false) String name,
+                               @RequestParam(value = "position", required = false) String position
+    ) {
+        Worker worker = new Worker();
+        worker.setName(name);
+        worker.setPosition(position);
+        List<Worker> list = workServiceDao.selectByParams(worker, page, limit);
+        int count = workServiceDao.selectAll(worker).size();
+        Map<String, Object> map = new HashMap<>();
+        map.put("code", 0);
+        map.put("msg", "查询成功");
+        map.put("data", list);
+        map.put("count", count);
+        try {
+            jsonUtil.responseWriteJson(response, map);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 
-    @RequestMapping("updateWorker")
-    public String updateWorker(Worker worker) {
+    @RequestMapping("updateworker")
+    public String updateWorker(Worker worker, HttpServletRequest request) {
         workServiceDao.updateWorker(worker);
-        return "修改成功";
+        return request.getContextPath() + "/WEB-INF/jsp/worker/show";
     }
 
+
+
+    @RequestMapping("deleteWorker/{id}")
+    public String deleteWorker(HttpServletRequest request,
+                               @PathVariable(value = "id") Integer id
+    ) {
+        workServiceDao.deleteWorker(id);
+        return request.getContextPath() + "/WEB-INF/jsp/worker/show";
+    }
+
+
+
+    @RequestMapping("addworker")
+    public  String addWorker(HttpServletRequest request,Worker worker){
+        workServiceDao.addWorker(worker);
+        return request.getContextPath() + "/WEB-INF/jsp/worker/show";
+
+    }
 }

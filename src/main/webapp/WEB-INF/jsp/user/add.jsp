@@ -58,7 +58,7 @@
 			
 			<div class="layui-form-item">
 				<button class="layui-btn"  type="submit">添加用户</button>
-				<button class="layui-btn">返回</button>
+				<button class="layui-btn"> <a style="color: white" href="../../../jumpuser">返回</a> </button>
 			</div>
 
 		</form>

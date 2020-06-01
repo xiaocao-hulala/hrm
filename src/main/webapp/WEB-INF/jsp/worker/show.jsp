@@ -16,9 +16,13 @@
 <body>
 
 <div class="demoTable">
-    搜索部门名：
+    搜索员工名：
     <div class="layui-inline">
-        <input class="layui-input" name="username" id="username2" autocomplete="off">
+        <input class="layui-input" name="name" id="username2" autocomplete="off">
+    </div>
+    搜索职位：
+    <div class="layui-inline">
+        <input class="layui-input" name="position" id="loginname2" autocomplete="off">
     </div>
     <button class="layui-btn" data-type="reload">搜索</button>
 </div>
@@ -32,11 +36,12 @@
 </script>
 
 <script>
-    var changeurl = "../../../department/selectByParams";
+    var changeurl = "../../../worker/selectByParams";
     var currdata;//当前点击的这行数据
-    layui.use(['layer', 'table'], function () {
+    layui.use(['layer', 'table', 'laypage'], function () {
         var table = layui.table;
         var layer = layui.layer;
+        var laypage = layui.laypage;
         //展示已知数据
         table.render({
             elem: '#Demo',
@@ -50,21 +55,60 @@
                 },
                     //标题栏
                     {
-                        field: 'id',
+                        field: 'workerid',
                         title: 'ID',
                         sort: true,
-                        width: 80,
+                        width: 80
                     }, {
+                    field: 'name',
+                    title: '员工名字',
+                    width: 120
+                }, {
+                    field: 'tel',
+                    title: '电话号码',
+                    width: 200
+                }, , {
+                    field: 'position',
+                    title: '职位',
+                    width: 102
+                }, {
+                    field: 'email',
+                    title: '邮箱',
+                    width: 120
+                },
+
+                    , {
+                    field: 'xueli',
+                    title: '学历',
+                    width: 120
+                },
+
+                    , {
+                    field: 'idcard',
+                    title: '身份证号',
+                    width: 120
+                },
+
+
+                    , {
+                    field: 'address',
+                    title: '邮箱',
+                    width: 120
+                },
+
+
+                    , {
+                    field: 'createtime',
+                    title: '入职时间',
+                    width: 120
+                },
+
+                    , {
                     field: 'departmentname',
-                    title: '部门名字',
+                    title: '所属部门',
                     width: 120
-                }
-                    , {
-                    field: 'detail',
-                    title: '部门简介',
-                    width: 120
-                }
-                    , {
+                },
+                    {
                     fixed: 'right',
                     width: 165,
                     align: 'center',
@@ -73,8 +117,9 @@
                 }
                 ]
             ]
-            , page: true
+            ,page:true
         });
+
 
         //监听工具条
         table.on('tool(test)', function (obj) { //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
@@ -88,17 +133,17 @@
                     layer.close(index);
                     //向服务端发送删除指令
                     /*  // console.log(data.id);*/
-                    location.href = "../../../department/delete/" + data.id;
+                    location.href = "../../../worker/deleteWorker/" + data.id;
                 });
             } else if (layEvent === 'edit') { //编辑
                 //iframe层
                 layer.open({
                     type: 2,
-                    title: '部门修改页面',
+                    title: '员工修改页面',
                     shadeClose: true,
                     shade: 0.8,
-                    area: ['380px', '70%'],
-                    content: '../../../alterpage/alterdepartment.jsp' //iframe的url
+                    area: ['580px', '100%'],
+                    content: '../../../alterpage/alterworker.jsp' //iframe的url
                 });
 
             }
@@ -106,6 +151,7 @@
 
         var $ = layui.$, active = {
             reload: function () {
+                var loginnameaa = $('#loginname2').val();
                 var usernameaa = $('#username2').val();
                 //执行重载
                 table.reload('testReload', {
@@ -113,7 +159,8 @@
                         curr: 1 //重新从第 1 页开始
                     }
                     , where: {
-                        departmentname: usernameaa
+                        position: loginnameaa,
+                        name: usernameaa,
                     }
                 }, 'data');
             }

@@ -1,3 +1,4 @@
+/*
 import com.dao.UserDao;
 import com.entity.User;
 import com.util.MyBatisUtils;
@@ -6,14 +7,18 @@ import org.junit.Test;
 
 import java.util.List;
 
+*/
 /**
  * @Author:caocong
  * @Description:
  * @Date:create in 20:48 2020/5/16
  *//*
+ */
+/*
 *用户测试类
 create by caocong on  2020/5/16
-*/
+*//*
+
 public class UserMapperTest {
 
 
@@ -81,3 +86,4 @@ public class UserMapperTest {
 
     }
 }
+*/

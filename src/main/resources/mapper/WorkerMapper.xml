@@ -51,11 +51,10 @@
 
         <association property="department" javaType="com.entity.Department">
             <id property="id" column="departmentid"></id>
-            <result property="dename" column="departmentname"></result>
+            <result property="departmentname" column="departmentname"></result>
             <result property="detail" column="detail"></result>
         </association>
     </resultMap>
-
 
 
     <!-- 查询员工能够显示属于哪个部门一对多映射实现-->
@@ -65,15 +64,23 @@
         worker a inner join department d inner join
         departmentype d2
         on d.id = d2.departmentid and a.departmentid = d.id
+        <where>
+            <if test="name != null and name !=''">and name like concat('%',#{name},'%')</if>
+            <if test="position != null and position !=''">and email like concat('%',#{position},'%')</if>
+        </where>
 
     </select>
 
 
     <select id="selectByParams" resultMap="workermap">
-        select * from worker
+        select a.id as workerid,a.name, a.tel,a.email,a.position,a.xueli,a.idcard,a.departmentid as workdepartmentid,
+        a.address,a.createtime,d.id as departmentid,d.detail,d2.departmentid as departmentypeid,d2.departmentname from
+        worker a inner join department d inner join
+        departmentype d2
+        on d.id = d2.departmentid and a.departmentid = d.id
         <where>
-            <if test="name != null and name !=''"> and name like concat('%',#{name},'%')</if>
-            <if test="email != null and email !=''">and email like concat('%',#{email},'%')</if>
+            <if test="name != null and name !=''">and name like concat('%',#{name},'%')</if>
+            <if test="position != null and position !=''">and email like concat('%',#{position},'%')</if>
         </where>
     </select>
 

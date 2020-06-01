@@ -2,6 +2,8 @@ package com.service.serviceimpl;
 
 import com.dao.DepartmentDao;
 import com.entity.Department;
+import com.entity.Departmentype;
+import com.github.pagehelper.PageHelper;
 import com.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,12 +26,14 @@ public class DepartmentImpl implements DepartmentService {
     DepartmentDao departmentDao;
 
     @Override
-    public List<Department> selectall(Integer pageNum, Integer pageSize) {
-        return departmentDao.selectall();
+    public List<Department> selectall(Department department) {
+
+        return departmentDao.selectall(department);
     }
 
     @Override
-    public List<Department> selectByParams(Department department) {
+    public List<Department> selectByParams(Department department, Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
         return departmentDao.selectByParams(department);
     }
 
@@ -46,5 +50,10 @@ public class DepartmentImpl implements DepartmentService {
     @Override
     public int updateDepartment(Department department) {
         return departmentDao.updateDepartment(department);
+    }
+
+    @Override
+    public int addDepartmentype(Departmentype departmentype) {
+        return 0;
     }
 }

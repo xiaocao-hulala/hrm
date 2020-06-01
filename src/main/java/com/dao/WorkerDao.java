@@ -14,7 +14,7 @@ create by caocong on  2020/5/16
 */
 public interface WorkerDao {
 
-    List<Worker> selectAll();
+    List<Worker> selectAll(Worker worker);
 
     List<Worker> selectByParams(Worker worker);
 

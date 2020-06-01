@@ -1,5 +1,7 @@
 package com.commons;
 
+import com.github.pagehelper.PageHelper;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -13,7 +15,7 @@ create by caocong on  2020/5/19
 */
 public class BaseServiceImpl<T> implements BaseService<T> {
 
-    protected  BaseDao baseDao;
+    protected BaseDao baseDao;
 
     @Override
     public T queryById(Object id) {
@@ -26,9 +28,17 @@ public class BaseServiceImpl<T> implements BaseService<T> {
     }
 
     @Override
-    public List<T> queryAll(T t) {
+    public List<T> selectall(T t) {
+        return baseDao.selectall(t);
+    }
+
+
+    @Override
+    public List<T> queryAll(T t, Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
         return baseDao.queryAll(t);
     }
+
 
     @Override
     public boolean insert(T t) {

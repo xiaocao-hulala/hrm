@@ -1,10 +1,10 @@
-/*
 package com.controller;
 
 import com.entity.Document;
 import com.entity.User;
 import com.service.DocumentService;
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,23 +13,22 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.net.URLEncoder;
 import java.util.Date;
 import java.util.UUID;
 
-*/
 /**
  * @Author:caocong
  * @Description:
  * @Date:create in 9:58 2020/5/20
- *//*
-*/
-/*
-*文件控制层
-create by caocong on  2020/5/20
-*//*
+ * <p>
+ * 文件控制层
+ * create by caocong on  2020/5/20
+ */
+
 
 @Controller
 @RequestMapping("document")
@@ -76,16 +75,36 @@ public class DocumentController {
 
 
     @RequestMapping("download")
-    public void download() {
+    @RequiresPermissions("document:download")
+    public void download(HttpServletRequest request, HttpServletResponse resp, Integer id) {
 
+        Document document = documentService.queryById(id);
+
+        if (document == null) {
+            return;
+        }
+        try {
+
+            String dir = request.getServletContext().getRealPath("");
+            resp.setHeader("content-disposition", "attachment;filename=" + URLEncoder.encode(document.getFilename(), "UTF-8")); //获取文件输入流 InputStream in = new FileInputStream("文件路径"); int len = 0; byte[] buffer = new byte[1024]; OutputStream out = resp.getOutputStream(); while ((len = in.read(buffer)) > 0) {    out.write(buffer,0,len);//将缓冲区的数据输出到客户端浏览器 } in.close(); out.close();
+
+            //读取这个资源的完整路径，然后io流写入
+            InputStream in = new FileInputStream(dir + "/" + document.getFilepath());
+            int len = 0;
+            byte[] buffer = new byte[1024];
+            OutputStream out = resp.getOutputStream();
+            while ((len = in.read(buffer)) > 0) {
+                out.write(buffer, 0, len);//将缓冲区的数据输出到客户端浏览器 } in.close(); out.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-
 
     @RequestMapping("list")
     public String listFile(Model model) {
-        model.addAttribute("filelist", documentService.queryAll(null));
+        model.addAttribute("filelist", documentService.queryAllByLimit(0, 100));
         return "/WEB-INF/jsp/file/showfile";
     }
 
 }
-*/

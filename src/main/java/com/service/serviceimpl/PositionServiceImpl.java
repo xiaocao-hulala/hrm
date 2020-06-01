@@ -6,7 +6,7 @@ import com.entity.Position;
 import com.service.PostionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import com.service.PostionService;
 import java.io.Serializable;
 import java.util.List;
 
@@ -19,10 +19,10 @@ import java.util.List;
 create by caocong on  2020/5/19
 */
 @Service
-public class PositionServiceImpl extends BaseServiceImpl<Position>{
-   /* //需要给父类的BaseServiceImpl中的baseDao赋值
+public class PositionServiceImpl extends BaseServiceImpl<Position> implements PostionService {
+    //需要给父类的BaseServiceImpl中的baseDao赋值
     @Autowired//改注解定义在方法上相当于给参数赋值，相当于就是属性
     public void setBaseDao(PositionDao positionDao) {
         super.baseDao=positionDao;
-    }*/
+    }
 }

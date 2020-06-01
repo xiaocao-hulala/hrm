@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> selectByParams(User user,int pageNum,int pageSize) {
+    public List<User> selectByParams(User user, int pageNum, int pageSize) {
         PageHelper.startPage(pageNum, pageSize);
         return userDao.selectByParams(user);
     }

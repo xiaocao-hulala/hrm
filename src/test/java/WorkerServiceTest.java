@@ -1,4 +1,6 @@
+import com.dao.NoticeDao;
 import com.dao.UserDao;
+import com.entity.Notice;
 import com.entity.User;
 import com.entity.Worker;
 import com.service.WorkServiceDao;
@@ -28,13 +30,21 @@ public class WorkerServiceTest {
     @Autowired
     UserDao userDao;
 
+
+    @Autowired
+    NoticeDao noticeDao;
+
     @Test
     public  void test(){
   /*      Worker  worker = new Worker();
         worker.setName("曹");
-        List<Worker> list =  workServiceDao.selectByParams(worker);*/
+        List<Worker> list =  workServiceDao.selectByParams(worker,1,10);
+        System.out.println(list);*/
 
 
+        Notice notice = new Notice();
+
+        System.out.println(noticeDao.selectall(notice));
     }
 
 
@@ -50,9 +60,8 @@ public class WorkerServiceTest {
         System.out.println(userDao.queryRoleNameByUserName("管理员a"));
         System.out.println(user);*/
 
-       List<User> list = userDao.selectall();
 
 
-        System.out.println(list);
+
     }
 }
